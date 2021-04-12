@@ -103,6 +103,16 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap base_shop_a {
+            get {
+                object obj = ResourceManager.GetObject("base_shop_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap base_shop_d {
             get {
                 object obj = ResourceManager.GetObject("base_shop_d", resourceCulture);

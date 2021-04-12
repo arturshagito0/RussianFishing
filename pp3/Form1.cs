@@ -44,7 +44,28 @@ namespace pp3
 
         private void FoodShopButton_MouseHover(object sender, EventArgs e)
         {
-			FoodShopButton.BackgroundImage = pp3.Properties.Resources.
+			
+        }
+
+        private void FoodShopButton_MouseEnter(object sender, EventArgs e)
+        {
+			
+		}
+
+        private void FishShopButton_MouseEnter(object sender, EventArgs e)
+        {
+			FishShopButton.Image = pp3.Properties.Resources.base_shop_a;
+		}
+
+        private void FishShopButton_MouseLeave(object sender, EventArgs e)
+        {
+			FishShopButton.Image = pp3.Properties.Resources.base_shop_d;
+		}
+
+        private void FishShopButton_MouseClick(object sender, MouseEventArgs e)
+        {
+			var myForm = new Form2();
+			myForm.show();
         }
     }
 }

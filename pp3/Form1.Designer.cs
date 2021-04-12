@@ -249,6 +249,9 @@ namespace pp3
             this.FishShopButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.FishShopButton.TabIndex = 3;
             this.FishShopButton.TabStop = false;
+            this.FishShopButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FishShopButton_MouseClick);
+            this.FishShopButton.MouseEnter += new System.EventHandler(this.FishShopButton_MouseEnter);
+            this.FishShopButton.MouseLeave += new System.EventHandler(this.FishShopButton_MouseLeave);
             // 
             // FoodShopButton
             // 
@@ -260,6 +263,7 @@ namespace pp3
             this.FoodShopButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.FoodShopButton.TabIndex = 2;
             this.FoodShopButton.TabStop = false;
+            this.FoodShopButton.MouseEnter += new System.EventHandler(this.FoodShopButton_MouseEnter);
             this.FoodShopButton.MouseHover += new System.EventHandler(this.FoodShopButton_MouseHover);
             // 
             // MainForm
