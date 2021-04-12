@@ -39,24 +39,7 @@ namespace pp3
 
         }
 
-        private void listView1_Click(object sender, EventArgs e)
-        {
-            string name = listView1.SelectedItems[0].SubItems[0].Text;
-            string maxWeight = listView1.SelectedItems[0].SubItems[1].Text;
-            string price = listView1.SelectedItems[0].SubItems[1].Text;
-
-            string poplabel = "Поплавочное удилище";
-            Description.Text = poplabel;
-            Price.Text = $"Цена: {price}";
-            MaxWeight.Text = $"Выдерживает вес: {maxWeight}";
-            NameOfItem.Text = name;
-
-
-
-
-
-            
-        }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -82,8 +65,9 @@ namespace pp3
             {
                 Description.Text = "Спиннинг";
             }
+            pictureBox1.Image = (Image)pp3.Properties.Resources.ResourceManager.GetObject(selectedRod.rodName + ".png", Properties.Resources.);
             Price.Text = $"Цена: {selectedRod.price}";
-            NameOfItem.Text = selectedRod.name;
+            NameOfItem.Text = selectedRod.rodName;
             MaxWeight.Text = $"Выдерживает: {selectedRod.maxWeight}";
         }
     }

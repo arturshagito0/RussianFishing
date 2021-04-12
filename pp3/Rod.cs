@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace pp3
 {
@@ -14,13 +16,13 @@ namespace pp3
             SPINNING
         }
 
-        private List<Rod> gameRods;
+        protected List<Rod> gameRods = new List<Rod>();
 
         private ROD_TYPE type { get; set; } = ROD_TYPE.POPLAVOK;
         private int id { get; set; }
-        public string name { get; set; }
+        public string rodName { get; set; }
         public int maxWeight { get; set; }
-        public double price { get; set; }
+        public int price { get; set; }
 
 
         public ROD_TYPE getRodType()
@@ -28,18 +30,24 @@ namespace pp3
             return type;
         }
 
-        public Rod(string name, int maxWeight, double price, ROD_TYPE type )
+        public Rod(string name, int maxWeight, int price, ROD_TYPE type )
         {
-            this.name = name;
+            this.rodName = name;
             
             this.maxWeight = maxWeight;
             this.price = price;
             this.type = type;
         }
 
-        public static void initialize()
+        public void initializeRods()
         {
+            
 
+        }
+
+        public List<Rod> getAllRods()
+        {
+            return this.gameRods;
         }
 
 

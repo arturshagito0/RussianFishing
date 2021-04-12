@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,6 +62,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Backpack.cs" />
+    <Compile Include="Database1DataSet.cs">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +97,7 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameRods.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Line.cs" />
@@ -80,6 +119,50 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsc">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet1.xss">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet2.xsc">
+      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet2.xss">
+      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet3.xsc">
+      <DependentUpon>Database1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet3.xss">
+      <DependentUpon>Database1DataSet3.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -508,6 +591,303 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cat_uniq_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Resources\SpinImages\Acamedic 255.png" />
+    <Content Include="Resources\SpinImages\Acamedic 285.png" />
+    <Content Include="Resources\SpinImages\Achilles 228.png" />
+    <Content Include="Resources\SpinImages\Achilles 233.png" />
+    <Content Include="Resources\SpinImages\ADC.png" />
+    <Content Include="Resources\SpinImages\Admiral 249.png" />
+    <Content Include="Resources\SpinImages\ADS.png" />
+    <Content Include="Resources\SpinImages\Adventure rod-carp.png" />
+    <Content Include="Resources\SpinImages\Adventure rod-pike.png" />
+    <Content Include="Resources\SpinImages\Anglers Division C10000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division C12000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division C14000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division C16000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division C20000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division C3500.png" />
+    <Content Include="Resources\SpinImages\Anglers Division C4000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division C5000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division C6500.png" />
+    <Content Include="Resources\SpinImages\Anglers Division C8000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division S10000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division S12000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division S14000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division S16000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division S20000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division S3500.png" />
+    <Content Include="Resources\SpinImages\Anglers Division S4000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division S5000.png" />
+    <Content Include="Resources\SpinImages\Anglers Division S6500.png" />
+    <Content Include="Resources\SpinImages\Anglers Division S8000.png" />
+    <Content Include="Resources\SpinImages\Apach rod.png" />
+    <Content Include="Resources\SpinImages\Armada-C1600.png" />
+    <Content Include="Resources\SpinImages\Armada-S1600.png" />
+    <Content Include="Resources\SpinImages\Armada-S1800.png" />
+    <Content Include="Resources\SpinImages\Armada-S2000.png" />
+    <Content Include="Resources\SpinImages\Armada-S2500.png" />
+    <Content Include="Resources\SpinImages\Armada-S3000.png" />
+    <Content Include="Resources\SpinImages\Assistance 257.png" />
+    <Content Include="Resources\SpinImages\Atlant 254.png" />
+    <Content Include="Resources\SpinImages\Atlantic Breeze.png" />
+    <Content Include="Resources\SpinImages\Atlantic Carp-fider.png" />
+    <Content Include="Resources\SpinImages\Atlantic Lakestar.png" />
+    <Content Include="Resources\SpinImages\Atlantic Light.png" />
+    <Content Include="Resources\SpinImages\Atlantic Nord.png" />
+    <Content Include="Resources\SpinImages\Atlantic Pike.png" />
+    <Content Include="Resources\SpinImages\Atlantic Salmon.png" />
+    <Content Include="Resources\SpinImages\Atlantic Smart.png" />
+    <Content Include="Resources\SpinImages\Atlantic White Bear.png" />
+    <Content Include="Resources\SpinImages\Atlantic xAgility.png" />
+    <Content Include="Resources\SpinImages\Atlantic xRise.png" />
+    <Content Include="Resources\SpinImages\Bambuka 12-Edition.png" />
+    <Content Include="Resources\SpinImages\Bambuka 14-Edition.png" />
+    <Content Include="Resources\SpinImages\Bambuka 15-Edition.png" />
+    <Content Include="Resources\SpinImages\Bambuka 21-Edition.png" />
+    <Content Include="Resources\SpinImages\Bambuka Ultima.png" />
+    <Content Include="Resources\SpinImages\Bambuka.png" />
+    <Content Include="Resources\SpinImages\Banana Force-c.png" />
+    <Content Include="Resources\SpinImages\Banana Force-s.png" />
+    <Content Include="Resources\SpinImages\Banana Start-c.png" />
+    <Content Include="Resources\SpinImages\Banana Start-s.png" />
+    <Content Include="Resources\SpinImages\Banana Strike-c.png" />
+    <Content Include="Resources\SpinImages\Barracuda B100.png" />
+    <Content Include="Resources\SpinImages\Barracuda B200.png" />
+    <Content Include="Resources\SpinImages\Barracuda B300.png" />
+    <Content Include="Resources\SpinImages\Barracuda B400.png" />
+    <Content Include="Resources\SpinImages\Barracuda B500.png" />
+    <Content Include="Resources\SpinImages\Barracuda B600.png" />
+    <Content Include="Resources\SpinImages\Barracuda B700.png" />
+    <Content Include="Resources\SpinImages\Barracuda B800.png" />
+    <Content Include="Resources\SpinImages\Bestia 110.png" />
+    <Content Include="Resources\SpinImages\Black Eagle Luxe.png" />
+    <Content Include="Resources\SpinImages\Black Eagle.png" />
+    <Content Include="Resources\SpinImages\Black Fish-700.png" />
+    <Content Include="Resources\SpinImages\Black Fish-800.png" />
+    <Content Include="Resources\SpinImages\Black Fish-900.png" />
+    <Content Include="Resources\SpinImages\Black Line.png" />
+    <Content Include="Resources\SpinImages\Black.png" />
+    <Content Include="Resources\SpinImages\Boreas 107.png" />
+    <Content Include="Resources\SpinImages\Bullet 246.png" />
+    <Content Include="Resources\SpinImages\Catapult 119.png" />
+    <Content Include="Resources\SpinImages\Catapult 120.png" />
+    <Content Include="Resources\SpinImages\Cheetah.png" />
+    <Content Include="Resources\SpinImages\Combat Stick 216.png" />
+    <Content Include="Resources\SpinImages\Combat Stick 218.png" />
+    <Content Include="Resources\SpinImages\Combat Stick 222.png" />
+    <Content Include="Resources\SpinImages\Comet 753.png" />
+    <Content Include="Resources\SpinImages\Corona 251.png" />
+    <Content Include="Resources\SpinImages\Crystal LE.png" />
+    <Content Include="Resources\SpinImages\Daytona B1.png" />
+    <Content Include="Resources\SpinImages\Daytona B2.png" />
+    <Content Include="Resources\SpinImages\Daytona B3.png" />
+    <Content Include="Resources\SpinImages\Daytona M1.png" />
+    <Content Include="Resources\SpinImages\Daytona M2.png" />
+    <Content Include="Resources\SpinImages\Daytona M3.png" />
+    <Content Include="Resources\SpinImages\Deep Fish.png" />
+    <Content Include="Resources\SpinImages\Delta 759.png" />
+    <Content Include="Resources\SpinImages\Demeter 111.png" />
+    <Content Include="Resources\SpinImages\Dex.png" />
+    <Content Include="Resources\SpinImages\Ecko Fish.png" />
+    <Content Include="Resources\SpinImages\Faraon rod.png" />
+    <Content Include="Resources\SpinImages\FastMaster.png" />
+    <Content Include="Resources\SpinImages\Fireblade-C1400.png" />
+    <Content Include="Resources\SpinImages\Fireblade-S1400.png" />
+    <Content Include="Resources\SpinImages\FishMaster-M1.png" />
+    <Content Include="Resources\SpinImages\FishMaster-M2.png" />
+    <Content Include="Resources\SpinImages\FishMaster-M3.png" />
+    <Content Include="Resources\SpinImages\FishMaster-M4.png" />
+    <Content Include="Resources\SpinImages\FishMaster-M5.png" />
+    <Content Include="Resources\SpinImages\FishMaster-M6.png" />
+    <Content Include="Resources\SpinImages\Force Master.png" />
+    <Content Include="Resources\SpinImages\Fox.png" />
+    <Content Include="Resources\SpinImages\Freeman 856.png" />
+    <Content Include="Resources\SpinImages\Gold Marlin-100-2.png" />
+    <Content Include="Resources\SpinImages\Gold Marlin-100.png" />
+    <Content Include="Resources\SpinImages\Gold Marlin-200-2.png" />
+    <Content Include="Resources\SpinImages\Gold Marlin-200.png" />
+    <Content Include="Resources\SpinImages\Gold River - Limited.png" />
+    <Content Include="Resources\SpinImages\gp-c.png" />
+    <Content Include="Resources\SpinImages\gp-s.png" />
+    <Content Include="Resources\SpinImages\Greek-880.png" />
+    <Content Include="Resources\SpinImages\Green Devil.png" />
+    <Content Include="Resources\SpinImages\Harpoon 51.png" />
+    <Content Include="Resources\SpinImages\Haven Creek-1500.png" />
+    <Content Include="Resources\SpinImages\Haven Creek-3000.png" />
+    <Content Include="Resources\SpinImages\Haven Creek-4000.png" />
+    <Content Include="Resources\SpinImages\Haven Creek-5500.png" />
+    <Content Include="Resources\SpinImages\Haven Creek-7000.png" />
+    <Content Include="Resources\SpinImages\Helios Bolognese 860.png" />
+    <Content Include="Resources\SpinImages\Hera Fiber Glass 672.png" />
+    <Content Include="Resources\SpinImages\Herakles 108.png" />
+    <Content Include="Resources\SpinImages\Hermes 112.png" />
+    <Content Include="Resources\SpinImages\Hermes Fiber Glass 651.png" />
+    <Content Include="Resources\SpinImages\Hydra Bolognese 861.png" />
+    <Content Include="Resources\SpinImages\Ice Bullet.png" />
+    <Content Include="Resources\SpinImages\Ink rod.png" />
+    <Content Include="Resources\SpinImages\Instant 252.png" />
+    <Content Include="Resources\SpinImages\John Silver-CarpKiller V2.png" />
+    <Content Include="Resources\SpinImages\John Silver-CarpKiller.png" />
+    <Content Include="Resources\SpinImages\John Silver-Cocodrilo.png" />
+    <Content Include="Resources\SpinImages\John Silver-Conus.png" />
+    <Content Include="Resources\SpinImages\John Silver-Gathering.png" />
+    <Content Include="Resources\SpinImages\John Silver-Grouper.png" />
+    <Content Include="Resources\SpinImages\John Silver-Killerwhale V2.png" />
+    <Content Include="Resources\SpinImages\John Silver-Killerwhale.png" />
+    <Content Include="Resources\SpinImages\John Silver-Lobster.png" />
+    <Content Include="Resources\SpinImages\John Silver-Magic C.png" />
+    <Content Include="Resources\SpinImages\John Silver-Magic S.png" />
+    <Content Include="Resources\SpinImages\John Silver-Mbambo Mbengo.png" />
+    <Content Include="Resources\SpinImages\John Silver-Murena.png" />
+    <Content Include="Resources\SpinImages\John Silver-Octopus.png" />
+    <Content Include="Resources\SpinImages\John Silver-Palia.png" />
+    <Content Include="Resources\SpinImages\John Silver-PerchMaster.png" />
+    <Content Include="Resources\SpinImages\John Silver-Salmon.png" />
+    <Content Include="Resources\SpinImages\John Silver-Sharks.png" />
+    <Content Include="Resources\SpinImages\John Silver-ShellMaster.png" />
+    <Content Include="Resources\SpinImages\John Silver-Squids.png" />
+    <Content Include="Resources\SpinImages\John Silver-Sturgeon.png" />
+    <Content Include="Resources\SpinImages\John Silver-Trophy C.png" />
+    <Content Include="Resources\SpinImages\John Silver-Trophy S.png" />
+    <Content Include="Resources\SpinImages\John Silver-TroutShot.png" />
+    <Content Include="Resources\SpinImages\John Silver-Tuna V2.png" />
+    <Content Include="Resources\SpinImages\John Silver-Tuna.png" />
+    <Content Include="Resources\SpinImages\John Silver-Walleye.png" />
+    <Content Include="Resources\SpinImages\Kipper 212.png" />
+    <Content Include="Resources\SpinImages\Labzilla Light.png" />
+    <Content Include="Resources\SpinImages\Labzilla Monster.png" />
+    <Content Include="Resources\SpinImages\Labzilla Power.png" />
+    <Content Include="Resources\SpinImages\Lagoon 242.png" />
+    <Content Include="Resources\SpinImages\Lagoon 243.png" />
+    <Content Include="Resources\SpinImages\Laocoon 235.png" />
+    <Content Include="Resources\SpinImages\Legend.png" />
+    <Content Include="Resources\SpinImages\Light Start.png" />
+    <Content Include="Resources\SpinImages\Limited Edition 217.png" />
+    <Content Include="Resources\SpinImages\Limited Edition 221.png" />
+    <Content Include="Resources\SpinImages\Lock Fish.png" />
+    <Content Include="Resources\SpinImages\Mirage 851.png" />
+    <Content Include="Resources\SpinImages\Moroz rod.png" />
+    <Content Include="Resources\SpinImages\Nephele 750.png" />
+    <Content Include="Resources\SpinImages\Nereids 230.png" />
+    <Content Include="Resources\SpinImages\Okeanos Bolognese 800.png" />
+    <Content Include="Resources\SpinImages\Omphale 670.png" />
+    <Content Include="Resources\SpinImages\Otter c300.png" />
+    <Content Include="Resources\SpinImages\Otter c520.png" />
+    <Content Include="Resources\SpinImages\Otter s300.png" />
+    <Content Include="Resources\SpinImages\Otter s520.png" />
+    <Content Include="Resources\SpinImages\Oyster Atlant.png" />
+    <Content Include="Resources\SpinImages\Oyster Deluxe.png" />
+    <Content Include="Resources\SpinImages\Oyster Fly.png" />
+    <Content Include="Resources\SpinImages\Oyster Gigant.png" />
+    <Content Include="Resources\SpinImages\Oyster Speed.png" />
+    <Content Include="Resources\SpinImages\Pan 802.png" />
+    <Content Include="Resources\SpinImages\Panther.png" />
+    <Content Include="Resources\SpinImages\Phantom 852.png" />
+    <Content Include="Resources\SpinImages\plasma-c.png" />
+    <Content Include="Resources\SpinImages\plasma-s.png" />
+    <Content Include="Resources\SpinImages\PowerStick Big carp.png" />
+    <Content Include="Resources\SpinImages\PowerStick Classic ADV.png" />
+    <Content Include="Resources\SpinImages\PowerStick Classic.png" />
+    <Content Include="Resources\SpinImages\PowerStick Compact.png" />
+    <Content Include="Resources\SpinImages\PowerStick Darkness.png" />
+    <Content Include="Resources\SpinImages\PowerStick Icebolt.png" />
+    <Content Include="Resources\SpinImages\PowerStick Magma.png" />
+    <Content Include="Resources\SpinImages\PowerStick Sport-S.png" />
+    <Content Include="Resources\SpinImages\PowerStick Sport.png" />
+    <Content Include="Resources\SpinImages\PowerStick Telescope.png" />
+    <Content Include="Resources\SpinImages\Prince 244.png" />
+    <Content Include="Resources\SpinImages\Quest Winners-1.png" />
+    <Content Include="Resources\SpinImages\Quest Winners-2.png" />
+    <Content Include="Resources\SpinImages\Quest Winners-3.png" />
+    <Content Include="Resources\SpinImages\Quest Winners-4.png" />
+    <Content Include="Resources\SpinImages\Quest Winners-5.png" />
+    <Content Include="Resources\SpinImages\Quest Winners-6.png" />
+    <Content Include="Resources\SpinImages\Quest Winners-Alpha.png" />
+    <Content Include="Resources\SpinImages\Quest Winners-Ultra.png" />
+    <Content Include="Resources\SpinImages\Ranger 247.png" />
+    <Content Include="Resources\SpinImages\Rattler 853.png" />
+    <Content Include="Resources\SpinImages\Red Salmon.png" />
+    <Content Include="Resources\SpinImages\Scout Carp-Easy.png" />
+    <Content Include="Resources\SpinImages\Scout Carp-Master.png" />
+    <Content Include="Resources\SpinImages\Scout Carp-Platinum.png" />
+    <Content Include="Resources\SpinImages\Scout Spin-Easy.png" />
+    <Content Include="Resources\SpinImages\Scout Spin-Master.png" />
+    <Content Include="Resources\SpinImages\Sea Devil-C1000.png" />
+    <Content Include="Resources\SpinImages\Sea Devil-S1000.png" />
+    <Content Include="Resources\SpinImages\Sevens Bronze.png" />
+    <Content Include="Resources\SpinImages\Sevens Crystal.png" />
+    <Content Include="Resources\SpinImages\Sevens Gold.png" />
+    <Content Include="Resources\SpinImages\Sevens Ice.png" />
+    <Content Include="Resources\SpinImages\Sevens Platinum.png" />
+    <Content Include="Resources\SpinImages\Sevens White.png" />
+    <Content Include="Resources\SpinImages\Sey-Pearl carp.png" />
+    <Content Include="Resources\SpinImages\Sey-Pearl peak.png" />
+    <Content Include="Resources\SpinImages\shark-c.png" />
+    <Content Include="Resources\SpinImages\shark-s.png" />
+    <Content Include="Resources\SpinImages\Silver Carp.png" />
+    <Content Include="Resources\SpinImages\Silver Fish C-Beginner.png" />
+    <Content Include="Resources\SpinImages\Silver Fish C-Ellite 2.png" />
+    <Content Include="Resources\SpinImages\Silver Fish C-Ellite.png" />
+    <Content Include="Resources\SpinImages\Silver Fish C-Expert.png" />
+    <Content Include="Resources\SpinImages\Silver Fish C-Master.png" />
+    <Content Include="Resources\SpinImages\Silver Fish C-Prof.png" />
+    <Content Include="Resources\SpinImages\Silver Fish S-Beginner.png" />
+    <Content Include="Resources\SpinImages\Silver Fish S-Ellite 2.png" />
+    <Content Include="Resources\SpinImages\Silver Fish S-Ellite.png" />
+    <Content Include="Resources\SpinImages\Silver Fish S-Expert.png" />
+    <Content Include="Resources\SpinImages\Silver Fish S-Master.png" />
+    <Content Include="Resources\SpinImages\Silver Fish S-Prof.png" />
+    <Content Include="Resources\SpinImages\Spinner Pro.png" />
+    <Content Include="Resources\SpinImages\Sprut-100.png" />
+    <Content Include="Resources\SpinImages\Sprut-100HP.png" />
+    <Content Include="Resources\SpinImages\Sprut-200.png" />
+    <Content Include="Resources\SpinImages\Sprut-200HP.png" />
+    <Content Include="Resources\SpinImages\Sprut-300.png" />
+    <Content Include="Resources\SpinImages\Sprut-300HP.png" />
+    <Content Include="Resources\SpinImages\Super Bambuka.png" />
+    <Content Include="Resources\SpinImages\Super Match 271.png" />
+    <Content Include="Resources\SpinImages\SuperFisher-700.png" />
+    <Content Include="Resources\SpinImages\SuperFisher-950.png" />
+    <Content Include="Resources\SpinImages\Sworldfish black.png" />
+    <Content Include="Resources\SpinImages\Sworldfish red.png" />
+    <Content Include="Resources\SpinImages\Syzdal Legend-c30.png" />
+    <Content Include="Resources\SpinImages\Syzdal Legend-s10.png" />
+    <Content Include="Resources\SpinImages\Syzdal Legend-s20.png" />
+    <Content Include="Resources\SpinImages\Tarpon-1000.png" />
+    <Content Include="Resources\SpinImages\Tarpon-2000.png" />
+    <Content Include="Resources\SpinImages\Titanium.png" />
+    <Content Include="Resources\SpinImages\Tuna Hunter 110.png" />
+    <Content Include="Resources\SpinImages\Tuna Hunter 120.png" />
+    <Content Include="Resources\SpinImages\Tuna Hunter 180.png" />
+    <Content Include="Resources\SpinImages\Tuna Hunter 200.png" />
+    <Content Include="Resources\SpinImages\Tuna Hunter 250.png" />
+    <Content Include="Resources\SpinImages\Tuna Hunter 300.png" />
+    <Content Include="Resources\SpinImages\Vesta 276.png" />
+    <Content Include="Resources\SpinImages\Viking rod.png" />
+    <Content Include="Resources\SpinImages\wf-c.png" />
+    <Content Include="Resources\SpinImages\wf-s.png" />
+    <Content Include="Resources\SpinImages\Yellow SuperCarp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
