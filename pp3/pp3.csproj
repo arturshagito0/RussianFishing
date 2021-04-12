@@ -108,22 +108,84 @@
     <None Include="Resources\layer6.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\base_sell_d.png" />
+    <None Include="Resources\base_sell_a.png" />
+    <None Include="Resources\base_quests_d.png" />
+    <None Include="Resources\base_quests_a.png" />
+    <None Include="Resources\base_news_d.png" />
+    <None Include="Resources\base_news_a.png" />
     <None Include="Resources\base_food_d.png" />
+    <None Include="Resources\base_food_a.png" />
+    <None Include="Resources\base_flea_d.png" />
+    <None Include="Resources\base_flea_a.png" />
+    <None Include="Resources\base_blanks_d.png" />
+    <None Include="Resources\base_blanks_a.png" />
+    <None Include="Resources\base_bar_d.png" />
+    <None Include="Resources\data_d.png" />
+    <None Include="Resources\food_d.png" />
+    <None Include="Resources\corf_d.png" />
+    <None Include="Resources\pack_d.png" />
+    <None Include="Resources\bag_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_shop_a.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\base_shop_d.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\base_flea_d.png" />
+    <None Include="Resources\base_teams_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_teams_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_tour_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_tour_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_travel_a.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\base_travel_d.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\base_sell_d.png" />
+    <None Include="Resources\base_uniq_a.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\base_shop_a.png" />
+    <None Include="Resources\base_uniq_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_bar_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corf_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pack_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_em_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_em_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_fu_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_fu_d.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

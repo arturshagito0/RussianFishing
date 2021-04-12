@@ -30,13 +30,17 @@ namespace pp3
 		private void InitializeComponent()
 		{
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.InventoryPanel = new System.Windows.Forms.Panel();
             this.InfoPanel = new System.Windows.Forms.Panel();
             this.ControlPanel = new System.Windows.Forms.Panel();
             this.MessagePanel = new System.Windows.Forms.Panel();
             this.BarPanel = new System.Windows.Forms.Panel();
             this.MiddlePanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.InventoryPanel = new System.Windows.Forms.Panel();
+            this.NotepadButton = new System.Windows.Forms.PictureBox();
+            this.FoodButton = new System.Windows.Forms.PictureBox();
+            this.FishsackButton = new System.Windows.Forms.PictureBox();
+            this.BackbackButton = new System.Windows.Forms.PictureBox();
+            this.TackleboxButton = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -48,13 +52,17 @@ namespace pp3
             this.FishShopButton = new System.Windows.Forms.PictureBox();
             this.FoodShopButton = new System.Windows.Forms.PictureBox();
             this.MainPanel.SuspendLayout();
-            this.InventoryPanel.SuspendLayout();
             this.InfoPanel.SuspendLayout();
             this.ControlPanel.SuspendLayout();
             this.MessagePanel.SuspendLayout();
             this.BarPanel.SuspendLayout();
             this.MiddlePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.InventoryPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NotepadButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FoodButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FishsackButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackbackButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TackleboxButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -81,15 +89,6 @@ namespace pp3
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1026, 734);
             this.MainPanel.TabIndex = 0;
-            // 
-            // InventoryPanel
-            // 
-            this.InventoryPanel.AutoSize = true;
-            this.InventoryPanel.Controls.Add(this.pictureBox1);
-            this.InventoryPanel.Location = new System.Drawing.Point(0, 538);
-            this.InventoryPanel.Name = "InventoryPanel";
-            this.InventoryPanel.Size = new System.Drawing.Size(1026, 197);
-            this.InventoryPanel.TabIndex = 2;
             // 
             // InfoPanel
             // 
@@ -139,17 +138,80 @@ namespace pp3
             this.MiddlePanel.Size = new System.Drawing.Size(803, 503);
             this.MiddlePanel.TabIndex = 1;
             // 
-            // pictureBox1
+            // InventoryPanel
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::pp3.Properties.Resources.layer6;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1026, 197);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            this.InventoryPanel.AutoSize = true;
+            this.InventoryPanel.BackColor = System.Drawing.Color.Transparent;
+            this.InventoryPanel.BackgroundImage = global::pp3.Properties.Resources.layer6;
+            this.InventoryPanel.Controls.Add(this.NotepadButton);
+            this.InventoryPanel.Controls.Add(this.FoodButton);
+            this.InventoryPanel.Controls.Add(this.FishsackButton);
+            this.InventoryPanel.Controls.Add(this.BackbackButton);
+            this.InventoryPanel.Controls.Add(this.TackleboxButton);
+            this.InventoryPanel.Location = new System.Drawing.Point(0, 538);
+            this.InventoryPanel.Name = "InventoryPanel";
+            this.InventoryPanel.Size = new System.Drawing.Size(1026, 224);
+            this.InventoryPanel.TabIndex = 2;
+            // 
+            // NotepadButton
+            // 
+            this.NotepadButton.Image = global::pp3.Properties.Resources.data_d;
+            this.NotepadButton.Location = new System.Drawing.Point(255, 6);
+            this.NotepadButton.Name = "NotepadButton";
+            this.NotepadButton.Size = new System.Drawing.Size(80, 88);
+            this.NotepadButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.NotepadButton.TabIndex = 5;
+            this.NotepadButton.TabStop = false;
+            this.NotepadButton.MouseEnter += new System.EventHandler(this.NotepadButton_MouseEnter);
+            this.NotepadButton.MouseLeave += new System.EventHandler(this.NotepadButton_MouseLeave);
+            // 
+            // FoodButton
+            // 
+            this.FoodButton.Image = global::pp3.Properties.Resources.food_d;
+            this.FoodButton.Location = new System.Drawing.Point(132, 87);
+            this.FoodButton.Name = "FoodButton";
+            this.FoodButton.Size = new System.Drawing.Size(80, 88);
+            this.FoodButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.FoodButton.TabIndex = 4;
+            this.FoodButton.TabStop = false;
+            this.FoodButton.MouseEnter += new System.EventHandler(this.FoodButton_MouseEnter);
+            this.FoodButton.MouseLeave += new System.EventHandler(this.FoodButton_MouseLeave);
+            // 
+            // FishsackButton
+            // 
+            this.FishsackButton.Image = global::pp3.Properties.Resources.corf_d;
+            this.FishsackButton.Location = new System.Drawing.Point(233, 96);
+            this.FishsackButton.Name = "FishsackButton";
+            this.FishsackButton.Size = new System.Drawing.Size(80, 88);
+            this.FishsackButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.FishsackButton.TabIndex = 3;
+            this.FishsackButton.TabStop = false;
+            this.FishsackButton.MouseEnter += new System.EventHandler(this.FishsackButton_MouseEnter);
+            this.FishsackButton.MouseLeave += new System.EventHandler(this.FishsackButton_MouseLeave);
+            // 
+            // BackbackButton
+            // 
+            this.BackbackButton.Image = global::pp3.Properties.Resources.bag_d;
+            this.BackbackButton.Location = new System.Drawing.Point(178, 3);
+            this.BackbackButton.Name = "BackbackButton";
+            this.BackbackButton.Size = new System.Drawing.Size(80, 88);
+            this.BackbackButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.BackbackButton.TabIndex = 2;
+            this.BackbackButton.TabStop = false;
+            this.BackbackButton.MouseEnter += new System.EventHandler(this.BackbackButton_MouseEnter);
+            this.BackbackButton.MouseLeave += new System.EventHandler(this.BackbackButton_MouseLeave);
+            // 
+            // TackleboxButton
+            // 
+            this.TackleboxButton.Image = global::pp3.Properties.Resources.pack_d;
+            this.TackleboxButton.Location = new System.Drawing.Point(102, 3);
+            this.TackleboxButton.Name = "TackleboxButton";
+            this.TackleboxButton.Size = new System.Drawing.Size(80, 88);
+            this.TackleboxButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.TackleboxButton.TabIndex = 1;
+            this.TackleboxButton.TabStop = false;
+            this.TackleboxButton.MouseEnter += new System.EventHandler(this.TackleboxButton_MouseEnter);
+            this.TackleboxButton.MouseLeave += new System.EventHandler(this.TackleboxButton_MouseLeave);
             // 
             // pictureBox3
             // 
@@ -219,6 +281,8 @@ namespace pp3
             this.SellFishButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.SellFishButton.TabIndex = 6;
             this.SellFishButton.TabStop = false;
+            this.SellFishButton.MouseEnter += new System.EventHandler(this.SellFishButton_MouseEnter);
+            this.SellFishButton.MouseLeave += new System.EventHandler(this.SellFishButton_MouseLeave);
             // 
             // TravelButton
             // 
@@ -229,6 +293,8 @@ namespace pp3
             this.TravelButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.TravelButton.TabIndex = 5;
             this.TravelButton.TabStop = false;
+            this.TravelButton.MouseEnter += new System.EventHandler(this.TravelButton_MouseEnter);
+            this.TravelButton.MouseLeave += new System.EventHandler(this.TravelButton_MouseLeave);
             // 
             // JunkShopButton
             // 
@@ -239,6 +305,8 @@ namespace pp3
             this.JunkShopButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.JunkShopButton.TabIndex = 4;
             this.JunkShopButton.TabStop = false;
+            this.JunkShopButton.MouseEnter += new System.EventHandler(this.JunkShopButton_MouseEnter);
+            this.JunkShopButton.MouseLeave += new System.EventHandler(this.JunkShopButton_MouseLeave);
             // 
             // FishShopButton
             // 
@@ -264,6 +332,7 @@ namespace pp3
             this.FoodShopButton.TabIndex = 2;
             this.FoodShopButton.TabStop = false;
             this.FoodShopButton.MouseEnter += new System.EventHandler(this.FoodShopButton_MouseEnter);
+            this.FoodShopButton.MouseLeave += new System.EventHandler(this.FoodShopButton_MouseLeave);
             this.FoodShopButton.MouseHover += new System.EventHandler(this.FoodShopButton_MouseHover);
             // 
             // MainForm
@@ -283,8 +352,6 @@ namespace pp3
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
-            this.InventoryPanel.ResumeLayout(false);
-            this.InventoryPanel.PerformLayout();
             this.InfoPanel.ResumeLayout(false);
             this.InfoPanel.PerformLayout();
             this.ControlPanel.ResumeLayout(false);
@@ -294,7 +361,13 @@ namespace pp3
             this.BarPanel.ResumeLayout(false);
             this.BarPanel.PerformLayout();
             this.MiddlePanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.InventoryPanel.ResumeLayout(false);
+            this.InventoryPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NotepadButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FoodButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FishsackButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackbackButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TackleboxButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -314,7 +387,6 @@ namespace pp3
         #endregion
 
         private System.Windows.Forms.Panel MainPanel;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel InventoryPanel;
         private System.Windows.Forms.Panel InfoPanel;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -331,6 +403,11 @@ namespace pp3
         private System.Windows.Forms.PictureBox TravelButton;
         private System.Windows.Forms.PictureBox JunkShopButton;
         private System.Windows.Forms.PictureBox FishShopButton;
+        private System.Windows.Forms.PictureBox FishsackButton;
+        private System.Windows.Forms.PictureBox BackbackButton;
+        private System.Windows.Forms.PictureBox TackleboxButton;
+        private System.Windows.Forms.PictureBox FoodButton;
+        private System.Windows.Forms.PictureBox NotepadButton;
     }
 }
 
