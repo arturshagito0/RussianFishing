@@ -98,5 +98,20 @@
   <ItemGroup>
     <None Include="Resources\layer6.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_food_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_shop_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_flea_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_travel_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_sell_d.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
