@@ -260,6 +260,7 @@ namespace pp3
             this.FoodShopButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.FoodShopButton.TabIndex = 2;
             this.FoodShopButton.TabStop = false;
+            this.FoodShopButton.MouseHover += new System.EventHandler(this.FoodShopButton_MouseHover);
             // 
             // MainForm
             // 

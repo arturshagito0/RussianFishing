@@ -41,5 +41,10 @@ namespace pp3
         {
 
         }
+
+        private void FoodShopButton_MouseHover(object sender, EventArgs e)
+        {
+			FoodShopButton.BackgroundImage = pp3.Properties.Resources.
+        }
     }
 }
