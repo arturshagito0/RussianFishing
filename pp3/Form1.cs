@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+
 
 namespace pp3
 {
@@ -64,8 +66,46 @@ namespace pp3
 
         private void FishShopButton_MouseClick(object sender, MouseEventArgs e)
         {
-			var myForm = new Form2();
+			var myForm = new FishshopForm();
 			myForm.Show();
+
+            Rod rod = new Rod("atlanta", 500, 20000, Rod.ROD_TYPE.POPLAVOK);
+            Rod rod2 = new Rod("Moch",  1500, 200000, Rod.ROD_TYPE.POPLAVOK);
+            Rod srod = new Rod("Spin",  100, 10000, Rod.ROD_TYPE.SPINNING);
+            List<Rod> rods = new List<Rod>{ rod, rod2, srod, rod, rod, rod, rod, rod, rod, rod, rod, rod, rod};
+
+
+            DataGridView datagrid = (DataGridView)myForm.Controls.Find("dataGridView1", true)[0];
+            datagrid.AutoGenerateColumns = true;
+            datagrid.DataSource = rods;
+            datagrid.Columns[0].HeaderText = "Удилища";
+            datagrid.Columns[1].HeaderText = "Выдерживает вес";
+            datagrid.Columns[2].HeaderText = "Цена";
+            datagrid.Columns[2].DefaultCellStyle.Format = "c0";
+            datagrid.Columns[2].DefaultCellStyle.FormatProvider = CultureInfo.GetCultureInfo("ru");
+            
+
+            MessageBox.Show(datagrid.Columns[2].Name);
+
+            for (int i = 0; i < datagrid.RowCount; i++)
+            {
+                var val = datagrid[datagrid.Columns[2].DisplayIndex, i];
+                 
+            }
+
+            
+            
+
+            ListViewItem item = new ListViewItem(rod.name);
+            item.SubItems.Add(rod.maxWeight.ToString());
+            item.SubItems.Add(rod.price.ToString());
+
+
+            ListView listview = (ListView) myForm.Controls.Find("listView1", true)[0];
+            listview.Items.Add(item);
+
+
+
         }
 
         private void FoodShopButton_MouseLeave(object sender, EventArgs e)
@@ -152,6 +192,46 @@ namespace pp3
         private void FishsackButton_MouseLeave(object sender, EventArgs e)
         {
             FishsackButton.Image = pp3.Properties.Resources.corf_d;
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            TeamButton.Image = pp3.Properties.Resources.toteam_a;
+        }
+
+        private void TeamButton_MouseLeave(object sender, EventArgs e)
+        {
+            TeamButton.Image = pp3.Properties.Resources.toteam_d;
+        }
+
+        private void BaseButton_MouseEnter(object sender, EventArgs e)
+        {
+            BaseButton.Image = pp3.Properties.Resources.tobase_a;
+        }
+
+        private void BaseButton_MouseLeave(object sender, EventArgs e)
+        {
+            BaseButton.Image = pp3.Properties.Resources.tobase_d;
+        }
+
+        private void HomeButton_MouseEnter(object sender, EventArgs e)
+        {
+            HomeButton.Image = pp3.Properties.Resources.store_house_a;
+        }
+
+        private void HomeButton_MouseLeave(object sender, EventArgs e)
+        {
+            HomeButton.Image = pp3.Properties.Resources.store_house_d;
+        }
+
+        private void CarButton_MouseEnter(object sender, EventArgs e)
+        {
+            CarButton.Image = pp3.Properties.Resources.store_car_a;
+        }
+
+        private void CarButton_MouseLeave(object sender, EventArgs e)
+        {
+            CarButton.Image = pp3.Properties.Resources.store_car_d;
         }
     }
 }

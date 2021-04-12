@@ -118,136 +118,415 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="base_sell_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_sell_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chat_i" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat_i.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="food_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\food_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="actions_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actions_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="layer5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\layer5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backbase_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backbase_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_food_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_food_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_shop_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_shop_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_flea_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_flea_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="layer4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\layer4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="layer6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\layer6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_shop_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\base_shop_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bag_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bag_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="layer7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\layer7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_travel_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_travel_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pack_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pack_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="layer2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\layer2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="corf_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\corf_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="data_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\data_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bag_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bag_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_bar_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_bar_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_bar_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_bar_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_blanks_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_blanks_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_blanks_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_blanks_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_flea_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_flea_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_food_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_food_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_news_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_news_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_news_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_news_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_quests_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_quests_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="layer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="base_quests_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\base_quests_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="base_sell_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_sell_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_teams_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_teams_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_teams_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_teams_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_tour_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_tour_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_tour_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_tour_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_travel_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_travel_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_uniq_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_uniq_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="base_uniq_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_uniq_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="bucket_em_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bucket_em_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bucket_em_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bucket_em_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="layer2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bucket_fu_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bucket_fu_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ico_rec_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_rec_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bucket_fu_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bucket_fu_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="data_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="corf_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\corf_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goldfish_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goldfish_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pack_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pack_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ind_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ind_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_rec_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_rec_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="data_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\data_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="base_bar_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_bar_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="store_house_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\store_house_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_travel_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_travel_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_flea_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_flea_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_uniq_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_uniq_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_rod_popl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_rod_popl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recive_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recive_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pack_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pack_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bag_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bag_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rod2_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rod2_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cat_popl_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_popl_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_quests_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_quests_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blocks_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blocks_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rod2_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rod2_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rod1_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rod1_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_blanks_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_blanks_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bucket_fu_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bucket_fu_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_tour_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_tour_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backbase_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backbase_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="players_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\players_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="return_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\return_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rod3_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rod3_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_shop_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_shop_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="food_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\food_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pack_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pack_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="players_i" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\players_i.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cat_spin_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_spin_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bucket_fu_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bucket_fu_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_food_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_food_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_shop_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\base_shop_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_travel_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_travel_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eraze_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eraze_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_send_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat_send_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bag_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bag_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_but08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_but08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="onserv_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\onserv_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ind_alc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ind_alc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_bar_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_bar_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rod1_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rod1_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dbchat_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dbchat_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_send_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat_send_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_blanks_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_blanks_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corf_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\corf_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_tour_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_tour_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="step9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\step9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prolong_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prolong_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rod3_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rod3_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_but05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_but05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_news_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_news_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_but03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_but03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ind_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ind_rod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corf_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\corf_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dbchat_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dbchat_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="actions_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actions_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_rec_i" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_rec_i.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_news_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_news_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_sell_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_sell_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="actions_i" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actions_i.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rodset_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rodset_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_but06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_but06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_block_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_block_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toteam_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toteam_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ind_loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ind_loading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_bait_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_bait_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tobase_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tobase_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_bait_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_bait_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rodset_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rodset_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blocks_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blocks_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_block_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_block_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_but04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_but04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="players_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\players_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tobase_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tobase_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rod1_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rod1_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="players_det_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\players_det_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pause_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pause_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_food_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_food_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_scaf_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_scaf_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toteam_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toteam_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eraze_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eraze_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_teams_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_teams_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pause_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pause_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ind_reel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ind_reel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bucket_em_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bucket_em_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_rod_spin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_rod_spin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="store_car_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\store_car_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="players_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\players_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="players_det_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\players_det_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_sell_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_sell_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="return_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\return_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_teams_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_teams_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rodback_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rodback_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_uniq_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_uniq_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_flea_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_flea_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="store_car_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\store_car_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="onserv_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\onserv_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prolong_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prolong_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_but10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_but10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_but13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_but13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rod3_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rod3_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recive_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recive_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="store_house_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\store_house_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rodback_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rodback_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_but01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_but01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rod2_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rod2_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="actions_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actions_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cat_uniq_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_uniq_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

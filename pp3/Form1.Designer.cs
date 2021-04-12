@@ -30,7 +30,6 @@ namespace pp3
 		private void InitializeComponent()
 		{
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.InfoPanel = new System.Windows.Forms.Panel();
             this.ControlPanel = new System.Windows.Forms.Panel();
             this.MessagePanel = new System.Windows.Forms.Panel();
             this.BarPanel = new System.Windows.Forms.Panel();
@@ -41,7 +40,12 @@ namespace pp3
             this.FishsackButton = new System.Windows.Forms.PictureBox();
             this.BackbackButton = new System.Windows.Forms.PictureBox();
             this.TackleboxButton = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.InfoPanel = new System.Windows.Forms.Panel();
+            this.TeamButton = new System.Windows.Forms.PictureBox();
+            this.CarButton = new System.Windows.Forms.PictureBox();
+            this.HomeButton = new System.Windows.Forms.PictureBox();
+            this.BaseButton = new System.Windows.Forms.PictureBox();
+            this.CurrentBase = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -52,7 +56,6 @@ namespace pp3
             this.FishShopButton = new System.Windows.Forms.PictureBox();
             this.FoodShopButton = new System.Windows.Forms.PictureBox();
             this.MainPanel.SuspendLayout();
-            this.InfoPanel.SuspendLayout();
             this.ControlPanel.SuspendLayout();
             this.MessagePanel.SuspendLayout();
             this.BarPanel.SuspendLayout();
@@ -63,7 +66,12 @@ namespace pp3
             ((System.ComponentModel.ISupportInitialize)(this.FishsackButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackbackButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TackleboxButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.InfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TeamButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CarButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HomeButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrentBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -89,15 +97,6 @@ namespace pp3
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1026, 734);
             this.MainPanel.TabIndex = 0;
-            // 
-            // InfoPanel
-            // 
-            this.InfoPanel.AutoSize = true;
-            this.InfoPanel.Controls.Add(this.pictureBox3);
-            this.InfoPanel.Location = new System.Drawing.Point(805, 0);
-            this.InfoPanel.Name = "InfoPanel";
-            this.InfoPanel.Size = new System.Drawing.Size(221, 538);
-            this.InfoPanel.TabIndex = 3;
             // 
             // ControlPanel
             // 
@@ -213,16 +212,78 @@ namespace pp3
             this.TackleboxButton.MouseEnter += new System.EventHandler(this.TackleboxButton_MouseEnter);
             this.TackleboxButton.MouseLeave += new System.EventHandler(this.TackleboxButton_MouseLeave);
             // 
-            // pictureBox3
+            // InfoPanel
             // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::pp3.Properties.Resources.layer7;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(221, 538);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.InfoPanel.AutoSize = true;
+            this.InfoPanel.BackColor = System.Drawing.Color.Transparent;
+            this.InfoPanel.BackgroundImage = global::pp3.Properties.Resources.layer7;
+            this.InfoPanel.Controls.Add(this.TeamButton);
+            this.InfoPanel.Controls.Add(this.CarButton);
+            this.InfoPanel.Controls.Add(this.HomeButton);
+            this.InfoPanel.Controls.Add(this.BaseButton);
+            this.InfoPanel.Controls.Add(this.CurrentBase);
+            this.InfoPanel.Location = new System.Drawing.Point(805, 0);
+            this.InfoPanel.Name = "InfoPanel";
+            this.InfoPanel.Size = new System.Drawing.Size(281, 538);
+            this.InfoPanel.TabIndex = 3;
+            // 
+            // TeamButton
+            // 
+            this.TeamButton.Image = global::pp3.Properties.Resources.toteam_d;
+            this.TeamButton.Location = new System.Drawing.Point(19, 280);
+            this.TeamButton.Name = "TeamButton";
+            this.TeamButton.Size = new System.Drawing.Size(194, 29);
+            this.TeamButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.TeamButton.TabIndex = 4;
+            this.TeamButton.TabStop = false;
+            this.TeamButton.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
+            this.TeamButton.MouseLeave += new System.EventHandler(this.TeamButton_MouseLeave);
+            // 
+            // CarButton
+            // 
+            this.CarButton.Image = global::pp3.Properties.Resources.store_car_d;
+            this.CarButton.Location = new System.Drawing.Point(117, 308);
+            this.CarButton.Name = "CarButton";
+            this.CarButton.Size = new System.Drawing.Size(96, 29);
+            this.CarButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.CarButton.TabIndex = 3;
+            this.CarButton.TabStop = false;
+            this.CarButton.MouseEnter += new System.EventHandler(this.CarButton_MouseEnter);
+            this.CarButton.MouseLeave += new System.EventHandler(this.CarButton_MouseLeave);
+            // 
+            // HomeButton
+            // 
+            this.HomeButton.Image = global::pp3.Properties.Resources.store_house_d;
+            this.HomeButton.Location = new System.Drawing.Point(19, 308);
+            this.HomeButton.Name = "HomeButton";
+            this.HomeButton.Size = new System.Drawing.Size(96, 29);
+            this.HomeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.HomeButton.TabIndex = 2;
+            this.HomeButton.TabStop = false;
+            this.HomeButton.MouseEnter += new System.EventHandler(this.HomeButton_MouseEnter);
+            this.HomeButton.MouseLeave += new System.EventHandler(this.HomeButton_MouseLeave);
+            // 
+            // BaseButton
+            // 
+            this.BaseButton.Image = global::pp3.Properties.Resources.tobase_d;
+            this.BaseButton.Location = new System.Drawing.Point(19, 245);
+            this.BaseButton.Name = "BaseButton";
+            this.BaseButton.Size = new System.Drawing.Size(194, 29);
+            this.BaseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.BaseButton.TabIndex = 1;
+            this.BaseButton.TabStop = false;
+            this.BaseButton.MouseEnter += new System.EventHandler(this.BaseButton_MouseEnter);
+            this.BaseButton.MouseLeave += new System.EventHandler(this.BaseButton_MouseLeave);
+            // 
+            // CurrentBase
+            // 
+            this.CurrentBase.Image = global::pp3.Properties.Resources.goldfish_d;
+            this.CurrentBase.Location = new System.Drawing.Point(19, 114);
+            this.CurrentBase.Name = "CurrentBase";
+            this.CurrentBase.Size = new System.Drawing.Size(190, 135);
+            this.CurrentBase.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.CurrentBase.TabIndex = 0;
+            this.CurrentBase.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -352,8 +413,6 @@ namespace pp3
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
-            this.InfoPanel.ResumeLayout(false);
-            this.InfoPanel.PerformLayout();
             this.ControlPanel.ResumeLayout(false);
             this.ControlPanel.PerformLayout();
             this.MessagePanel.ResumeLayout(false);
@@ -368,7 +427,13 @@ namespace pp3
             ((System.ComponentModel.ISupportInitialize)(this.FishsackButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackbackButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TackleboxButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.InfoPanel.ResumeLayout(false);
+            this.InfoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TeamButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CarButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HomeButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BaseButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrentBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -389,7 +454,6 @@ namespace pp3
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel InventoryPanel;
         private System.Windows.Forms.Panel InfoPanel;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel ControlPanel;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel BarPanel;
@@ -408,6 +472,11 @@ namespace pp3
         private System.Windows.Forms.PictureBox TackleboxButton;
         private System.Windows.Forms.PictureBox FoodButton;
         private System.Windows.Forms.PictureBox NotepadButton;
+        private System.Windows.Forms.PictureBox CurrentBase;
+        private System.Windows.Forms.PictureBox BaseButton;
+        private System.Windows.Forms.PictureBox HomeButton;
+        private System.Windows.Forms.PictureBox CarButton;
+        private System.Windows.Forms.PictureBox TeamButton;
     }
 }
 

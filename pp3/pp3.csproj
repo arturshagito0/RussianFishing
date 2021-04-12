@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backpack.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,8 +59,16 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Initializer.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="Object.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Potion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reel.cs" />
+    <Compile Include="Rod.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,24 +117,64 @@
     <None Include="Resources\layer6.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\base_sell_d.png" />
-    <None Include="Resources\base_sell_a.png" />
-    <None Include="Resources\base_quests_d.png" />
-    <None Include="Resources\base_quests_a.png" />
-    <None Include="Resources\base_news_d.png" />
-    <None Include="Resources\base_news_a.png" />
-    <None Include="Resources\base_food_d.png" />
-    <None Include="Resources\base_food_a.png" />
-    <None Include="Resources\base_flea_d.png" />
-    <None Include="Resources\base_flea_a.png" />
-    <None Include="Resources\base_blanks_d.png" />
-    <None Include="Resources\base_blanks_a.png" />
-    <None Include="Resources\base_bar_d.png" />
-    <None Include="Resources\data_d.png" />
-    <None Include="Resources\food_d.png" />
-    <None Include="Resources\corf_d.png" />
-    <None Include="Resources\pack_d.png" />
+    <None Include="Resources\step9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldfish_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag_a.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\bag_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_bar_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_bar_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_blanks_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_blanks_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_flea_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_flea_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_food_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_food_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_news_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_news_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_quests_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_quests_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_sell_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_sell_d.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\base_shop_a.png" />
@@ -158,22 +207,10 @@
     <None Include="Resources\base_uniq_d.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\base_bar_a.png" />
+    <None Include="Resources\blocks_a.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\corf_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\data_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\food_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pack_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bag_a.png" />
+    <None Include="Resources\blocks_d.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bucket_em_a.png" />
@@ -186,6 +223,291 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bucket_fu_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat_i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat_send_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat_send_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corf_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corf_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbchat_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbchat_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraze_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraze_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_block_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_block_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_rec_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_rec_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_rec_i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ind_alc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ind_food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ind_loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ind_reel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ind_rod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_bait_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_bait_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_rod_popl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_rod_spin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_scaf_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onserv_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onserv_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pack_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pack_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\players_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\players_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\players_det_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\players_det_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\players_i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\players_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prolong_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prolong_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recive_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recive_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod1_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod1_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod1_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod2_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod2_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod2_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod3_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod3_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod3_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rodback_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rodback_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rodset_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rodset_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store_car_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store_car_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store_house_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store_house_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tobase_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tobase_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toteam_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toteam_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_but01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_but03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_but04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_but05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_but06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_but08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_but10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_but13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat_popl_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat_spin_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat_uniq_d.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
