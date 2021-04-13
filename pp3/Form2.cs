@@ -70,16 +70,20 @@ namespace pp3
 
 
 
-
+            var c = StringFormatter.FORMAT_KIND.CURR;
+            var m = StringFormatter.FORMAT_KIND.WEIGHT;
 
             Bitmap im = (Bitmap)Properties.Resources.ResourceManager.GetObject(selectedRod.rodName);
+
+            StringFormatter formatter = new StringFormatter();
+
             
+
             pictureBox1.Image = im;
-            string str = selectedRod.price.ToString();
-            string temp = String.Format("{0:C}", str);
-            Price.Text = $"Цена: {temp}";
+            
+            Price.Text = $"Цена: {formatter.decimalFormat(selectedRod.price.ToString(), c)}";
             NameOfItem.Text = selectedRod.rodName;
-            MaxWeight.Text = $"Выдерживает: {selectedRod.maxWeight}";
+            MaxWeight.Text = $"Выдерживает: {formatter.decimalFormat(selectedRod.maxWeight.ToString(), m)}";
         }
 
         
