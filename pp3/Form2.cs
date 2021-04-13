@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Reflection;
 
 namespace pp3
 {
@@ -70,11 +71,17 @@ namespace pp3
 
 
 
-            MessageBox.Show(selectedRod.rodName + ".png");
-            pictureBox1.Image = (Image)pp3.Properties.Resources.ResourceManager.GetObject(selectedRod.rodName + ".png", Properties.Resources.Culture);
-            Price.Text = $"Цена: {selectedRod.price}";
+
+            Bitmap im = (Bitmap)Properties.Resources.ResourceManager.GetObject(selectedRod.rodName);
+            
+            pictureBox1.Image = im;
+            string str = selectedRod.price.ToString();
+            string temp = String.Format("{0:C}", str);
+            Price.Text = $"Цена: {temp}";
             NameOfItem.Text = selectedRod.rodName;
             MaxWeight.Text = $"Выдерживает: {selectedRod.maxWeight}";
         }
+
+        
     }
 }
