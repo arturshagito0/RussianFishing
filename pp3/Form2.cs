@@ -15,11 +15,12 @@ namespace pp3
 {
     public partial class FishshopForm : Form
     {
-
+       
         public FishshopForm()
         {
 
             Load += RodButton_Click;
+           
             Load += poplavokButton_Click;
             InitializeComponent();
             DrawingControl.SetDoubleBuffered(dataGridView1);
@@ -112,16 +113,52 @@ namespace pp3
         private void poplavokButton_Click(object sender, EventArgs e)
         {
             poplavokButton.Image = pp3.Properties.Resources.cat_popl_s;
-
+            Load += spinningButton_MouseLeave;
             ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, false, dataGridView1);
+            
 
-
+            
         }
+
+       
+
+       
+
+
 
         private void spinningButton_Click(object sender, EventArgs e)
         {
             spinningButton.Image = Properties.Resources.cat_spin_s;
+            //poplavokButtonDisable();
+            Load += poplavokButton_MouseLeave;
             ShopGridViewHandler.selectRods(Rod.ROD_TYPE.SPINNING, false, dataGridView1);
+
+            
+        }
+
+        private string changeLetter(string s, char c)
+        {
+            char[] chars = s.ToCharArray();
+            chars[s.Length - 1] = c;
+            return new string(chars);
+        }
+
+     
+
+        private void poplavokButton_MouseLeave(object sender, EventArgs e)
+        {
+            poplavokButton.Image = Properties.Resources.cat_popl_d;
+        }
+
+        private void spinningButton_MouseEnter(object sender, EventArgs e)
+        {
+            spinningButton.Image = Properties.Resources.cat_spin_a;
+            
+        }
+
+        private void spinningButton_MouseLeave(object sender, EventArgs e)
+        {
+            spinningButton.Image = Properties.Resources.cat_spin_d;
         }
     }
 }

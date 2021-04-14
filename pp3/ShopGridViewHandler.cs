@@ -21,14 +21,37 @@ namespace pp3
 
             List<Rod> selectedRods = init.getAllRods().FindAll(e => e.getRodType() == type && e.getUniqueness() == unique); ;
             
-           
-            datagrid.AutoGenerateColumns = true;
+ 
+            datagrid.AutoGenerateColumns = false;
+            datagrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             datagrid.DataSource = selectedRods;
-            datagrid.Columns[0].HeaderText = "Удилища";
-            datagrid.Columns[1].HeaderText = "Выдерживает вес";
-            datagrid.Columns[2].HeaderText = "Цена";
-            datagrid.Columns[2].DefaultCellStyle.Format = "c0";
-            datagrid.Columns[2].DefaultCellStyle.FormatProvider = CultureInfo.GetCultureInfo("ru");
+            
+
+            if (datagrid.Columns.Count == 0)
+            {
+
+                DataGridViewColumn column1 = new DataGridViewTextBoxColumn();
+                column1.DataPropertyName = "rodName";
+                column1.Name = "Удилища";
+
+                DataGridViewColumn column2 = new DataGridViewTextBoxColumn();
+                column2.DataPropertyName = "maxWeight";
+                column2.Name = "Выдерживает вес";
+
+                DataGridViewColumn column3 = new DataGridViewTextBoxColumn();
+                column3.DataPropertyName = "price";
+                column3.Name = "Цена";
+                column3.DefaultCellStyle.Format = "c0";
+                column3.DefaultCellStyle.FormatProvider = CultureInfo.GetCultureInfo("ru");
+
+                datagrid.Columns.Add(column1);
+                datagrid.Columns.Add(column2);
+                datagrid.Columns.Add(column3);
+
+            }
+            
+            
+          
         }
     }
 

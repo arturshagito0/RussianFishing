@@ -18,7 +18,7 @@ namespace pp3
 
         protected List<Rod> gameRods = new List<Rod>();
 
-        private bool unique { get;  } = false;
+        public bool unique { get;  } = false;
 
         private ROD_TYPE type { get; set; } = ROD_TYPE.POPLAVOK;
         private int id { get; set; }
