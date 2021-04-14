@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Data.SqlClient;
+using System.Threading;
 
 
 namespace pp3
@@ -68,52 +69,17 @@ namespace pp3
         private void FishShopButton_MouseClick(object sender, MouseEventArgs e)
         {
 			var myForm = new FishshopForm();
-			myForm.Show();
-
-            Rod rod = new Rod("atlanta", 500, 20000, Rod.ROD_TYPE.POPLAVOK);
-            Rod rod2 = new Rod("Moch",  1500, 200000, Rod.ROD_TYPE.POPLAVOK);
-            Rod srod = new Rod("Spin",  100, 10000, Rod.ROD_TYPE.SPINNING);
-
-
-            Database1DataSet1TableAdapters.RodTableTableAdapter adap = new Database1DataSet1TableAdapters.RodTableTableAdapter();
-            var pidor = adap.GetData().Rows[0]["maxWeight"];
-
-            GameRods init = new GameRods();
-            init.InitializeAllRods();
-
-
-
-            List<Rod> rods = new List<Rod>{ rod, rod2, srod, rod, rod, rod, rod, rod, rod, rod, rod, rod, rod};
-
-            List<Rod> rods2 = init.getAllRods();
             
-
-  
-
-            
+       
             
             
 
             
 
-            DataGridView datagrid = (DataGridView)myForm.Controls.Find("dataGridView1", true)[0];
-            datagrid.AutoGenerateColumns = true;
-            datagrid.DataSource = rods2;
-            datagrid.Columns[0].HeaderText = "Удилища";
-            datagrid.Columns[1].HeaderText = "Выдерживает вес";
-            datagrid.Columns[2].HeaderText = "Цена";
-            datagrid.Columns[2].DefaultCellStyle.Format = "c0";
-            datagrid.Columns[2].DefaultCellStyle.FormatProvider = CultureInfo.GetCultureInfo("ru");
-            
 
-            MessageBox.Show(pidor.ToString());
 
-            
 
-            
-            
-
-           
+            myForm.Show();
 
 
 

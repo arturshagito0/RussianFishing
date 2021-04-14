@@ -27,8 +27,9 @@ namespace pp3
                 int maxWeight = (int)rod["maxWeight"];
                 string name = rod["name"].ToString();
                 Rod.ROD_TYPE ty = (Rod.ROD_TYPE)(Enum.Parse(typeof(Rod.ROD_TYPE), rod["type"].ToString()));
+                bool unique = (bool)rod["isUnique"];
 
-                gamerRods.Add(new Rod(name, maxWeight, price, ty));
+                gamerRods.Add(new Rod(name, maxWeight, price, ty, unique));
 
             }
         }

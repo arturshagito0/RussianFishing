@@ -8,6 +8,7 @@ namespace pp3
 {
     public class Player
     {
+        
         private int id { get; set; }
         private string player_name { get; set; }
         private int rank { get; set; } = 0;

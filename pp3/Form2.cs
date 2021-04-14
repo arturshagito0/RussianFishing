@@ -9,17 +9,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Reflection;
+using System.Globalization;
 
 namespace pp3
 {
     public partial class FishshopForm : Form
     {
-       
+
         public FishshopForm()
         {
-            InitializeComponent();
 
-        }
+            Load += RodButton_Click;
+            Load += poplavokButton_Click;
+            InitializeComponent();
+            DrawingControl.SetDoubleBuffered(dataGridView1);
+
+            
+
+           
+            
+            }
+
+        
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -28,7 +39,7 @@ namespace pp3
 
         private void FishshopForm_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,6 +63,12 @@ namespace pp3
         {
             RodButton.BackColor = System.Drawing.Color.LightSkyBlue;
             rodLabel.BackColor = System.Drawing.Color.LightSkyBlue;
+
+           
+            
+
+
+
         }
 
         private void dataGridView1_Click(object sender, EventArgs e)
@@ -86,6 +103,25 @@ namespace pp3
             MaxWeight.Text = $"Выдерживает: {formatter.decimalFormat(selectedRod.maxWeight.ToString(), m)}";
         }
 
-        
+        private void poplavokButton_MouseEnter(object sender, EventArgs e)
+        {
+            poplavokButton.Image = pp3.Properties.Resources.cat_popl_a;
+            
+        }
+
+        private void poplavokButton_Click(object sender, EventArgs e)
+        {
+            poplavokButton.Image = pp3.Properties.Resources.cat_popl_s;
+
+            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, false, dataGridView1);
+
+
+        }
+
+        private void spinningButton_Click(object sender, EventArgs e)
+        {
+            spinningButton.Image = Properties.Resources.cat_spin_s;
+            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.SPINNING, false, dataGridView1);
+        }
     }
 }

@@ -289,6 +289,8 @@ namespace pp3 {
             
             private global::System.Data.DataColumn columntype;
             
+            private global::System.Data.DataColumn columnisUnique;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public RodTableDataTable() {
@@ -364,6 +366,14 @@ namespace pp3 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn isUniqueColumn {
+                get {
+                    return this.columnisUnique;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -399,14 +409,15 @@ namespace pp3 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public RodTableRow AddRodTableRow(int Id, string name, int price, int maxWeight, string type) {
+            public RodTableRow AddRodTableRow(int Id, string name, int price, int maxWeight, string type, bool isUnique) {
                 RodTableRow rowRodTableRow = ((RodTableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
                         name,
                         price,
                         maxWeight,
-                        type};
+                        type,
+                        isUnique};
                 rowRodTableRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowRodTableRow);
                 return rowRodTableRow;
@@ -441,6 +452,7 @@ namespace pp3 {
                 this.columnprice = base.Columns["price"];
                 this.columnmaxWeight = base.Columns["maxWeight"];
                 this.columntype = base.Columns["type"];
+                this.columnisUnique = base.Columns["isUnique"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -456,6 +468,8 @@ namespace pp3 {
                 base.Columns.Add(this.columnmaxWeight);
                 this.columntype = new global::System.Data.DataColumn("type", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntype);
+                this.columnisUnique = new global::System.Data.DataColumn("isUnique", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnisUnique);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AllowDBNull = false;
@@ -667,6 +681,22 @@ namespace pp3 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool isUnique {
+                get {
+                    try {
+                        return ((bool)(this[this.tableRodTable.isUniqueColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'isUnique\' in table \'RodTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRodTable.isUniqueColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IstypeNull() {
                 return this.IsNull(this.tableRodTable.typeColumn);
             }
@@ -675,6 +705,18 @@ namespace pp3 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SettypeNull() {
                 this[this.tableRodTable.typeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsisUniqueNull() {
+                return this.IsNull(this.tableRodTable.isUniqueColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetisUniqueNull() {
+                this[this.tableRodTable.isUniqueColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -842,10 +884,11 @@ namespace pp3.Database1DataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("price", "price");
             tableMapping.ColumnMappings.Add("maxWeight", "maxWeight");
             tableMapping.ColumnMappings.Add("type", "type");
+            tableMapping.ColumnMappings.Add("isUnique", "isUnique");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [RodTable] WHERE (([Id] = @Original_Id) AND ([name] = @Original_name) AND ([price] = @Original_price) AND ((@IsNull_maxWeight = 1 AND [maxWeight] IS NULL) OR ([maxWeight] = @Original_maxWeight)) AND ((@IsNull_type = 1 AND [type] IS NULL) OR ([type] = @Original_type)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [RodTable] WHERE (([Id] = @Original_Id) AND ([name] = @Original_name) AND ([price] = @Original_price) AND ((@IsNull_maxWeight = 1 AND [maxWeight] IS NULL) OR ([maxWeight] = @Original_maxWeight)) AND ((@IsNull_type = 1 AND [type] IS NULL) OR ([type] = @Original_type)) AND ((@IsNull_isUnique = 1 AND [isUnique] IS NULL) OR ([isUnique] = @Original_isUnique)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -853,35 +896,41 @@ namespace pp3.Database1DataSet1TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_maxWeight", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "maxWeight", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_maxWeight", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "maxWeight", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_type", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_type", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_type", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_isUnique", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "isUnique", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_isUnique", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "isUnique", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [RodTable] ([Id], [name], [price], [maxWeight], [type]) VALUES (@Id, " +
-                "@name, @price, @maxWeight, @type);\r\nSELECT Id, name, price, maxWeight, type FROM" +
-                " RodTable WHERE (Id = @Id)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [RodTable] ([Id], [name], [price], [maxWeight], [type], [isUnique]) V" +
+                "ALUES (@Id, @name, @price, @maxWeight, @type, @isUnique);\r\nSELECT Id, name, pric" +
+                "e, maxWeight, type, isUnique FROM RodTable WHERE (Id = @Id)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@price", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@maxWeight", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "maxWeight", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@type", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@type", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@isUnique", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "isUnique", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [RodTable] SET [Id] = @Id, [name] = @name, [price] = @price, [maxWeight] = @maxWeight, [type] = @type WHERE (([Id] = @Original_Id) AND ([name] = @Original_name) AND ([price] = @Original_price) AND ((@IsNull_maxWeight = 1 AND [maxWeight] IS NULL) OR ([maxWeight] = @Original_maxWeight)) AND ((@IsNull_type = 1 AND [type] IS NULL) OR ([type] = @Original_type)));
-SELECT Id, name, price, maxWeight, type FROM RodTable WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [RodTable] SET [Id] = @Id, [name] = @name, [price] = @price, [maxWeight] = @maxWeight, [type] = @type, [isUnique] = @isUnique WHERE (([Id] = @Original_Id) AND ([name] = @Original_name) AND ([price] = @Original_price) AND ((@IsNull_maxWeight = 1 AND [maxWeight] IS NULL) OR ([maxWeight] = @Original_maxWeight)) AND ((@IsNull_type = 1 AND [type] IS NULL) OR ([type] = @Original_type)) AND ((@IsNull_isUnique = 1 AND [isUnique] IS NULL) OR ([isUnique] = @Original_isUnique)));
+SELECT Id, name, price, maxWeight, type, isUnique FROM RodTable WHERE (Id = @Id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@price", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@maxWeight", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "maxWeight", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@type", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@type", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@isUnique", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "isUnique", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_price", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "price", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_maxWeight", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "maxWeight", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_maxWeight", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "maxWeight", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_type", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_type", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_type", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "type", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_isUnique", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "isUnique", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_isUnique", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "isUnique", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -897,7 +946,7 @@ SELECT Id, name, price, maxWeight, type FROM RodTable WHERE (Id = @Id)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, name, price, maxWeight, type FROM RodTable";
+            this._commandCollection[0].CommandText = "SELECT Id, name, price, maxWeight, type, isUnique FROM RodTable";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -958,7 +1007,7 @@ SELECT Id, name, price, maxWeight, type FROM RodTable WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id, string Original_name, int Original_price, global::System.Nullable<int> Original_maxWeight, string Original_type) {
+        public virtual int Delete(int Original_Id, string Original_name, int Original_price, global::System.Nullable<int> Original_maxWeight, string Original_type, global::System.Nullable<bool> Original_isUnique) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
             if ((Original_name == null)) {
                 throw new global::System.ArgumentNullException("Original_name");
@@ -983,6 +1032,14 @@ SELECT Id, name, price, maxWeight, type FROM RodTable WHERE (Id = @Id)";
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_type));
             }
+            if ((Original_isUnique.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((bool)(Original_isUnique.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1003,7 +1060,7 @@ SELECT Id, name, price, maxWeight, type FROM RodTable WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Id, string name, int price, global::System.Nullable<int> maxWeight, string type) {
+        public virtual int Insert(int Id, string name, int price, global::System.Nullable<int> maxWeight, string type, global::System.Nullable<bool> isUnique) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Id));
             if ((name == null)) {
                 throw new global::System.ArgumentNullException("name");
@@ -1023,6 +1080,12 @@ SELECT Id, name, price, maxWeight, type FROM RodTable WHERE (Id = @Id)";
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(type));
+            }
+            if ((isUnique.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((bool)(isUnique.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1044,7 +1107,7 @@ SELECT Id, name, price, maxWeight, type FROM RodTable WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Id, string name, int price, global::System.Nullable<int> maxWeight, string type, int Original_Id, string Original_name, int Original_price, global::System.Nullable<int> Original_maxWeight, string Original_type) {
+        public virtual int Update(int Id, string name, int price, global::System.Nullable<int> maxWeight, string type, global::System.Nullable<bool> isUnique, int Original_Id, string Original_name, int Original_price, global::System.Nullable<int> Original_maxWeight, string Original_type, global::System.Nullable<bool> Original_isUnique) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id));
             if ((name == null)) {
                 throw new global::System.ArgumentNullException("name");
@@ -1065,29 +1128,43 @@ SELECT Id, name, price, maxWeight, type FROM RodTable WHERE (Id = @Id)";
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(type));
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Id));
+            if ((isUnique.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((bool)(isUnique.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_Id));
             if ((Original_name == null)) {
                 throw new global::System.ArgumentNullException("Original_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_name));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_name));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_price));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_price));
             if ((Original_maxWeight.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_maxWeight.Value));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_maxWeight.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             if ((Original_type == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_type));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_type));
+            }
+            if ((Original_isUnique.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((bool)(Original_isUnique.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1109,8 +1186,8 @@ SELECT Id, name, price, maxWeight, type FROM RodTable WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string name, int price, global::System.Nullable<int> maxWeight, string type, int Original_Id, string Original_name, int Original_price, global::System.Nullable<int> Original_maxWeight, string Original_type) {
-            return this.Update(Original_Id, name, price, maxWeight, type, Original_Id, Original_name, Original_price, Original_maxWeight, Original_type);
+        public virtual int Update(string name, int price, global::System.Nullable<int> maxWeight, string type, global::System.Nullable<bool> isUnique, int Original_Id, string Original_name, int Original_price, global::System.Nullable<int> Original_maxWeight, string Original_type, global::System.Nullable<bool> Original_isUnique) {
+            return this.Update(Original_Id, name, price, maxWeight, type, isUnique, Original_Id, Original_name, Original_price, Original_maxWeight, Original_type, Original_isUnique);
         }
     }
     
