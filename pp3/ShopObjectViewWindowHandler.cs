@@ -11,7 +11,7 @@ namespace pp3
 {
     public static class ShopObjectViewWindowHandler
     {
-        public static void DisplayItem(DataGridView datagrid, Object selectedRodd, List<Label> controls, PictureBox picturebox)
+        public static void DisplayItem(DataGridView datagrid, Object selectedItem, List<Label> controls, PictureBox picturebox)
         {
 
             
@@ -19,27 +19,39 @@ namespace pp3
             
             if (member == typeof(Rod))
             {
-                DisplayRod((Rod)selectedRodd);
+                DisplayRod((Rod)selectedItem);
             }
 
             else if (member == typeof(Reel))
             {
-                DisplayReel((Reel)selectedRodd);
+                DisplayReel((Reel)selectedItem);
             }
 
 
             void DisplayReel(Reel reel)
             {
+                picturebox.Image = null;
                 controls[1].Text = "Чем мощнее катушка тем легче вытащить рыбу";
-                
+                Image im = Image.FromFile("ReelImages/Chartel.png");
+
+
+
+                picturebox.Image = im;
+
+
+
+
+
+
                 controls[0].Text = reel.name;
-                MessageBox.Show(reel.name);
+                
                 controls[2].Text = $"Мощность: {reel.power}%";
 
                 StringFormatter sf = new StringFormatter();
                 controls[3].Text = $"Цена: {sf.decimalFormat(reel.price.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
 
-                picturebox.Image = (Bitmap) Properties.Resources.ResourceManager.GetObject(reel.name);
+               
+                
             }
 
 
@@ -68,7 +80,7 @@ namespace pp3
                 StringFormatter formatter = new StringFormatter();
 
 
-
+               
                 picturebox.Image = im;
 
                 controls[3].Text = $"Цена: {formatter.decimalFormat(selectedRod.price.ToString(), c)}";

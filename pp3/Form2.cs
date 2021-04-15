@@ -231,7 +231,7 @@ namespace pp3
         {
             normalReelButton.Image = Properties.Resources.cat_ordin_s;
             ShopGridViewHandler.selectReels(false, dataGridView1);
-            MessageBox.Show(dataGridView1.Columns.Count.ToString());
+            
         }
 
         private void normalReelButton_MouseEnter(object sender, EventArgs e)

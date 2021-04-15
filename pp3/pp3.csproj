@@ -12,7 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\art_s\OneDrive\Рабочий стол\ApplicationFolder\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,10 +23,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -46,6 +47,21 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7B00C49F6C99B91DE6222FFE65798648D3A55541</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>pp3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -111,6 +127,11 @@
     <Compile Include="Potion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\ReelResouce.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReelResouce.resx</DependentUpon>
+    </Compile>
     <Compile Include="Reel.cs" />
     <Compile Include="Rod.cs" />
     <Compile Include="ShopAssociation.cs" />
@@ -122,6 +143,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ReelResouce.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReelResouce.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -172,6 +197,7 @@
     <None Include="Database1DataSet3.xss">
       <DependentUpon>Database1DataSet3.xsd</DependentUpon>
     </None>
+    <None Include="pp3_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -594,6 +620,112 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="ReelImages\ACIS 1304.png" />
+    <Content Include="ReelImages\Anglers Division R300.png" />
+    <Content Include="ReelImages\Anglers Division R350.png" />
+    <Content Include="ReelImages\Anglers Division R400.png" />
+    <Content Include="ReelImages\Anglers Division R450.png" />
+    <Content Include="ReelImages\Anglers Division R500.png" />
+    <Content Include="ReelImages\BaitFlex.png" />
+    <Content Include="ReelImages\Black Raven.png" />
+    <Content Include="ReelImages\Blood Raven.png" />
+    <Content Include="ReelImages\Chartel.png" />
+    <Content Include="ReelImages\CIRCE 1311.png" />
+    <Content Include="ReelImages\Denlou.png" />
+    <Content Include="ReelImages\DIONYSIA 1302.png" />
+    <Content Include="ReelImages\DRACO FD 1704.png" />
+    <Content Include="ReelImages\Faraon reel.png" />
+    <Content Include="ReelImages\Flueger LProf-100.png" />
+    <Content Include="ReelImages\Flueger LProf-200.png" />
+    <Content Include="ReelImages\Flueger Spin-100.png" />
+    <Content Include="ReelImages\Flueger Spin-200.png" />
+    <Content Include="ReelImages\Flueger Vintage.png" />
+    <Content Include="ReelImages\HYDRA 1711.png" />
+    <Content Include="ReelImages\Hydra.png" />
+    <Content Include="ReelImages\ICARUS 1309.png" />
+    <Content Include="ReelImages\Ink reel.png" />
+    <Content Include="ReelImages\JSR-C100.png" />
+    <Content Include="ReelImages\JSR-C200.png" />
+    <Content Include="ReelImages\JSR-L100.png" />
+    <Content Include="ReelImages\JSR-L200.png" />
+    <Content Include="ReelImages\JSR-T100.png" />
+    <Content Include="ReelImages\JSR-T20.png" />
+    <Content Include="ReelImages\JSR-T200.png" />
+    <Content Include="ReelImages\LACERTA 1301.png" />
+    <Content Include="ReelImages\LATONA 1712.png" />
+    <Content Include="ReelImages\LIBRA 1901.png" />
+    <Content Include="ReelImages\magna-mx-400-spinning-fishing-reel.jpg" />
+    <Content Include="ReelImages\Marco-R1.png" />
+    <Content Include="ReelImages\Marco-R10.png" />
+    <Content Include="ReelImages\Marco-R11.png" />
+    <Content Include="ReelImages\Marco-R12.png" />
+    <Content Include="ReelImages\Marco-R13.png" />
+    <Content Include="ReelImages\Marco-R2.png" />
+    <Content Include="ReelImages\Marco-R3.png" />
+    <Content Include="ReelImages\Marco-R4.png" />
+    <Content Include="ReelImages\Marco-R5.png" />
+    <Content Include="ReelImages\Marco-R6.png" />
+    <Content Include="ReelImages\Marco-R7.png" />
+    <Content Include="ReelImages\Marco-R8.png" />
+    <Content Include="ReelImages\Marco-R9.png" />
+    <Content Include="ReelImages\Meridian-100.png" />
+    <Content Include="ReelImages\Meridian-200.png" />
+    <Content Include="ReelImages\Meridian-300.png" />
+    <Content Include="ReelImages\Meridian-400.png" />
+    <Content Include="ReelImages\Meridian-500.png" />
+    <Content Include="ReelImages\Meridian-600.png" />
+    <Content Include="ReelImages\Meridian-700.png" />
+    <Content Include="ReelImages\Meridian-800.png" />
+    <Content Include="ReelImages\Meteor.png" />
+    <Content Include="ReelImages\MGX Cruiser.png" />
+    <Content Include="ReelImages\MGX Inshore.png" />
+    <Content Include="ReelImages\MGX SilverTrack.png" />
+    <Content Include="ReelImages\Miada Lake-100.png" />
+    <Content Include="ReelImages\Miada Lake-200.png" />
+    <Content Include="ReelImages\Miada River-100.png" />
+    <Content Include="ReelImages\Miada River-200.png" />
+    <Content Include="ReelImages\NUMAN 1400.png" />
+    <Content Include="ReelImages\Old Reel.png" />
+    <Content Include="ReelImages\Predator Classic.png" />
+    <Content Include="ReelImages\Predator MonsterGear.png" />
+    <Content Include="ReelImages\Predator Ultimate.png" />
+    <Content Include="ReelImages\Quest Platinum.png" />
+    <Content Include="ReelImages\Quest Reel.png" />
+    <Content Include="ReelImages\RAINSTARS 1317.png" />
+    <Content Include="ReelImages\REMUS 1312.png" />
+    <Content Include="ReelImages\RS-800.png" />
+    <Content Include="ReelImages\Salmon Force.png" />
+    <Content Include="ReelImages\Salmon Pro-PW.png" />
+    <Content Include="ReelImages\Salmon Pro-SP1.png" />
+    <Content Include="ReelImages\Salmon Pro-SP2.png" />
+    <Content Include="ReelImages\Sea Monster s180.png" />
+    <Content Include="ReelImages\Sea Monster s190.png" />
+    <Content Include="ReelImages\Sea Monster s200.png" />
+    <Content Include="ReelImages\Sevens Reel-100.png" />
+    <Content Include="ReelImages\Sevens Reel-200.png" />
+    <Content Include="ReelImages\Sevens Reel-300.png" />
+    <Content Include="ReelImages\Sevens Reel-400.png" />
+    <Content Include="ReelImages\Sky Raven.png" />
+    <Content Include="ReelImages\SPARK 1316.png" />
+    <Content Include="ReelImages\Squid Power-1000.png" />
+    <Content Include="ReelImages\Squid Power-1000HG.png" />
+    <Content Include="ReelImages\Squid Power-2000.png" />
+    <Content Include="ReelImages\Squid Power-2000HG.png" />
+    <Content Include="ReelImages\Squid Power-3000.png" />
+    <Content Include="ReelImages\Squid Power-3000HG.png" />
+    <Content Include="ReelImages\SuperWinch-155.png" />
+    <Content Include="ReelImages\SuperWinch-170.png" />
+    <Content Include="ReelImages\Syberia HD-1.png" />
+    <Content Include="ReelImages\Syberia HD-3.png" />
+    <Content Include="ReelImages\Syberia HD-4.png" />
+    <Content Include="ReelImages\Syberia HD-5.png" />
+    <Content Include="ReelImages\Syberia LT-1.png" />
+    <Content Include="ReelImages\Syberia LT-2.png" />
+    <Content Include="ReelImages\TBR-4000.png" />
+    <Content Include="ReelImages\Valkyrie V3.png" />
+    <Content Include="ReelImages\Valkyrie V5.png" />
+    <Content Include="ReelImages\Viking reel.png" />
+    <Content Include="ReelImages\Zymix.png" />
     <None Include="Resources\Anglers Division R300.png" />
     <None Include="Resources\ACIS 1304.png" />
     <None Include="Resources\Zymix.png" />

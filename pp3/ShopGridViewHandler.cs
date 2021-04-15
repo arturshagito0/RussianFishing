@@ -77,7 +77,7 @@ namespace pp3
             var reels = init.getAllReels();
             
             List<Reel> selectedReels = reels.FindAll(e => e.getUniqueness() == unique);
-            MessageBox.Show("Total no of reels is " + selectedReels.Count.ToString());
+            
             datagrid.Columns.Clear();
             datagrid.AutoGenerateColumns = false;
             datagrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
