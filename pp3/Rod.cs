@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace pp3
 {
-    public class Rod
+    public class Rod : Object
     {
         public enum ROD_TYPE
         {

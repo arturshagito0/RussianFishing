@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pp3
 {
-    interface Object
+    public interface Object
     {
         
 

@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -99,7 +101,7 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameRods.cs" />
+    <Compile Include="ObjectInitializer.cs" />
     <Compile Include="Home.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Inventory.cs" />
@@ -111,7 +113,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reel.cs" />
     <Compile Include="Rod.cs" />
+    <Compile Include="ShopAssociation.cs" />
     <Compile Include="ShopGridViewHandler.cs" />
+    <Compile Include="ShopObjectViewWindowHandler.cs" />
     <Compile Include="StringFormatter.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -358,12 +362,6 @@
     <None Include="Resources\eraze_d.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\exit_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\exit_d.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\food_a.png" />
   </ItemGroup>
   <ItemGroup>
@@ -589,15 +587,6 @@
     <None Include="Resources\shop_but13.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cat_popl_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cat_spin_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cat_uniq_d.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -605,12 +594,174 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\cat_uniq_a.png" />
+    <None Include="Resources\Anglers Division R300.png" />
+    <None Include="Resources\ACIS 1304.png" />
+    <None Include="Resources\Zymix.png" />
+    <None Include="Resources\Viking reel.png" />
+    <None Include="Resources\Valkyrie V5.png" />
+    <None Include="Resources\Valkyrie V3.png" />
+    <None Include="Resources\TBR-4000.png" />
+    <None Include="Resources\Syberia LT-2.png" />
+    <None Include="Resources\Syberia LT-1.png" />
+    <None Include="Resources\Syberia HD-5.png" />
+    <None Include="Resources\Syberia HD-4.png" />
+    <None Include="Resources\Syberia HD-3.png" />
+    <None Include="Resources\Syberia HD-1.png" />
+    <None Include="Resources\SuperWinch-170.png" />
+    <None Include="Resources\SuperWinch-155.png" />
+    <None Include="Resources\Squid Power-3000HG.png" />
+    <None Include="Resources\Squid Power-3000.png" />
+    <None Include="Resources\Squid Power-2000HG.png" />
+    <None Include="Resources\Squid Power-2000.png" />
+    <None Include="Resources\Squid Power-1000HG.png" />
+    <None Include="Resources\Squid Power-1000.png" />
+    <None Include="Resources\SPARK 1316.png" />
+    <None Include="Resources\Sky Raven.png" />
+    <None Include="Resources\Sevens Reel-400.png" />
+    <None Include="Resources\Sevens Reel-300.png" />
+    <None Include="Resources\Sevens Reel-200.png" />
+    <None Include="Resources\Sevens Reel-100.png" />
+    <None Include="Resources\Sea Monster s200.png" />
+    <None Include="Resources\Sea Monster s190.png" />
+    <None Include="Resources\Sea Monster s180.png" />
+    <None Include="Resources\Salmon Pro-SP2.png" />
+    <None Include="Resources\Salmon Pro-SP1.png" />
+    <None Include="Resources\Salmon Pro-PW.png" />
+    <None Include="Resources\Salmon Force.png" />
+    <None Include="Resources\RS-800.png" />
+    <None Include="Resources\REMUS 1312.png" />
+    <None Include="Resources\RAINSTARS 1317.png" />
+    <None Include="Resources\Quest Reel.png" />
+    <None Include="Resources\Quest Platinum.png" />
+    <None Include="Resources\Predator Ultimate.png" />
+    <None Include="Resources\Predator MonsterGear.png" />
+    <None Include="Resources\Predator Classic.png" />
+    <None Include="Resources\Old Reel.png" />
+    <None Include="Resources\NUMAN 1400.png" />
+    <None Include="Resources\Miada River-200.png" />
+    <None Include="Resources\Miada River-100.png" />
+    <None Include="Resources\Miada Lake-200.png" />
+    <None Include="Resources\Miada Lake-100.png" />
+    <None Include="Resources\MGX SilverTrack.png" />
+    <None Include="Resources\MGX Inshore.png" />
+    <None Include="Resources\MGX Cruiser.png" />
+    <None Include="Resources\Meteor.png" />
+    <None Include="Resources\Meridian-800.png" />
+    <None Include="Resources\Meridian-700.png" />
+    <None Include="Resources\Meridian-600.png" />
+    <None Include="Resources\Meridian-500.png" />
+    <None Include="Resources\Meridian-400.png" />
+    <None Include="Resources\Meridian-300.png" />
+    <None Include="Resources\Meridian-200.png" />
+    <None Include="Resources\Meridian-100.png" />
+    <None Include="Resources\Marco-R13.png" />
+    <None Include="Resources\Marco-R12.png" />
+    <None Include="Resources\Marco-R11.png" />
+    <None Include="Resources\Marco-R10.png" />
+    <None Include="Resources\Marco-R9.png" />
+    <None Include="Resources\Marco-R8.png" />
+    <None Include="Resources\Marco-R7.png" />
+    <None Include="Resources\Marco-R6.png" />
+    <None Include="Resources\Marco-R5.png" />
+    <None Include="Resources\Marco-R4.png" />
+    <None Include="Resources\Marco-R3.png" />
+    <None Include="Resources\Marco-R2.png" />
+    <None Include="Resources\Marco-R1.png" />
+    <None Include="Resources\magna-mx-400-spinning-fishing-reel.jpg" />
+    <None Include="Resources\LIBRA 1901.png" />
+    <None Include="Resources\LATONA 1712.png" />
+    <None Include="Resources\LACERTA 1301.png" />
+    <None Include="Resources\JSR-T200.png" />
+    <None Include="Resources\JSR-T100.png" />
+    <None Include="Resources\JSR-T20.png" />
+    <None Include="Resources\JSR-L200.png" />
+    <None Include="Resources\JSR-L100.png" />
+    <None Include="Resources\JSR-C200.png" />
+    <None Include="Resources\JSR-C100.png" />
+    <None Include="Resources\Ink reel.png" />
+    <None Include="Resources\ICARUS 1309.png" />
+    <None Include="Resources\Hydra.png" />
+    <None Include="Resources\HYDRA 1711.png" />
+    <None Include="Resources\Flueger Vintage.png" />
+    <None Include="Resources\Flueger Spin-200.png" />
+    <None Include="Resources\Flueger Spin-100.png" />
+    <None Include="Resources\Flueger LProf-200.png" />
+    <None Include="Resources\Flueger LProf-100.png" />
+    <None Include="Resources\Faraon reel.png" />
+    <None Include="Resources\DRACO FD 1704.png" />
+    <None Include="Resources\DIONYSIA 1302.png" />
+    <None Include="Resources\Denlou.png" />
+    <None Include="Resources\CIRCE 1311.png" />
+    <None Include="Resources\Chartel.png" />
+    <None Include="Resources\Blood Raven.png" />
+    <None Include="Resources\Black Raven.png" />
+    <None Include="Resources\BaitFlex.png" />
+    <None Include="Resources\Anglers Division R500.png" />
+    <None Include="Resources\Anglers Division R450.png" />
+    <None Include="Resources\Anglers Division R400.png" />
+    <None Include="Resources\Anglers Division R350.png" />
+    <None Include="Resources\buy_d.png" />
+    <None Include="Resources\buy_a.png" />
+    <None Include="Resources\takeprofit_d.png" />
+    <None Include="Resources\takeprofit_a.png" />
+    <None Include="Resources\sendbill_d.png" />
+    <None Include="Resources\sendbill_a.png" />
+    <None Include="Resources\sellshop_d.png" />
+    <None Include="Resources\sellshop_a.png" />
+    <None Include="Resources\select_place_d.png" />
+    <None Include="Resources\select_place_a.png" />
+    <None Include="Resources\rem_d.png" />
+    <None Include="Resources\rem_a.png" />
+    <None Include="Resources\refresh_d.png" />
+    <None Include="Resources\refresh_a.png" />
+    <None Include="Resources\office_d.png" />
+    <None Include="Resources\office_a.png" />
+    <None Include="Resources\makebid_d.png" />
+    <None Include="Resources\makebid_a.png" />
+    <None Include="Resources\exit_d.png" />
+    <None Include="Resources\exit_a.png" />
     <None Include="Resources\cat_uniq_s.png" />
-    <None Include="Resources\cat_spin_a.png" />
+    <None Include="Resources\cat_uniq_d.png" />
+    <None Include="Resources\cat_uniq_a.png" />
     <None Include="Resources\cat_spin_s.png" />
-    <None Include="Resources\cat_popl_a.png" />
+    <None Include="Resources\cat_spin_d.png" />
+    <None Include="Resources\cat_spin_a.png" />
+    <None Include="Resources\cat_reel_s.png" />
+    <None Include="Resources\cat_reel_d.png" />
+    <None Include="Resources\cat_reel_a.png" />
     <None Include="Resources\cat_popl_s.png" />
+    <None Include="Resources\cat_popl_d.png" />
+    <None Include="Resources\cat_popl_a.png" />
+    <None Include="Resources\cat_osn_s.png" />
+    <None Include="Resources\cat_osn_d.png" />
+    <None Include="Resources\cat_osn_a.png" />
+    <None Include="Resources\cat_ordin_s.png" />
+    <None Include="Resources\cat_ordin_d.png" />
+    <None Include="Resources\cat_ordin_a.png" />
+    <None Include="Resources\cat_house_s.png" />
+    <None Include="Resources\cat_house_d.png" />
+    <None Include="Resources\cat_house_a.png" />
+    <None Include="Resources\cat_fider_s.png" />
+    <None Include="Resources\cat_fider_d.png" />
+    <None Include="Resources\cat_fider_a.png" />
+    <None Include="Resources\cat_car_s.png" />
+    <None Include="Resources\cat_car_d.png" />
+    <None Include="Resources\cat_car_a.png" />
+    <None Include="Resources\cat_bles_s.png" />
+    <None Include="Resources\cat_bles_d.png" />
+    <None Include="Resources\cat_bles_a.png" />
+    <None Include="Resources\cat_bait_s.png" />
+    <None Include="Resources\cat_bait_d.png" />
+    <None Include="Resources\cat_bait_a.png" />
+    <None Include="Resources\cat_aroma_s.png" />
+    <None Include="Resources\cat_aroma_d.png" />
+    <None Include="Resources\cat_aroma_a.png" />
+    <None Include="Resources\cat_ammo_s.png" />
+    <None Include="Resources\cat_ammo_d.png" />
+    <None Include="Resources\cat_ammo_a.png" />
+    <None Include="Resources\cat_acc_s.png" />
+    <None Include="Resources\cat_acc_d.png" />
+    <None Include="Resources\cat_acc_a.png" />
     <None Include="Resources\Yellow SuperCarp.png" />
     <None Include="Resources\wf-s.png" />
     <None Include="Resources\wf-c.png" />
