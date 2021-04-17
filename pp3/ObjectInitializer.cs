@@ -1,20 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace pp3
 {
-    
+
 
     class ObjectInitializer
     {
         private List<Rod> gamerRods;
         private List<Reel> gameReels;
         private List<Line> gameLines;
-        
+
 
         public ObjectInitializer()
         {
@@ -45,12 +41,12 @@ namespace pp3
 
             foreach (System.Data.DataRow reel in adapter.GetData().Rows)
             {
-                
-                int price = (int) reel["price"];
+
+                int price = (int)reel["price"];
                 int power = (int)reel["power"];
                 string name = (string)reel["name"];
                 bool unique = (bool)reel["unique"];
-                
+
                 gameReels.Add(new Reel(name, power, price, unique));
             }
 

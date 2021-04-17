@@ -1,33 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace pp3
 {
-    class Inventory
+    public class Inventory
     {
 
-        private int capacity;
-        private List<Rod> rods;
-        private List<Reel> reels;
-        private List<Line> lines;
+        public int capacity = 100;
+        private List<Object> items = new List<Object>();
+        public int count = 0;
+        
 
-        public void addRod(Rod rod)
+        public void addItem(Object item)
         {
-            rods.Add(rod);
+            items.Add(item);
+            count += 1;
         }
 
-        public void addReel(Reel reel)
-        {
-            reels.Add(reel);
-        }
-
-        public void addLine(Line line)
-        {
-            lines.Add(line);
-        }
+       
 
     }
 }

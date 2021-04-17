@@ -1,39 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-using System.Reflection;
-using System.Globalization;
 
 namespace pp3
 {
     public partial class FishshopForm : Form
     {
-
+        Player currentPlayer;
         public List<Label> displayedLabels;
         public List<PictureBox> leftButtons;
         public List<Label> leftLabels;
         public List<PictureBox> topButtons = new List<PictureBox>();
+        
+        public Object selectedItem;
 
         public FishshopForm()
         {
 
-            Load += RodButton_Click;
            
-            
+
+            Load += RodButton_Click;
+
+
             InitializeComponent();
             DrawingControl.SetDoubleBuffered(dataGridView1);
-            
+
 
             topButtons = panel1.Controls.OfType<PictureBox>().ToList();
 
-            
+
             displayedLabels = new List<Label> { NameOfItem, Description, MaxWeight, Price, };
 
             leftButtons = new List<PictureBox> { RodButton,
@@ -49,7 +46,7 @@ namespace pp3
 
 
 
-            }
+        }
 
         private void labelDisabler(PictureBox picture, Label label, List<PictureBox> buttons)
         {
@@ -79,25 +76,19 @@ namespace pp3
                 }
             }
 
-            
-                foreach (var b in topButtons.Except(buttons))
-                {
+
+            foreach (var b in topButtons.Except(buttons))
+            {
                 b.Visible = false;
                 b.Enabled = false;
-                }
-            
-
-            
-           
-
-
+            }
         }
 
-        
+
 
         private void FishshopForm_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -110,28 +101,28 @@ namespace pp3
 
         }
 
-        
+
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        
+
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
-            var selectedRod = (Object) dataGridView1.CurrentRow.DataBoundItem;
-            
+            var selectedRod = (Object)dataGridView1.CurrentRow.DataBoundItem;
+            selectedItem = selectedRod;
             ShopObjectViewWindowHandler.DisplayItem(dataGridView1, selectedRod, displayedLabels, pictureBox1);
 
-           
+
         }
 
         private void poplavokButton_MouseEnter(object sender, EventArgs e)
         {
             poplavokButton.Image = pp3.Properties.Resources.cat_popl_a;
-            
+
         }
 
         private void poplavokButton_Click(object sender, EventArgs e)
@@ -139,26 +130,26 @@ namespace pp3
             poplavokButton.Image = pp3.Properties.Resources.cat_popl_s;
             Load += spinningButton_MouseLeave;
             ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, false, dataGridView1);
-            
 
-            
+
+
         }
 
-       
 
-       
+
+
 
 
 
         private void spinningButton_Click(object sender, EventArgs e)
         {
             spinningButton.Image = Properties.Resources.cat_spin_s;
-            
-           
+
+
 
             ShopGridViewHandler.selectRods(Rod.ROD_TYPE.SPINNING, false, dataGridView1);
 
-            
+
         }
 
         private string changeLetter(string s, char c)
@@ -168,7 +159,7 @@ namespace pp3
             return new string(chars);
         }
 
-     
+
 
         private void poplavokButton_MouseLeave(object sender, EventArgs e)
         {
@@ -178,7 +169,7 @@ namespace pp3
         private void spinningButton_MouseEnter(object sender, EventArgs e)
         {
             spinningButton.Image = Properties.Resources.cat_spin_a;
-            
+
         }
 
         private void spinningButton_MouseLeave(object sender, EventArgs e)
@@ -205,16 +196,18 @@ namespace pp3
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+
         {
-            labelDisabler(ReelButton, reelLabel, new List<PictureBox> {normalReelButton, uniqueReelButton});
+            normalReelButton_Click(sender, e);
+            labelDisabler(ReelButton, reelLabel, new List<PictureBox> { normalReelButton, uniqueReelButton });
             reelLabel.BackColor = Color.LightSkyBlue;
         }
 
 
         private void LineButton_Click(object sender, EventArgs e)
         {
-           // labelDisabler(LineButton, lineLabel, );
-            
+            // labelDisabler(LineButton, lineLabel, );
+
 
         }
 
@@ -223,7 +216,7 @@ namespace pp3
             poplavokButton_Click(sender, e);
             labelDisabler(RodButton, rodLabel, new List<PictureBox> { poplavokButton, spinningButton, uniqueRodButton });
 
-          
+
 
         }
 
@@ -231,14 +224,14 @@ namespace pp3
         {
             normalReelButton.Image = Properties.Resources.cat_ordin_s;
             ShopGridViewHandler.selectReels(false, dataGridView1);
-            
+
         }
 
         private void normalReelButton_MouseEnter(object sender, EventArgs e)
         {
             normalReelButton.Image = Properties.Resources.cat_ordin_s;
         }
-    
+
 
         private void normalReelButton_MouseLeave(object sender, EventArgs e)
         {
@@ -248,6 +241,7 @@ namespace pp3
         private void uniqueReelButton_Click(object sender, EventArgs e)
         {
             uniqueReelButton.Image = Properties.Resources.cat_uniq_s;
+            ShopGridViewHandler.selectReels(true, dataGridView1);
         }
 
         private void uniqueReelButton_MouseEnter(object sender, EventArgs e)
@@ -259,6 +253,47 @@ namespace pp3
         {
             uniqueReelButton.Image = Properties.Resources.cat_uniq_d;
         }
+
+
+        public event EventHandler OnItemBought;
+        
+        protected virtual void ItemIsBought(EventArgs e)
+        {
+            EventHandler eh = OnItemBought;
+            if (eh != null)
+            {
+                eh(this, e);
+            }
+        }
+
+
+
+        private void buyButton_Click(object sender, EventArgs e)
+        {
+            buyButton.Image = Properties.Resources.buy_a;
+            ItemIsBought(null);
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.ReelResouce.kassa);
+            player.Play();
+            
+            
+            
+
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void buyButton_MouseEnter(object sender, EventArgs e)
+        {
+            buyButton.Image = Properties.Resources.buy_a;
+        }
+
+        private void buyButton_MouseLeave(object sender, EventArgs e)
+        {
+            buyButton.Image = Properties.Resources.buy_d;
+        }
     }
-    
+
 }

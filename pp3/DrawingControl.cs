@@ -36,6 +36,6 @@ public static class DrawingControl
     /// Suspend drawing updates for the specified control. After the control has been updated
     /// call DrawingControl.ResumeDrawing(Control control).
     /// </summary>
-    
-    
+
+
 }

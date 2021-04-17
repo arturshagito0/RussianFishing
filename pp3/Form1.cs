@@ -1,98 +1,73 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Globalization;
-using System.Data.SqlClient;
-using System.Threading;
 
 
 namespace pp3
 {
-	public partial class MainForm : Form
-	{
-		public MainForm()
-		{
-			InitializeComponent();
-		}
-
-		private void pictureBox1_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void pictureBox7_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void pictureBox1_MouseCaptureChanged(object sender, EventArgs e)
-		{
-
-		}
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
+    public partial class MainForm : Form
+    {
+        public FishshopForm myForm = new FishshopForm();
+        public Player currentPlayer;
+        public System.Media.SoundPlayer onClickSound = new System.Media.SoundPlayer(Properties.ReelResouce.click1);
+        public MainForm(Player player)
         {
+            currentPlayer = player;
+            InitializeComponent();
+            myForm.OnItemBought += MyForm_DataAvailable;
 
         }
+
+        private void MyForm_DataAvailable(object sender, EventArgs e)
+        {
+            FishshopForm child = sender as FishshopForm;
+            if (child != null)
+            {
+                this.currentPlayer.playerInventory.addItem(child.selectedItem);
+
+            }
+        }
+
+       
+
+       
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void FoodShopButton_MouseHover(object sender, EventArgs e)
+        private void FishShopButton_MouseClick(object sender, MouseEventArgs e)
         {
-			
+            myForm.Show();
+            onClickSound.Play();
+            MessageBox.Show(Application.StartupPath);
+            Properties.Loc
         }
 
+       
         private void FoodShopButton_MouseEnter(object sender, EventArgs e)
         {
-			FoodShopButton.Image = pp3.Properties.Resources.base_food_a;
-		}
+            FoodShopButton.Image = pp3.Properties.Resources.base_food_a;
+        }
 
         private void FishShopButton_MouseEnter(object sender, EventArgs e)
         {
-			FishShopButton.Image = pp3.Properties.Resources.base_shop_a;
-		}
+            FishShopButton.Image = pp3.Properties.Resources.base_shop_a;
+        }
 
         private void FishShopButton_MouseLeave(object sender, EventArgs e)
         {
-			FishShopButton.Image = pp3.Properties.Resources.base_shop_d;
-		}
-
-        private void FishShopButton_MouseClick(object sender, MouseEventArgs e)
-        {
-			var myForm = new FishshopForm();
-            
-       
-            
-            
-
-            
-
-
-
-
-            myForm.Show();
-
-
-
+            FishShopButton.Image = pp3.Properties.Resources.base_shop_d;
         }
 
         private void FoodShopButton_MouseLeave(object sender, EventArgs e)
         {
-			FoodShopButton.Image = pp3.Properties.Resources.base_food_d;
-		}
+            FoodShopButton.Image = pp3.Properties.Resources.base_food_d;
+        }
 
         private void JunkShopButton_MouseEnter(object sender, EventArgs e)
         {
-			JunkShopButton.Image = pp3.Properties.Resources.base_flea_a;
+            JunkShopButton.Image = pp3.Properties.Resources.base_flea_a;
 
         }
 
@@ -209,6 +184,18 @@ namespace pp3
         private void CarButton_MouseLeave(object sender, EventArgs e)
         {
             CarButton.Image = pp3.Properties.Resources.store_car_d;
+        }
+
+        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.currentPlayer.playerInventory.count.ToString());
+        }
+
+        private void BaseButton_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

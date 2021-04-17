@@ -1,22 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+
+
+using System;
 
 namespace pp3
 {
+    [Serializable]
     public class Player
     {
-        
+
         private int id { get; set; }
         private string player_name { get; set; }
         private int rank { get; set; } = 0;
 
+        public Inventory playerInventory;
+        public Backpack backpack;
 
+        public Player(string player_name)
+        {
+            this.player_name = player_name;
+            playerInventory = new Inventory();
+            backpack = new Backpack();
+        }
 
-        Inventory playerInventory;
-        Backpack backpack;
+        
 
 
 

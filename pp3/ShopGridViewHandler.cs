@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Collections.Generic;
 using System.Globalization;
+using System.Windows.Forms;
 
 namespace pp3
 {
     public static class ShopGridViewHandler
 
     {
-        
-    
-        public static void selectRods(Rod.ROD_TYPE type, bool unique, DataGridView datagrid )
+
+
+        public static void selectRods(Rod.ROD_TYPE type, bool unique, DataGridView datagrid)
         {
 
             ObjectInitializer init = new ObjectInitializer();
@@ -38,8 +34,8 @@ namespace pp3
             {
                 datagrid.DataSource = selectedRods;
             }
-            
-            
+
+
 
             if (datagrid.Columns.Count == 0)
             {
@@ -63,9 +59,9 @@ namespace pp3
                 datagrid.Columns.Add(column3);
 
             }
-            
-            
-          
+
+
+
         }
 
 
@@ -75,14 +71,14 @@ namespace pp3
             ObjectInitializer init = new ObjectInitializer();
             init.InitializeAllReels();
             var reels = init.getAllReels();
-            
+
             List<Reel> selectedReels = reels.FindAll(e => e.getUniqueness() == unique);
-            
+
             datagrid.Columns.Clear();
             datagrid.AutoGenerateColumns = false;
             datagrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             datagrid.DataSource = selectedReels;
-           
+
 
 
             if (datagrid.Columns.Count == 0)
@@ -108,11 +104,11 @@ namespace pp3
 
         }
 
-       
 
-           
+
+
 
     }
 
-   
+
 }

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace pp3
+﻿namespace pp3
 {
     public class Reel : Object
     {
-        public  int id;
+        public int id;
         public string name { get; set; }
         public int power { get; set; }
         public bool unique { get; set; }

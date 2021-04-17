@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Windows.Forms;
+﻿using System.Collections.Generic;
 
 namespace pp3
 {
@@ -18,7 +12,7 @@ namespace pp3
 
         protected List<Rod> gameRods = new List<Rod>();
 
-        public bool unique { get;  } = false;
+        public bool unique { get; } = false;
 
         private ROD_TYPE type { get; set; } = ROD_TYPE.POPLAVOK;
         private int id { get; set; }
@@ -35,10 +29,10 @@ namespace pp3
             return type;
         }
 
-        public Rod(string name, int maxWeight, int price, ROD_TYPE type, bool unique )
+        public Rod(string name, int maxWeight, int price, ROD_TYPE type, bool unique)
         {
             this.rodName = name;
-            
+
             this.maxWeight = maxWeight;
             this.price = price;
             this.type = type;
@@ -47,7 +41,7 @@ namespace pp3
 
         public void initializeRods()
         {
-            
+
 
         }
 
@@ -59,5 +53,5 @@ namespace pp3
 
     }
 
-   
+
 }

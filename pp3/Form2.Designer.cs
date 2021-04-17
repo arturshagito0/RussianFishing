@@ -37,6 +37,8 @@ namespace pp3
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.closeFormButton = new System.Windows.Forms.PictureBox();
+            this.buyButton = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.spinningButton = new System.Windows.Forms.PictureBox();
             this.uniqueRodButton = new System.Windows.Forms.PictureBox();
@@ -64,6 +66,8 @@ namespace pp3
             this.rodLabel = new System.Windows.Forms.Label();
             this.RodButton = new System.Windows.Forms.PictureBox();
             this.MainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closeFormButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buyButton)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spinningButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uniqueRodButton)).BeginInit();
@@ -85,6 +89,8 @@ namespace pp3
             // MainPanel
             // 
             this.MainPanel.BackgroundImage = global::pp3.Properties.Resources.layer;
+            this.MainPanel.Controls.Add(this.closeFormButton);
+            this.MainPanel.Controls.Add(this.buyButton);
             this.MainPanel.Controls.Add(this.panel1);
             this.MainPanel.Controls.Add(this.cormLabel);
             this.MainPanel.Controls.Add(this.baitLabel);
@@ -110,6 +116,32 @@ namespace pp3
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(849, 712);
             this.MainPanel.TabIndex = 0;
+            // 
+            // closeFormButton
+            // 
+            this.closeFormButton.BackColor = System.Drawing.Color.Transparent;
+            this.closeFormButton.Image = global::pp3.Properties.Resources.exit_d1;
+            this.closeFormButton.Location = new System.Drawing.Point(807, 3);
+            this.closeFormButton.Name = "closeFormButton";
+            this.closeFormButton.Size = new System.Drawing.Size(30, 30);
+            this.closeFormButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.closeFormButton.TabIndex = 27;
+            this.closeFormButton.TabStop = false;
+            this.closeFormButton.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            // 
+            // buyButton
+            // 
+            this.buyButton.BackColor = System.Drawing.Color.Transparent;
+            this.buyButton.Image = global::pp3.Properties.Resources.buy_d1;
+            this.buyButton.Location = new System.Drawing.Point(345, 595);
+            this.buyButton.Name = "buyButton";
+            this.buyButton.Size = new System.Drawing.Size(90, 29);
+            this.buyButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.buyButton.TabIndex = 26;
+            this.buyButton.TabStop = false;
+            this.buyButton.Click += new System.EventHandler(this.buyButton_Click);
+            this.buyButton.MouseEnter += new System.EventHandler(this.buyButton_MouseEnter);
+            this.buyButton.MouseLeave += new System.EventHandler(this.buyButton_MouseLeave);
             // 
             // panel1
             // 
@@ -165,7 +197,7 @@ namespace pp3
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(184)))));
             dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(184)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(184)))));
             dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
@@ -174,7 +206,7 @@ namespace pp3
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(184)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -330,7 +362,7 @@ namespace pp3
             this.MaxWeight.AutoSize = true;
             this.MaxWeight.BackColor = System.Drawing.Color.Transparent;
             this.MaxWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaxWeight.Location = new System.Drawing.Point(325, 482);
+            this.MaxWeight.Location = new System.Drawing.Point(290, 465);
             this.MaxWeight.Name = "MaxWeight";
             this.MaxWeight.Size = new System.Drawing.Size(0, 20);
             this.MaxWeight.TabIndex = 12;
@@ -341,7 +373,7 @@ namespace pp3
             this.Price.AutoSize = true;
             this.Price.BackColor = System.Drawing.Color.Transparent;
             this.Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Price.Location = new System.Drawing.Point(325, 536);
+            this.Price.Location = new System.Drawing.Point(290, 501);
             this.Price.Name = "Price";
             this.Price.Size = new System.Drawing.Size(0, 20);
             this.Price.TabIndex = 11;
@@ -351,7 +383,8 @@ namespace pp3
             this.Description.AutoSize = true;
             this.Description.BackColor = System.Drawing.Color.Transparent;
             this.Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Description.Location = new System.Drawing.Point(325, 432);
+            this.Description.Location = new System.Drawing.Point(290, 430);
+            this.Description.MaximumSize = new System.Drawing.Size(0, 50);
             this.Description.Name = "Description";
             this.Description.Size = new System.Drawing.Size(0, 20);
             this.Description.TabIndex = 10;
@@ -361,10 +394,12 @@ namespace pp3
             this.NameOfItem.AutoSize = true;
             this.NameOfItem.BackColor = System.Drawing.Color.Transparent;
             this.NameOfItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameOfItem.Location = new System.Drawing.Point(323, 383);
+            this.NameOfItem.Location = new System.Drawing.Point(289, 383);
             this.NameOfItem.Name = "NameOfItem";
+            this.NameOfItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.NameOfItem.Size = new System.Drawing.Size(0, 29);
             this.NameOfItem.TabIndex = 9;
+            this.NameOfItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LineButton
             // 
@@ -469,11 +504,14 @@ namespace pp3
             this.ClientSize = new System.Drawing.Size(849, 712);
             this.Controls.Add(this.MainPanel);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FishshopForm";
             this.Text = "FishShopForm";
             this.Load += new System.EventHandler(this.FishshopForm_Load);
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closeFormButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buyButton)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spinningButton)).EndInit();
@@ -525,5 +563,7 @@ namespace pp3
         private System.Windows.Forms.PictureBox normalReelButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox uniqueReelButton;
+        private System.Windows.Forms.PictureBox buyButton;
+        private System.Windows.Forms.PictureBox closeFormButton;
     }
 }

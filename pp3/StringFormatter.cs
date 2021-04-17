@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace pp3
 {
-    public  class StringFormatter
+    public class StringFormatter
     {
         public enum FORMAT_KIND
         {
@@ -19,7 +16,7 @@ namespace pp3
 
         }
 
-        public  string decimalFormat(string str, FORMAT_KIND kind)
+        public string decimalFormat(string str, FORMAT_KIND kind)
         {
             char[] reversed_chars = str.ToCharArray();
             Array.Reverse(reversed_chars);
@@ -34,7 +31,7 @@ namespace pp3
                 {
                     strb.Append(" ");
                     strb.Append(reversed_chars[count]);
-                   
+
                 }
 
                 else
@@ -65,10 +62,11 @@ namespace pp3
                         break;
                     }
 
-                default: {
+                default:
+                    {
                         break;
                     }
-               
+
             }
 
             string final_string = new String(aux) + suffix;

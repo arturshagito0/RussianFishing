@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace pp3
 {
-    public class  ShopAssociation <T>
+    public class ShopAssociation<T>
 
     {
         List<T> leftButtons;

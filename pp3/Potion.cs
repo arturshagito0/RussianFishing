@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace pp3
+﻿namespace pp3
 {
     class Potion : Object
     {
@@ -16,8 +10,8 @@ namespace pp3
 
         private string name;
         private int id;
-        
-        
+
+
 
     }
 }

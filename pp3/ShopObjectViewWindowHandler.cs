@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -14,9 +11,9 @@ namespace pp3
         public static void DisplayItem(DataGridView datagrid, Object selectedItem, List<Label> controls, PictureBox picturebox)
         {
 
-            
+
             Type member = datagrid.DataSource.GetType().GetGenericArguments()[0];
-            
+
             if (member == typeof(Rod))
             {
                 DisplayRod((Rod)selectedItem);
@@ -32,32 +29,25 @@ namespace pp3
             {
                 picturebox.Image = null;
                 controls[1].Text = "Чем мощнее катушка тем легче вытащить рыбу";
-                Image im = Image.FromFile("ReelImages/Chartel.png");
 
-
-
-                picturebox.Image = im;
-
-
-
-
-
+                picturebox.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(reel.name);
+                
 
                 controls[0].Text = reel.name;
-                
+
                 controls[2].Text = $"Мощность: {reel.power}%";
 
                 StringFormatter sf = new StringFormatter();
                 controls[3].Text = $"Цена: {sf.decimalFormat(reel.price.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
 
-               
-                
+
+
             }
 
 
 
 
-             void DisplayRod(Rod selectedRod)
+            void DisplayRod(Rod selectedRod)
             {
                 if (selectedRod.getRodType() == Rod.ROD_TYPE.POPLAVOK)
                 {
@@ -80,7 +70,7 @@ namespace pp3
                 StringFormatter formatter = new StringFormatter();
 
 
-               
+
                 picturebox.Image = im;
 
                 controls[3].Text = $"Цена: {formatter.decimalFormat(selectedRod.price.ToString(), c)}";
@@ -92,6 +82,6 @@ namespace pp3
 
         }
 
-        
+
     }
 }
