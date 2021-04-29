@@ -9,12 +9,12 @@ namespace pp3
     {
        
 
-        public static void selectRods(Rod.ROD_TYPE type, bool unique, DataGridView datagrid)
+        public static void selectRods(Rod.ROD_TYPE type, bool unique, DataGridView datagrid, ObjectInitializer initializer)
         {
 
 
 
-            var rods = ObjectInitializer.InitializeAllRods();
+            var rods = initializer.Rods;
 
 
             List<Rod> uniqueRods = rods.FindAll(e => e.getUniqueness() == unique);
@@ -64,11 +64,11 @@ namespace pp3
         }
 
 
-        public static void selectReels(bool unique, DataGridView datagrid)
+        public static void selectReels(bool unique, DataGridView datagrid, ObjectInitializer initializer)
 
         {
 
-            var reels = ObjectInitializer.InitializeAllReels();
+            var reels = initializer.Reels;
 
             List<Reel> selectedReels = reels.FindAll(e => e.getUniqueness() == unique);
 

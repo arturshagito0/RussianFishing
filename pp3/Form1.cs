@@ -6,22 +6,23 @@ using System.Collections.Generic;
 namespace pp3
 {
     public partial class MainForm : Form
+
+
     {
-        public FishshopForm myForm = new FishshopForm();
+        public ObjectInitializer initializer = new ObjectInitializer();
+        public FishshopForm myForm;
         public Player currentPlayer;
         public System.Media.SoundPlayer onClickSound = new System.Media.SoundPlayer(Properties.ReelResouce.click1);
         public MainForm(Player player)
         {
+            myForm = new FishshopForm(initializer);
             currentPlayer = player;
             InitializeComponent();
             myForm.OnItemBought += MyForm_DataAvailable;
             
         }
 
-        private void CannotBeBeought(object sender, EventArgs e)
-        {
-            
-        }
+       
 
         private void MyForm_DataAvailable(object sender, EventArgs e)
         {
@@ -238,7 +239,7 @@ namespace pp3
         private void TravelButton_Click(object sender, EventArgs e)
         {
 
-            List<Base> bas = ObjectInitializer.InitializeAllMaps();
+            List<Base> bas = initializer.Maps;
             MessageBox.Show(bas.Count.ToString() + " - number of bases");
 
         }

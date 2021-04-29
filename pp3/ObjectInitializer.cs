@@ -6,10 +6,26 @@ using System.Windows.Forms;
 namespace pp3
 {
 
-    public static class ObjectInitializer
+    
+
+    public class ObjectInitializer
     {
-        
-        public static List<Rod> InitializeAllRods()
+
+
+        public List<Rod> Rods { get; set; }
+        public List<Reel> Reels { get; set; }
+        public List<Base> Maps { get; set; }
+
+
+        public ObjectInitializer()
+        {
+            this.Rods = InitializeAllRods();
+            this.Reels = InitializeAllReels();
+            this.Maps = InitializeAllMaps();
+        }
+
+
+        private static List<Rod> InitializeAllRods()
         {
             List<Rod> gamerRods = new List<Rod>();
             Database1DataSet1TableAdapters.RodTableTableAdapter adapter = new Database1DataSet1TableAdapters.RodTableTableAdapter();
@@ -30,7 +46,7 @@ namespace pp3
             return gamerRods;
         }
 
-        public static List<Reel> InitializeAllReels()
+        private static List<Reel> InitializeAllReels()
         {
             List<Reel> gameReels = new List<Reel>();
             Database1DataSet1TableAdapters.ReelTableTableAdapter adapter = new Database1DataSet1TableAdapters.ReelTableTableAdapter();
@@ -50,7 +66,7 @@ namespace pp3
 
         }
 
-        public static List<Base> InitializeAllMaps()
+        private static List<Base> InitializeAllMaps()
         {
             List<Base> bases = new List<Base>();
 

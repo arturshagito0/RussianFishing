@@ -35,8 +35,8 @@ namespace pp3
         {
             // TODO: This line of code loads data into the 'database1DataSet1.Maps' table. You can move, or remove it, as needed.
             // mapAdapter = new Database1DataSet1TableAdapters.MapsTableAdapter();
-            dataGridView1.AutoGenerateColumns = true;
-            dataGridView1.DataSource = ObjectInitializer.InitializeAllMaps();
+            //dataGridView1.AutoGenerateColumns = true;
+            //dataGridView1.DataSource = ObjectInitializer.InitializeAllMaps();
 
         }
 

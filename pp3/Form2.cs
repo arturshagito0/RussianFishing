@@ -8,7 +8,8 @@ namespace pp3
 {
     public partial class FishshopForm : Form
     {
-        
+        private ObjectInitializer initializer;
+
         public List<Label> displayedLabels;
         public List<PictureBox> leftButtons;
         public List<Label> leftLabels;
@@ -16,9 +17,9 @@ namespace pp3
         
         public Object selectedItem;
 
-        public FishshopForm()
+        public FishshopForm(ObjectInitializer initializer)
         {
-
+            this.initializer = initializer;
             Inventory.OnCannotBeBought += CannotBeBought;
             Inventory.OnCanBeBought += CanBeBought;
             Load += RodButton_Click;
@@ -141,7 +142,7 @@ namespace pp3
         {
             poplavokButton.Image = pp3.Properties.Resources.cat_popl_s;
             Load += spinningButton_MouseLeave;
-            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, false, dataGridView1);
+            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, false, dataGridView1, initializer);
 
 
 
@@ -159,7 +160,7 @@ namespace pp3
 
 
 
-            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.SPINNING, false, dataGridView1);
+            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.SPINNING, false, dataGridView1, initializer);
 
 
         }
@@ -184,7 +185,7 @@ namespace pp3
         private void uniqueButton_Click(object sender, EventArgs e)
         {
             uniqueRodButton.Image = Properties.Resources.cat_uniq_s;
-            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, true, dataGridView1);
+            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, true, dataGridView1, initializer);
         }
 
         private void uniqueButton_MouseEnter(object sender, EventArgs e)
@@ -227,7 +228,7 @@ namespace pp3
         private void normalReelButton_Click(object sender, EventArgs e)
         {
             normalReelButton.Image = Properties.Resources.cat_ordin_s;
-            ShopGridViewHandler.selectReels(false, dataGridView1);
+            ShopGridViewHandler.selectReels(false, dataGridView1, initializer);
 
         }
 
@@ -245,7 +246,7 @@ namespace pp3
         private void uniqueReelButton_Click(object sender, EventArgs e)
         {
             uniqueReelButton.Image = Properties.Resources.cat_uniq_s;
-            ShopGridViewHandler.selectReels(true, dataGridView1);
+            ShopGridViewHandler.selectReels(true, dataGridView1, initializer);
         }
 
         private void uniqueReelButton_MouseEnter(object sender, EventArgs e)
