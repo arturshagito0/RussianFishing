@@ -1,26 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace pp3
 {
 
-
-    class ObjectInitializer
+    public static class ObjectInitializer
     {
-        private List<Rod> gamerRods;
-        private List<Reel> gameReels;
-        private List<Line> gameLines;
-
-
-        public ObjectInitializer()
+        
+        public static List<Rod> InitializeAllRods()
         {
-            gamerRods = new List<Rod>();
-            gameReels = new List<Reel>();
-        }
-
-        public void InitializeAllRods()
-        {
+            List<Rod> gamerRods = new List<Rod>();
             Database1DataSet1TableAdapters.RodTableTableAdapter adapter = new Database1DataSet1TableAdapters.RodTableTableAdapter();
+            
             foreach (System.Data.DataRow rod in adapter.GetData().Rows)
             {
 
@@ -33,10 +26,13 @@ namespace pp3
                 gamerRods.Add(new Rod(name, maxWeight, price, ty, unique));
 
             }
+
+            return gamerRods;
         }
 
-        public void InitializeAllReels()
+        public static List<Reel> InitializeAllReels()
         {
+            List<Reel> gameReels = new List<Reel>();
             Database1DataSet1TableAdapters.ReelTableTableAdapter adapter = new Database1DataSet1TableAdapters.ReelTableTableAdapter();
 
             foreach (System.Data.DataRow reel in adapter.GetData().Rows)
@@ -50,21 +46,65 @@ namespace pp3
                 gameReels.Add(new Reel(name, power, price, unique));
             }
 
+            return gameReels;
+
         }
 
-
-
-        public List<Reel> getAllReels()
+        public static List<Base> InitializeAllMaps()
         {
-            return this.gameReels;
+            List<Base> bases = new List<Base>();
+
+
+            Database1DataSet1TableAdapters.MapsTableAdapter adapter = new Database1DataSet1TableAdapters.MapsTableAdapter();
+
+            foreach (System.Data.DataRow map in adapter.GetData().Rows)
+
+            {
+
+                Database1DataSet1TableAdapters.LocationTableAdapter locAdapter = new  Database1DataSet1TableAdapters.LocationTableAdapter();
+
+                List<Location> locs = new List<Location>();
+
+                foreach (System.Data.DataRow loc in locAdapter.GetByBaseID((int)map["ID"]).Rows)
+                {
+
+                    string path = Application.StartupPath + @"\Locations\" + ((string)loc["Image"]).Remove(0, 12);
+                    
+                    Location l = new Location
+                    {
+                        locationNumer = (int)loc["Location Number"],
+                        displayName = (string)loc["Display Name"],
+                        locationImage = Image.FromFile(path)
+
+
+                    };
+
+                    locs.Add(l);
+
+                }
+
+
+                Base newBase = new Base
+                {
+                    id = (int)map["ID"],
+                    displayName = (string)map["Display name"],
+                    mapName = (string)map["Map name"],
+                    rank = (int)map["Rank"],
+                    karma = (int)map["Karma"],
+                    price = (int)map["Price"],
+                    locations = locs
+
+                   
+                };
+
+                bases.Add(newBase);
+            }
+
+
+
+            MessageBox.Show("Done!");
+                return bases;
         }
-
-        public List<Rod> getAllRods()
-        {
-            return this.gamerRods;
-        }
-
-
 
     }
 }

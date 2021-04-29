@@ -50,7 +50,10 @@ namespace pp3
             return this.gameRods;
         }
 
-
+        int Object.getPrice()
+        {
+            return this.price;
+        }
     }
 
 

@@ -7,15 +7,14 @@ namespace pp3
     public static class ShopGridViewHandler
 
     {
-
+       
 
         public static void selectRods(Rod.ROD_TYPE type, bool unique, DataGridView datagrid)
         {
 
-            ObjectInitializer init = new ObjectInitializer();
-            init.InitializeAllRods();
 
-            var rods = init.getAllRods();
+
+            var rods = ObjectInitializer.InitializeAllRods();
 
 
             List<Rod> uniqueRods = rods.FindAll(e => e.getUniqueness() == unique);
@@ -68,9 +67,8 @@ namespace pp3
         public static void selectReels(bool unique, DataGridView datagrid)
 
         {
-            ObjectInitializer init = new ObjectInitializer();
-            init.InitializeAllReels();
-            var reels = init.getAllReels();
+
+            var reels = ObjectInitializer.InitializeAllReels();
 
             List<Reel> selectedReels = reels.FindAll(e => e.getUniqueness() == unique);
 

@@ -1,10 +1,17 @@
 ﻿namespace pp3
 {
-    class Line
+    class Line : Object
     {
-        private int id;
-        private string name;
-        private int maxWeight;
-        private int length = 150;
+        private int id { get; set; }
+        private string name { get; set; }
+        private int maxWeight { get; set; }
+        private int length { get; set; } = 150;
+
+        private int price { get; set; }
+
+        int Object.getPrice()
+        {
+            return this.price;
+        }
     }
 }

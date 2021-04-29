@@ -24,5 +24,9 @@
             return this.unique;
         }
 
+        int Object.getPrice()
+        {
+            return this.price;
+        }
     }
 }

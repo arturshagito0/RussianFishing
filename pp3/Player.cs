@@ -14,8 +14,13 @@ namespace pp3
         private string player_name { get; set; }
         private int rank { get; set; } = 0;
 
+        Base currentBase { get; set; } 
+        Location currentLocation { get; set; }
+
         public Inventory playerInventory;
         public Backpack backpack;
+
+        public long money { get; set; } = 100000000000000;
 
         public Player(string player_name)
         {

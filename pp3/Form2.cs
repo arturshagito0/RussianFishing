@@ -8,7 +8,7 @@ namespace pp3
 {
     public partial class FishshopForm : Form
     {
-        Player currentPlayer;
+        
         public List<Label> displayedLabels;
         public List<PictureBox> leftButtons;
         public List<Label> leftLabels;
@@ -19,8 +19,8 @@ namespace pp3
         public FishshopForm()
         {
 
-           
-
+            Inventory.OnCannotBeBought += CannotBeBought;
+            Inventory.OnCanBeBought += CanBeBought;
             Load += RodButton_Click;
 
 
@@ -46,6 +46,18 @@ namespace pp3
 
 
 
+        }
+
+        private void CanBeBought(object sender, EventArgs e)
+        {
+            
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.ReelResouce.kassa);
+            player.Play();
+        }
+
+        private void CannotBeBought(object sender, String e)
+        {
+            MessageBox.Show(e);
         }
 
         private void labelDisabler(PictureBox picture, Label label, List<PictureBox> buttons)
@@ -152,15 +164,7 @@ namespace pp3
 
         }
 
-        private string changeLetter(string s, char c)
-        {
-            char[] chars = s.ToCharArray();
-            chars[s.Length - 1] = c;
-            return new string(chars);
-        }
-
-
-
+       
         private void poplavokButton_MouseLeave(object sender, EventArgs e)
         {
             poplavokButton.Image = Properties.Resources.cat_popl_d;
@@ -206,7 +210,7 @@ namespace pp3
 
         private void LineButton_Click(object sender, EventArgs e)
         {
-            // labelDisabler(LineButton, lineLabel, );
+            
 
 
         }
@@ -259,24 +263,25 @@ namespace pp3
         
         protected virtual void ItemIsBought(EventArgs e)
         {
+            
             EventHandler eh = OnItemBought;
             if (eh != null)
             {
                 eh(this, e);
+                
             }
         }
 
-
+        public static EventHandler<Player> PlayerIsNeeded;
 
         private void buyButton_Click(object sender, EventArgs e)
         {
             buyButton.Image = Properties.Resources.buy_a;
             ItemIsBought(null);
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.ReelResouce.kassa);
-            player.Play();
-            
-            
-            
+
+
+
+
 
         }
 

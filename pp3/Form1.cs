@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-
+using System.IO;
+using System.Collections.Generic;
 
 namespace pp3
 {
@@ -14,7 +15,12 @@ namespace pp3
             currentPlayer = player;
             InitializeComponent();
             myForm.OnItemBought += MyForm_DataAvailable;
+            
+        }
 
+        private void CannotBeBeought(object sender, EventArgs e)
+        {
+            
         }
 
         private void MyForm_DataAvailable(object sender, EventArgs e)
@@ -22,7 +28,9 @@ namespace pp3
             FishshopForm child = sender as FishshopForm;
             if (child != null)
             {
-                this.currentPlayer.playerInventory.addItem(child.selectedItem);
+                
+                this.currentPlayer.playerInventory.addItem(child.selectedItem, currentPlayer);
+                
 
             }
         }
@@ -39,12 +47,12 @@ namespace pp3
         private void FishShopButton_MouseClick(object sender, MouseEventArgs e)
         {
             myForm.Show();
-            onClickSound.Play();
-            MessageBox.Show(Application.StartupPath);
-            Properties.Loc
+            onClickSound.Play();            
         }
 
-       
+
+        #region MouseHover
+
         private void FoodShopButton_MouseEnter(object sender, EventArgs e)
         {
             FoodShopButton.Image = pp3.Properties.Resources.base_food_a;
@@ -186,16 +194,68 @@ namespace pp3
             CarButton.Image = pp3.Properties.Resources.store_car_d;
         }
 
-        
+        #endregion 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(this.currentPlayer.playerInventory.count.ToString());
+            
         }
 
         private void BaseButton_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.currentPlayer.playerInventory.count.ToString() + "   " + this.currentPlayer.money);
+            //DatabaseForm dbForm = new DatabaseForm();
+            //dbForm.Show();
+           
+        }
+
+        private void MainForm_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void MiddlePanel_MouseClick(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+        private void MainForm_MouseClick(object sender, MouseEventArgs e)
+        {
+           
+
+        }
+
+        private void BasePanel_MouseClick(object sender, MouseEventArgs e)
+        {
+            button1.Text = (e.X.ToString() + "    " +  (500 - e.Y).ToString());
+        }
+
+        private void TravelButton_Click(object sender, EventArgs e)
+        {
+
+            List<Base> bas = ObjectInitializer.InitializeAllMaps();
+            MessageBox.Show(bas.Count.ToString() + " - number of bases");
+
+        }
+
+        private void FoodShopButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void FishShopButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CurrentBase_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

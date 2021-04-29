@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -81,6 +81,7 @@
   <ItemGroup>
     <Compile Include="Backpack.cs" />
     <Compile Include="Bait.cs" />
+    <Compile Include="Base.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="Database1DataSet.cs">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
@@ -89,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet1.cs">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Database1DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -105,6 +109,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseForm.Designer.cs">
+      <DependentUpon>DatabaseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DrawingControl.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -119,6 +129,13 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Hook.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="LocationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationsForm.Designer.cs">
+      <DependentUpon>LocationsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ObjectInitializer.cs" />
     <Compile Include="Home.cs" />
     <Compile Include="Initializer.cs" />
@@ -137,10 +154,18 @@
     </Compile>
     <Compile Include="Reel.cs" />
     <Compile Include="Rod.cs" />
-    <Compile Include="ShopAssociation.cs" />
     <Compile Include="ShopGridViewHandler.cs" />
     <Compile Include="ShopObjectViewWindowHandler.cs" />
     <Compile Include="StringFormatter.cs" />
+    <Compile Include="TravelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelForm.Designer.cs">
+      <DependentUpon>TravelForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DatabaseForm.resx">
+      <DependentUpon>DatabaseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +180,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelForm.resx">
+      <DependentUpon>TravelForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
@@ -623,27 +651,71 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
-    <Content Include="Locations\ahtung\index.jpg" />
-    <Content Include="Locations\ahtung\Loc10\Scene.jpg" />
-    <Content Include="Locations\ahtung\Loc11\Scene.jpg" />
-    <EmbeddedResource Include="Locations\ahtung\Loc1\Scene.jpg" />
-    <Content Include="Locations\ahtung\Loc2\Scene.jpg" />
-    <Content Include="Locations\ahtung\Loc3\Scene.jpg" />
-    <Content Include="Locations\ahtung\Loc4\Scene.jpg" />
-    <Content Include="Locations\ahtung\Loc5\Scene.jpg" />
-    <Content Include="Locations\ahtung\Loc6\Scene.jpg" />
-    <Content Include="Locations\ahtung\Loc7\Scene.jpg" />
-    <Content Include="Locations\ahtung\Loc8\Scene.jpg" />
+    <Content Include="Locations\ahtung\index.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\index.jpg" />
+    <None Include="Resources\map_de.png" />
+    <None Include="Resources\podmoskovie.jpg" />
+    <None Include="Resources\layer1.jpg" />
+    <Content Include="Locations\ahtung\Loc10\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\ahtung\Loc11\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\ahtung\Loc1\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\ahtung\Loc2\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\ahtung\Loc3\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\ahtung\Loc4\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\ahtung\Loc5\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\ahtung\Loc6\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\ahtung\Loc7\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\ahtung\Loc8\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Locations\ahtung\Loc9\Scene.jpg" />
-    <Content Include="Locations\akadia\index.jpg" />
-    <Content Include="Locations\akadia\Loc1\Scene.jpg" />
-    <Content Include="Locations\akadia\Loc2\Scene.jpg" />
-    <Content Include="Locations\akadia\Loc3\Scene.jpg" />
-    <Content Include="Locations\akadia\Loc4\Scene.jpg" />
-    <Content Include="Locations\akadia\Loc5\Scene.jpg" />
-    <Content Include="Locations\akadia\Loc6\Scene.jpg" />
-    <Content Include="Locations\akadia\Loc7\Scene.jpg" />
-    <Content Include="Locations\akadia\Loc8\Scene.jpg" />
+    <Content Include="Locations\akadia\index.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\akadia\Loc1\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\akadia\Loc2\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\akadia\Loc3\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\akadia\Loc4\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\akadia\Loc5\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\akadia\Loc6\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\akadia\Loc7\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Locations\akadia\Loc8\Scene.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Locations\alexandra\index.jpg" />
     <Content Include="Locations\alexandra\Loc10\Scene.jpg" />
     <Content Include="Locations\alexandra\Loc11\Scene.jpg" />

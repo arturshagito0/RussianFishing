@@ -30,10 +30,6 @@ namespace pp3
 		private void InitializeComponent()
 		{
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.BarPanel = new System.Windows.Forms.Panel();
-            this.MessagePanel = new System.Windows.Forms.Panel();
-            this.ControlPanel = new System.Windows.Forms.Panel();
-            this.MiddlePanel = new System.Windows.Forms.Panel();
             this.InventoryPanel = new System.Windows.Forms.Panel();
             this.NotepadButton = new System.Windows.Forms.PictureBox();
             this.FoodButton = new System.Windows.Forms.PictureBox();
@@ -46,20 +42,21 @@ namespace pp3
             this.HomeButton = new System.Windows.Forms.PictureBox();
             this.BaseButton = new System.Windows.Forms.PictureBox();
             this.CurrentBase = new System.Windows.Forms.PictureBox();
+            this.BarPanel = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.MessagePanel = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.ControlPanel = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.MiddlePanel = new System.Windows.Forms.Panel();
             this.BasePanel = new System.Windows.Forms.Panel();
             this.SellFishButton = new System.Windows.Forms.PictureBox();
             this.TravelButton = new System.Windows.Forms.PictureBox();
             this.JunkShopButton = new System.Windows.Forms.PictureBox();
             this.FishShopButton = new System.Windows.Forms.PictureBox();
             this.FoodShopButton = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.MainPanel.SuspendLayout();
-            this.BarPanel.SuspendLayout();
-            this.MessagePanel.SuspendLayout();
-            this.ControlPanel.SuspendLayout();
-            this.MiddlePanel.SuspendLayout();
             this.InventoryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NotepadButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FoodButton)).BeginInit();
@@ -72,9 +69,13 @@ namespace pp3
             ((System.ComponentModel.ISupportInitialize)(this.HomeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BaseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CurrentBase)).BeginInit();
+            this.BarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.MessagePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.ControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.MiddlePanel.SuspendLayout();
             this.BasePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SellFishButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TravelButton)).BeginInit();
@@ -97,45 +98,6 @@ namespace pp3
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1022, 730);
             this.MainPanel.TabIndex = 0;
-            // 
-            // BarPanel
-            // 
-            this.BarPanel.AutoSize = true;
-            this.BarPanel.Controls.Add(this.pictureBox6);
-            this.BarPanel.Location = new System.Drawing.Point(0, 0);
-            this.BarPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.BarPanel.Name = "BarPanel";
-            this.BarPanel.Size = new System.Drawing.Size(5, 538);
-            this.BarPanel.TabIndex = 1;
-            // 
-            // MessagePanel
-            // 
-            this.MessagePanel.AutoSize = true;
-            this.MessagePanel.Controls.Add(this.pictureBox5);
-            this.MessagePanel.Location = new System.Drawing.Point(5, 0);
-            this.MessagePanel.Name = "MessagePanel";
-            this.MessagePanel.Size = new System.Drawing.Size(358, 61);
-            this.MessagePanel.TabIndex = 4;
-            // 
-            // ControlPanel
-            // 
-            this.ControlPanel.AutoSize = true;
-            this.ControlPanel.Controls.Add(this.pictureBox4);
-            this.ControlPanel.Enabled = false;
-            this.ControlPanel.Location = new System.Drawing.Point(363, 0);
-            this.ControlPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.ControlPanel.Name = "ControlPanel";
-            this.ControlPanel.Size = new System.Drawing.Size(447, 40);
-            this.ControlPanel.TabIndex = 2;
-            // 
-            // MiddlePanel
-            // 
-            this.MiddlePanel.AutoSize = true;
-            this.MiddlePanel.Controls.Add(this.BasePanel);
-            this.MiddlePanel.Location = new System.Drawing.Point(2, 35);
-            this.MiddlePanel.Name = "MiddlePanel";
-            this.MiddlePanel.Size = new System.Drawing.Size(803, 503);
-            this.MiddlePanel.TabIndex = 1;
             // 
             // InventoryPanel
             // 
@@ -285,6 +247,17 @@ namespace pp3
             this.CurrentBase.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.CurrentBase.TabIndex = 0;
             this.CurrentBase.TabStop = false;
+            this.CurrentBase.Click += new System.EventHandler(this.CurrentBase_Click);
+            // 
+            // BarPanel
+            // 
+            this.BarPanel.AutoSize = true;
+            this.BarPanel.Controls.Add(this.pictureBox6);
+            this.BarPanel.Location = new System.Drawing.Point(0, 0);
+            this.BarPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.BarPanel.Name = "BarPanel";
+            this.BarPanel.Size = new System.Drawing.Size(5, 538);
+            this.BarPanel.TabIndex = 1;
             // 
             // pictureBox6
             // 
@@ -297,6 +270,15 @@ namespace pp3
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
             // 
+            // MessagePanel
+            // 
+            this.MessagePanel.AutoSize = true;
+            this.MessagePanel.Controls.Add(this.pictureBox5);
+            this.MessagePanel.Location = new System.Drawing.Point(5, 0);
+            this.MessagePanel.Name = "MessagePanel";
+            this.MessagePanel.Size = new System.Drawing.Size(358, 61);
+            this.MessagePanel.TabIndex = 4;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -308,6 +290,17 @@ namespace pp3
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // ControlPanel
+            // 
+            this.ControlPanel.AutoSize = true;
+            this.ControlPanel.Controls.Add(this.pictureBox4);
+            this.ControlPanel.Enabled = false;
+            this.ControlPanel.Location = new System.Drawing.Point(363, 0);
+            this.ControlPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.ControlPanel.Name = "ControlPanel";
+            this.ControlPanel.Size = new System.Drawing.Size(447, 40);
+            this.ControlPanel.TabIndex = 2;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -318,6 +311,16 @@ namespace pp3
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
+            // 
+            // MiddlePanel
+            // 
+            this.MiddlePanel.AutoSize = true;
+            this.MiddlePanel.Controls.Add(this.BasePanel);
+            this.MiddlePanel.Location = new System.Drawing.Point(2, 35);
+            this.MiddlePanel.Name = "MiddlePanel";
+            this.MiddlePanel.Size = new System.Drawing.Size(803, 503);
+            this.MiddlePanel.TabIndex = 1;
+            this.MiddlePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MiddlePanel_MouseClick);
             // 
             // BasePanel
             // 
@@ -333,6 +336,7 @@ namespace pp3
             this.BasePanel.Name = "BasePanel";
             this.BasePanel.Size = new System.Drawing.Size(803, 503);
             this.BasePanel.TabIndex = 2;
+            this.BasePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.BasePanel_MouseClick);
             // 
             // SellFishButton
             // 
@@ -355,6 +359,7 @@ namespace pp3
             this.TravelButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.TravelButton.TabIndex = 5;
             this.TravelButton.TabStop = false;
+            this.TravelButton.Click += new System.EventHandler(this.TravelButton_Click);
             this.TravelButton.MouseEnter += new System.EventHandler(this.TravelButton_MouseEnter);
             this.TravelButton.MouseLeave += new System.EventHandler(this.TravelButton_MouseLeave);
             // 
@@ -379,6 +384,7 @@ namespace pp3
             this.FishShopButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.FishShopButton.TabIndex = 3;
             this.FishShopButton.TabStop = false;
+            this.FishShopButton.Click += new System.EventHandler(this.FishShopButton_Click);
             this.FishShopButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FishShopButton_MouseClick);
             this.FishShopButton.MouseEnter += new System.EventHandler(this.FishShopButton_MouseEnter);
             this.FishShopButton.MouseLeave += new System.EventHandler(this.FishShopButton_MouseLeave);
@@ -393,15 +399,26 @@ namespace pp3
             this.FoodShopButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.FoodShopButton.TabIndex = 2;
             this.FoodShopButton.TabStop = false;
+            this.FoodShopButton.Click += new System.EventHandler(this.FoodShopButton_Click);
             this.FoodShopButton.MouseEnter += new System.EventHandler(this.FoodShopButton_MouseEnter);
             this.FoodShopButton.MouseLeave += new System.EventHandler(this.FoodShopButton_MouseLeave);
-           
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(478, 148);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Update Database";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1022, 730);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.MainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -411,15 +428,10 @@ namespace pp3
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Реальная Русская Рыбалка 4.13";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.MainForm_Click);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
-            this.BarPanel.ResumeLayout(false);
-            this.BarPanel.PerformLayout();
-            this.MessagePanel.ResumeLayout(false);
-            this.MessagePanel.PerformLayout();
-            this.ControlPanel.ResumeLayout(false);
-            this.ControlPanel.PerformLayout();
-            this.MiddlePanel.ResumeLayout(false);
             this.InventoryPanel.ResumeLayout(false);
             this.InventoryPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NotepadButton)).EndInit();
@@ -434,9 +446,16 @@ namespace pp3
             ((System.ComponentModel.ISupportInitialize)(this.HomeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BaseButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CurrentBase)).EndInit();
+            this.BarPanel.ResumeLayout(false);
+            this.BarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.MessagePanel.ResumeLayout(false);
+            this.MessagePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.ControlPanel.ResumeLayout(false);
+            this.ControlPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.MiddlePanel.ResumeLayout(false);
             this.BasePanel.ResumeLayout(false);
             this.BasePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SellFishButton)).EndInit();
@@ -477,6 +496,7 @@ namespace pp3
         private System.Windows.Forms.PictureBox HomeButton;
         private System.Windows.Forms.PictureBox CarButton;
         private System.Windows.Forms.PictureBox TeamButton;
+        private System.Windows.Forms.Button button1;
     }
 }
 
