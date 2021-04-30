@@ -2,6 +2,8 @@
 using System.Windows.Forms;
 using System.IO;
 using System.Collections.Generic;
+using System.Threading;
+using System.Drawing;
 
 namespace pp3
 {
@@ -10,19 +12,39 @@ namespace pp3
 
     {
         public ObjectInitializer initializer = new ObjectInitializer();
-        public FishshopForm myForm;
+        public FishshopForm fishShopForm;
+        public TravelForm travelForm;
         public Player currentPlayer;
         public System.Media.SoundPlayer onClickSound = new System.Media.SoundPlayer(Properties.ReelResouce.click1);
         public MainForm(Player player)
         {
-            myForm = new FishshopForm(initializer);
+
+
+
+            fishShopForm = new FishshopForm(initializer);
+            travelForm = new TravelForm(player, initializer);
             currentPlayer = player;
+            currentPlayer.currentBase = initializer.Maps.Find(e => e.mapName == "houm");
+
             InitializeComponent();
-            myForm.OnItemBought += MyForm_DataAvailable;
+            fishShopForm.OnItemBought += MyForm_DataAvailable;
+            EventHandlers.OnCanBeBought += MoneyChanged;
+            EventHandlers.OnButtonClickSound += ButtonClickSound;
+            moneyLabel.Text = $"Деньги: {StringFormatter.decimalFormat(this.currentPlayer.money.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
             
         }
 
-       
+        private void ButtonClickSound(object sender, EventArgs e)
+            
+        {
+            
+            onClickSound.Play();
+        }
+
+        public void MoneyChanged(object sender, long money)
+        {
+            moneyLabel.Text = $"Деньги: {StringFormatter.decimalFormat(money.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
+        }
 
         private void MyForm_DataAvailable(object sender, EventArgs e)
         {
@@ -47,8 +69,9 @@ namespace pp3
         }
         private void FishShopButton_MouseClick(object sender, MouseEventArgs e)
         {
-            myForm.Show();
-            onClickSound.Play();            
+            EventHandlers.OnButtonClickSound?.Invoke  (null, null);
+            Thread.Sleep(150);
+            fishShopForm.Show();
         }
 
 
@@ -238,9 +261,8 @@ namespace pp3
 
         private void TravelButton_Click(object sender, EventArgs e)
         {
-
-            List<Base> bas = initializer.Maps;
-            MessageBox.Show(bas.Count.ToString() + " - number of bases");
+            
+            travelForm.Show();
 
         }
 
@@ -257,6 +279,26 @@ namespace pp3
         private void CurrentBase_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        Point lastPoint;
+        private void MainPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void MainPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.lastPoint = new Point(e.X, e.Y);
         }
     }
 }

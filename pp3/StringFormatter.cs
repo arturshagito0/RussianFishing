@@ -3,7 +3,7 @@ using System.Text;
 
 namespace pp3
 {
-    public class StringFormatter
+    public static class StringFormatter
     {
         public enum FORMAT_KIND
         {
@@ -11,12 +11,9 @@ namespace pp3
             WEIGHT
         }
 
-        public StringFormatter()
-        {
+        
 
-        }
-
-        public string decimalFormat(string str, FORMAT_KIND kind)
+        public static string decimalFormat(string str, FORMAT_KIND kind)
         {
             char[] reversed_chars = str.ToCharArray();
             Array.Reverse(reversed_chars);
@@ -64,6 +61,7 @@ namespace pp3
 
                 default:
                     {
+                        suffix = "";
                         break;
                     }
 

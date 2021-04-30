@@ -30,6 +30,14 @@ namespace pp3
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.karmaLabel = new System.Windows.Forms.Label();
+            this.rankLabel = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.goButton = new System.Windows.Forms.PictureBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.Базы = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.locationImage = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mostung = new System.Windows.Forms.PictureBox();
@@ -40,12 +48,12 @@ namespace pp3
             this.saratung = new System.Windows.Forms.PictureBox();
             this.volhov = new System.Windows.Forms.PictureBox();
             this.seligtung = new System.Windows.Forms.PictureBox();
+            this.rybtung = new System.Windows.Forms.PictureBox();
             this.pahra = new System.Windows.Forms.PictureBox();
             this.nevabelnoch = new System.Windows.Forms.PictureBox();
             this.pasha = new System.Windows.Forms.PictureBox();
             this.mecha = new System.Windows.Forms.PictureBox();
             this.volga = new System.Windows.Forms.PictureBox();
-            this.rybtung = new System.Windows.Forms.PictureBox();
             this.kolyma = new System.Windows.Forms.PictureBox();
             this.kuhtuy = new System.Windows.Forms.PictureBox();
             this.labinkir = new System.Windows.Forms.PictureBox();
@@ -103,6 +111,8 @@ namespace pp3
             this.missisipi = new System.Windows.Forms.PictureBox();
             this.akadia = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.locationImage)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mostung)).BeginInit();
@@ -113,12 +123,12 @@ namespace pp3
             ((System.ComponentModel.ISupportInitialize)(this.saratung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.volhov)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seligtung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rybtung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pahra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nevabelnoch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pasha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mecha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.volga)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rybtung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kolyma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kuhtuy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.labinkir)).BeginInit();
@@ -180,6 +190,13 @@ namespace pp3
             // panel1
             // 
             this.panel1.BackgroundImage = global::pp3.Properties.Resources.layer1;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.karmaLabel);
+            this.panel1.Controls.Add(this.rankLabel);
+            this.panel1.Controls.Add(this.priceLabel);
+            this.panel1.Controls.Add(this.nameLabel);
+            this.panel1.Controls.Add(this.goButton);
+            this.panel1.Controls.Add(this.listView1);
             this.panel1.Controls.Add(this.locationImage);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -187,6 +204,107 @@ namespace pp3
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(960, 596);
             this.panel1.TabIndex = 0;
+            this.panel1.PaddingChanged += new System.EventHandler(this.panel1_PaddingChanged);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::pp3.Properties.Resources.exit_d1;
+            this.pictureBox1.Location = new System.Drawing.Point(919, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
+            // 
+            // karmaLabel
+            // 
+            this.karmaLabel.AutoSize = true;
+            this.karmaLabel.BackColor = System.Drawing.Color.Transparent;
+            this.karmaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.karmaLabel.Location = new System.Drawing.Point(697, 555);
+            this.karmaLabel.Name = "karmaLabel";
+            this.karmaLabel.Size = new System.Drawing.Size(53, 20);
+            this.karmaLabel.TabIndex = 7;
+            this.karmaLabel.Text = "label4";
+            this.karmaLabel.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // rankLabel
+            // 
+            this.rankLabel.AutoSize = true;
+            this.rankLabel.BackColor = System.Drawing.Color.Transparent;
+            this.rankLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rankLabel.Location = new System.Drawing.Point(697, 526);
+            this.rankLabel.Name = "rankLabel";
+            this.rankLabel.Size = new System.Drawing.Size(53, 20);
+            this.rankLabel.TabIndex = 6;
+            this.rankLabel.Text = "label3";
+            // 
+            // priceLabel
+            // 
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.BackColor = System.Drawing.Color.Transparent;
+            this.priceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceLabel.Location = new System.Drawing.Point(399, 543);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(53, 20);
+            this.priceLabel.TabIndex = 5;
+            this.priceLabel.Text = "label2";
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.Location = new System.Drawing.Point(275, 437);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(70, 25);
+            this.nameLabel.TabIndex = 4;
+            this.nameLabel.Text = "label1";
+            // 
+            // goButton
+            // 
+            this.goButton.BackColor = System.Drawing.Color.Transparent;
+            this.goButton.Image = global::pp3.Properties.Resources.go_d;
+            this.goButton.Location = new System.Drawing.Point(287, 543);
+            this.goButton.Name = "goButton";
+            this.goButton.Size = new System.Drawing.Size(74, 29);
+            this.goButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.goButton.TabIndex = 3;
+            this.goButton.TabStop = false;
+            this.goButton.MouseEnter += new System.EventHandler(this.goButton_MouseEnter);
+            this.goButton.MouseLeave += new System.EventHandler(this.goButton_MouseLeave);
+            this.goButton.MouseHover += new System.EventHandler(this.goButton_MouseHover);
+            // 
+            // listView1
+            // 
+            this.listView1.AutoArrange = false;
+            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(185)))));
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Базы});
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.FullRowSelect = true;
+            this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(26, 43);
+            this.listView1.MultiSelect = false;
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(217, 372);
+            this.listView1.TabIndex = 2;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.listView1.Click += new System.EventHandler(this.listView1_Click);
+            // 
+            // Базы
+            // 
+            this.Базы.Text = "";
+            this.Базы.Width = 200;
             // 
             // locationImage
             // 
@@ -200,6 +318,7 @@ namespace pp3
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.BackgroundImage = global::pp3.Properties.Resources.podmoskovie;
             this.panel2.Controls.Add(this.mostung);
             this.panel2.Controls.Add(this.houm);
@@ -209,12 +328,12 @@ namespace pp3
             this.panel2.Controls.Add(this.saratung);
             this.panel2.Controls.Add(this.volhov);
             this.panel2.Controls.Add(this.seligtung);
+            this.panel2.Controls.Add(this.rybtung);
             this.panel2.Controls.Add(this.pahra);
             this.panel2.Controls.Add(this.nevabelnoch);
             this.panel2.Controls.Add(this.pasha);
             this.panel2.Controls.Add(this.mecha);
             this.panel2.Controls.Add(this.volga);
-            this.panel2.Controls.Add(this.rybtung);
             this.panel2.Controls.Add(this.kolyma);
             this.panel2.Controls.Add(this.kuhtuy);
             this.panel2.Controls.Add(this.labinkir);
@@ -356,6 +475,16 @@ namespace pp3
             this.seligtung.TabIndex = 62;
             this.seligtung.TabStop = false;
             // 
+            // rybtung
+            // 
+            this.rybtung.Image = global::pp3.Properties.Resources.map_de;
+            this.rybtung.Location = new System.Drawing.Point(106, 294);
+            this.rybtung.Name = "rybtung";
+            this.rybtung.Size = new System.Drawing.Size(17, 17);
+            this.rybtung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.rybtung.TabIndex = 56;
+            this.rybtung.TabStop = false;
+            // 
             // pahra
             // 
             this.pahra.Image = global::pp3.Properties.Resources.map_de;
@@ -405,16 +534,6 @@ namespace pp3
             this.volga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.volga.TabIndex = 57;
             this.volga.TabStop = false;
-            // 
-            // rybtung
-            // 
-            this.rybtung.Image = global::pp3.Properties.Resources.map_de;
-            this.rybtung.Location = new System.Drawing.Point(106, 287);
-            this.rybtung.Name = "rybtung";
-            this.rybtung.Size = new System.Drawing.Size(17, 17);
-            this.rybtung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.rybtung.TabIndex = 56;
-            this.rybtung.TabStop = false;
             // 
             // kolyma
             // 
@@ -818,6 +937,7 @@ namespace pp3
             // 
             // redsea
             // 
+            this.redsea.BackColor = System.Drawing.Color.Transparent;
             this.redsea.Image = global::pp3.Properties.Resources.map_de;
             this.redsea.Location = new System.Drawing.Point(641, 23);
             this.redsea.Name = "redsea";
@@ -988,7 +1108,12 @@ namespace pp3
             this.Name = "TravelForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "TravelForm";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TravelForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TravelForm_MouseMove);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.locationImage)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -1000,12 +1125,12 @@ namespace pp3
             ((System.ComponentModel.ISupportInitialize)(this.saratung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.volhov)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seligtung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rybtung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pahra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nevabelnoch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pasha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mecha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.volga)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rybtung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kolyma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kuhtuy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.labinkir)).EndInit();
@@ -1141,5 +1266,13 @@ namespace pp3
         private System.Windows.Forms.PictureBox greenland;
         private System.Windows.Forms.PictureBox missisipi;
         private System.Windows.Forms.PictureBox locationImage;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader Базы;
+        private System.Windows.Forms.PictureBox goButton;
+        private System.Windows.Forms.Label karmaLabel;
+        private System.Windows.Forms.Label rankLabel;
+        private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

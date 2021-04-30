@@ -37,6 +37,7 @@ namespace pp3
             this.BackbackButton = new System.Windows.Forms.PictureBox();
             this.TackleboxButton = new System.Windows.Forms.PictureBox();
             this.InfoPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.TeamButton = new System.Windows.Forms.PictureBox();
             this.CarButton = new System.Windows.Forms.PictureBox();
             this.HomeButton = new System.Windows.Forms.PictureBox();
@@ -45,7 +46,7 @@ namespace pp3
             this.BarPanel = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.MessagePanel = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.moneyLabel = new System.Windows.Forms.Label();
             this.ControlPanel = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.MiddlePanel = new System.Windows.Forms.Panel();
@@ -72,7 +73,6 @@ namespace pp3
             this.BarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.MessagePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.ControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.MiddlePanel.SuspendLayout();
@@ -98,6 +98,8 @@ namespace pp3
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1022, 730);
             this.MainPanel.TabIndex = 0;
+            this.MainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPanel_MouseDown);
+            this.MainPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainPanel_MouseMove);
             // 
             // InventoryPanel
             // 
@@ -179,6 +181,7 @@ namespace pp3
             this.InfoPanel.AutoSize = true;
             this.InfoPanel.BackColor = System.Drawing.Color.Transparent;
             this.InfoPanel.BackgroundImage = global::pp3.Properties.Resources.layer7;
+            this.InfoPanel.Controls.Add(this.button2);
             this.InfoPanel.Controls.Add(this.TeamButton);
             this.InfoPanel.Controls.Add(this.CarButton);
             this.InfoPanel.Controls.Add(this.HomeButton);
@@ -188,6 +191,16 @@ namespace pp3
             this.InfoPanel.Name = "InfoPanel";
             this.InfoPanel.Size = new System.Drawing.Size(281, 538);
             this.InfoPanel.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(117, 16);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // TeamButton
             // 
@@ -273,22 +286,26 @@ namespace pp3
             // MessagePanel
             // 
             this.MessagePanel.AutoSize = true;
-            this.MessagePanel.Controls.Add(this.pictureBox5);
+            this.MessagePanel.BackColor = System.Drawing.Color.White;
+            this.MessagePanel.BackgroundImage = global::pp3.Properties.Resources.layer2;
+            this.MessagePanel.Controls.Add(this.moneyLabel);
             this.MessagePanel.Location = new System.Drawing.Point(5, 0);
             this.MessagePanel.Name = "MessagePanel";
             this.MessagePanel.Size = new System.Drawing.Size(358, 61);
             this.MessagePanel.TabIndex = 4;
             // 
-            // pictureBox5
+            // moneyLabel
             // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = global::pp3.Properties.Resources.layer2;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(358, 61);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.moneyLabel.AutoSize = true;
+            this.moneyLabel.BackColor = System.Drawing.Color.Transparent;
+            this.moneyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moneyLabel.ForeColor = System.Drawing.Color.Black;
+            this.moneyLabel.Location = new System.Drawing.Point(124, 35);
+            this.moneyLabel.Name = "moneyLabel";
+            this.moneyLabel.Size = new System.Drawing.Size(52, 18);
+            this.moneyLabel.TabIndex = 1;
+            this.moneyLabel.Text = "label1";
+            this.moneyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ControlPanel
             // 
@@ -451,7 +468,6 @@ namespace pp3
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.MessagePanel.ResumeLayout(false);
             this.MessagePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ControlPanel.ResumeLayout(false);
             this.ControlPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -478,7 +494,6 @@ namespace pp3
         private System.Windows.Forms.Panel BarPanel;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel MessagePanel;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel MiddlePanel;
         private System.Windows.Forms.Panel BasePanel;
         private System.Windows.Forms.PictureBox FoodShopButton;
@@ -497,6 +512,8 @@ namespace pp3
         private System.Windows.Forms.PictureBox CarButton;
         private System.Windows.Forms.PictureBox TeamButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label moneyLabel;
+        private System.Windows.Forms.Button button2;
     }
 }
 

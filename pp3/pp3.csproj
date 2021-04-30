@@ -64,6 +64,10 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DragAssembly">
+      <HintPath>..\..\..\..\Downloads\DragAssembly.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
@@ -116,6 +120,7 @@
       <DependentUpon>DatabaseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DrawingControl.cs" />
+    <Compile Include="EventHandlers.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -654,6 +659,12 @@
     <Content Include="Locations\ahtung\index.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\go_a.png" />
+    <None Include="Resources\go_d.png" />
+    <None Include="Resources\blackkrug.png" />
+    <None Include="Resources\greenkrug.png" />
+    <None Include="Resources\redkrug.png" />
+    <None Include="Resources\map_act.png" />
     <None Include="Resources\index.jpg" />
     <None Include="Resources\map_de.png" />
     <None Include="Resources\podmoskovie.jpg" />

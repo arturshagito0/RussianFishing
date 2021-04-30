@@ -1213,6 +1213,16 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blackkrug {
+            get {
+                object obj = ResourceManager.GetObject("blackkrug", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blocks_a {
             get {
                 object obj = ResourceManager.GetObject("blocks_a", resourceCulture);
@@ -2393,6 +2403,26 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap go_a {
+            get {
+                object obj = ResourceManager.GetObject("go_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap go_d {
+            get {
+                object obj = ResourceManager.GetObject("go_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gold_Marlin_100 {
             get {
                 object obj = ResourceManager.GetObject("Gold Marlin-100", resourceCulture);
@@ -2486,6 +2516,16 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap Green_Devil {
             get {
                 object obj = ResourceManager.GetObject("Green Devil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap greenkrug {
+            get {
+                object obj = ResourceManager.GetObject("greenkrug", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3446,6 +3486,16 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap makebid_d {
             get {
                 object obj = ResourceManager.GetObject("makebid_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap map_act {
+            get {
+                object obj = ResourceManager.GetObject("map_act", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4496,6 +4546,16 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap Red_Salmon {
             get {
                 object obj = ResourceManager.GetObject("Red Salmon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap redkrug {
+            get {
+                object obj = ResourceManager.GetObject("redkrug", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

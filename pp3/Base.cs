@@ -33,6 +33,7 @@ namespace pp3
             this.price = price;
             this.locations = locations;
             this.indexImage = index;
+            
         }
 
         public Base()

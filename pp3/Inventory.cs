@@ -14,10 +14,13 @@ namespace pp3
 
         public void addItem(Object item, Player player)
         {
+
+            
+
             if (this.count > this.capacity)
             {
       
-                OnCannotBeBought?.Invoke(this, "Inventory is Full!");
+                EventHandlers.OnCannotBeBought?.Invoke(this, "Inventory is Full!");
                
                 
             }
@@ -25,7 +28,7 @@ namespace pp3
             else if (item.getPrice() > player.money)
             {
                
-              OnCannotBeBought?.Invoke(this, "Not enough money!");
+              EventHandlers.OnCannotBeBought?.Invoke(this, "Not enough money!");
               
                 
             }
@@ -35,15 +38,15 @@ namespace pp3
                 items.Add(item);
                 count += 1;
                 player.money -= item.getPrice();
-                OnCanBeBought(null, null);
+                EventHandlers.OnCanBeBought(null, player.money);
             }
            
 
 
         }
 
-        public static EventHandler<String> OnCannotBeBought;
-        public static EventHandler OnCanBeBought;
+        
+        
 
        
 

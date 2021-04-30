@@ -20,8 +20,8 @@ namespace pp3
         public FishshopForm(ObjectInitializer initializer)
         {
             this.initializer = initializer;
-            Inventory.OnCannotBeBought += CannotBeBought;
-            Inventory.OnCanBeBought += CanBeBought;
+            EventHandlers.OnCannotBeBought += CannotBeBought;
+            EventHandlers.OnCanBeBought += CanBeBought;
             Load += RodButton_Click;
 
 
@@ -49,7 +49,7 @@ namespace pp3
 
         }
 
-        private void CanBeBought(object sender, EventArgs e)
+        private void CanBeBought(object sender, long e)
         {
             
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.ReelResouce.kassa);
@@ -143,7 +143,7 @@ namespace pp3
             poplavokButton.Image = pp3.Properties.Resources.cat_popl_s;
             Load += spinningButton_MouseLeave;
             ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, false, dataGridView1, initializer);
-
+            EventHandlers.OnButtonClickSound(null, null);
 
 
         }
@@ -157,7 +157,7 @@ namespace pp3
         private void spinningButton_Click(object sender, EventArgs e)
         {
             spinningButton.Image = Properties.Resources.cat_spin_s;
-
+            EventHandlers.OnButtonClickSound(null, null);
 
 
             ShopGridViewHandler.selectRods(Rod.ROD_TYPE.SPINNING, false, dataGridView1, initializer);
@@ -184,6 +184,7 @@ namespace pp3
 
         private void uniqueButton_Click(object sender, EventArgs e)
         {
+            EventHandlers.OnButtonClickSound(null, null);
             uniqueRodButton.Image = Properties.Resources.cat_uniq_s;
             ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, true, dataGridView1, initializer);
         }
@@ -204,6 +205,7 @@ namespace pp3
 
         {
             normalReelButton_Click(sender, e);
+            dataGridView1_Click(sender, e);
             labelDisabler(ReelButton, reelLabel, new List<PictureBox> { normalReelButton, uniqueReelButton });
             reelLabel.BackColor = Color.LightSkyBlue;
         }
@@ -219,6 +221,7 @@ namespace pp3
         private void RodButton_Click(object sender, EventArgs e)
         {
             poplavokButton_Click(sender, e);
+            dataGridView1_Click(sender, e);
             labelDisabler(RodButton, rodLabel, new List<PictureBox> { poplavokButton, spinningButton, uniqueRodButton });
 
 
@@ -229,7 +232,7 @@ namespace pp3
         {
             normalReelButton.Image = Properties.Resources.cat_ordin_s;
             ShopGridViewHandler.selectReels(false, dataGridView1, initializer);
-
+            EventHandlers.OnButtonClickSound(null, null);
         }
 
         private void normalReelButton_MouseEnter(object sender, EventArgs e)
@@ -246,6 +249,7 @@ namespace pp3
         private void uniqueReelButton_Click(object sender, EventArgs e)
         {
             uniqueReelButton.Image = Properties.Resources.cat_uniq_s;
+            EventHandlers.OnButtonClickSound(null, null);
             ShopGridViewHandler.selectReels(true, dataGridView1, initializer);
         }
 

@@ -37,8 +37,8 @@ namespace pp3
 
                 controls[2].Text = $"Мощность: {reel.power}%";
 
-                StringFormatter sf = new StringFormatter();
-                controls[3].Text = $"Цена: {sf.decimalFormat(reel.price.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
+                
+                controls[3].Text = $"Цена: {StringFormatter.decimalFormat(reel.price.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
 
 
 
@@ -67,15 +67,15 @@ namespace pp3
 
                 Bitmap im = (Bitmap)Properties.Resources.ResourceManager.GetObject(selectedRod.rodName);
 
-                StringFormatter formatter = new StringFormatter();
+                
 
 
 
                 picturebox.Image = im;
 
-                controls[3].Text = $"Цена: {formatter.decimalFormat(selectedRod.price.ToString(), c)}";
+                controls[3].Text = $"Цена: {StringFormatter.decimalFormat(selectedRod.price.ToString(), c)}";
                 controls[0].Text = selectedRod.rodName;
-                controls[2].Text = $"Выдерживает: {formatter.decimalFormat(selectedRod.maxWeight.ToString(), m)}";
+                controls[2].Text = $"Выдерживает: {StringFormatter.decimalFormat(selectedRod.maxWeight.ToString(), m)}";
             }
 
 
