@@ -82,23 +82,7 @@ namespace pp3
 
                 List<Location> locs = new List<Location>();
 
-                //foreach (System.Data.DataRow loc in locAdapter.GetByBaseID((int)map["ID"]).Rows)
-                //{
-
-                //    string path = Application.StartupPath + @"\Locations\" + ((string)loc["Image"]).Remove(0, 12);
-
-                //    Location l = new Location
-                //    {
-                //        locationNumer = (int)loc["Location Number"],
-                //        displayName = (string)loc["Display Name"],
-                //        locationImage = Image.FromFile(path)
-
-
-                //    };
-
-                //    locs.Add(l);
-
-                //}
+                
 
 
                 Base newBase = new Base
@@ -120,8 +104,13 @@ namespace pp3
 
 
 
-            MessageBox.Show("Done!");
+            
                 return bases;
+        }
+
+        private static void InitializeMapLocations(Base map)
+        {
+
         }
 
     }

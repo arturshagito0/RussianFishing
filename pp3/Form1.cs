@@ -15,6 +15,9 @@ namespace pp3
         public FishshopForm fishShopForm;
         public TravelForm travelForm;
         public Player currentPlayer;
+        
+
+
         public System.Media.SoundPlayer onClickSound = new System.Media.SoundPlayer(Properties.ReelResouce.click1);
         public MainForm(Player player)
         {
@@ -41,9 +44,9 @@ namespace pp3
             onClickSound.Play();
         }
 
-        public void MoneyChanged(object sender, long money)
+        public void MoneyChanged(object sender, bool b)
         {
-            moneyLabel.Text = $"Деньги: {StringFormatter.decimalFormat(money.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
+            moneyLabel.Text = $"Деньги: {StringFormatter.decimalFormat(this.currentPlayer.money.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
         }
 
         private void MyForm_DataAvailable(object sender, EventArgs e)
@@ -299,6 +302,7 @@ namespace pp3
         private void MainPanel_MouseDown(object sender, MouseEventArgs e)
         {
             this.lastPoint = new Point(e.X, e.Y);
+            
         }
     }
 }

@@ -8,11 +8,13 @@ namespace pp3
 {
     public static class EventHandlers
     {
+
+        public static EventHandler<Object> ItemToBeAdded;
         public static EventHandler<String> OnCannotBeBought;
-        public static EventHandler<long> OnCanBeBought;
+        public static EventHandler<bool> OnCanBeBought;
         public static EventHandler OnButtonClickSound;
         public static EventHandler OnMapButtonClick;
-        
+        public static EventHandler<int> OnItemBought;
 
 
     }

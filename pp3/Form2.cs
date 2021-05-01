@@ -49,11 +49,13 @@ namespace pp3
 
         }
 
-        private void CanBeBought(object sender, long e)
+        private void CanBeBought(object sender, bool e)
         {
-            
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.ReelResouce.kassa);
-            player.Play();
+            if (e)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.ReelResouce.kassa);
+                player.Play();
+            }
         }
 
         private void CannotBeBought(object sender, String e)

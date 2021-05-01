@@ -37,8 +37,10 @@ namespace pp3
             {
                 items.Add(item);
                 count += 1;
-                player.money -= item.getPrice();
-                EventHandlers.OnCanBeBought(null, player.money);
+
+                
+                EventHandlers.OnItemBought(null, item.getPrice());
+                EventHandlers.OnCanBeBought(null, true);
             }
            
 

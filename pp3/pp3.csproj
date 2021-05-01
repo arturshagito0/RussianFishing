@@ -68,6 +68,9 @@
       <HintPath>..\..\..\..\Downloads\DragAssembly.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SplashScreen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SplashScreen.Winforms.1.0.0\lib\SplashScreen.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
@@ -233,6 +236,7 @@
     <None Include="Database1DataSet3.xss">
       <DependentUpon>Database1DataSet3.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="pp3_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,6 +17,7 @@ namespace pp3
         private Image previousPicture = Properties.Resources.blackkrug;
         private Player currentPlayer;
         private ObjectInitializer initializer;
+        private Base selectedBase;
 
         Point lastPoint;
 
@@ -44,6 +46,7 @@ namespace pp3
 
 
             ManuallyEnableButton += ManualButtonChange;
+            
 
             listView1.Items[0].Selected = true;
             listView1_Click(null, null);
@@ -56,7 +59,6 @@ namespace pp3
             {
                 button.Click += MapButtonClicked;
                 button.Click += playSound;
-                //button.Click += ShowMapDetails;
                 
             }
 
@@ -74,7 +76,8 @@ namespace pp3
         private void ShowMapDetails(object sender, EventArgs e)
         {
             
-            Base selectedBase = initializer.Maps.Find(b => b.mapName == ((PictureBox)sender).Name);
+            
+            this.selectedBase = initializer.Maps.Find(b => b.mapName == ((PictureBox)sender).Name);
             listView1.Items.Find(selectedBase.displayName, true)[0].Selected = true;
             listView1.Items.Find(selectedBase.displayName, true)[0].Focused = true;
 
@@ -96,6 +99,7 @@ namespace pp3
 
 
             playSound(null, null);
+
             ShowMapDetails(sender, null);
             this.previous.Image = this.previousPicture;
 
@@ -169,8 +173,8 @@ namespace pp3
         private void listView1_Click(object sender, EventArgs e)
         {
 
-            Base temp = initializer.Maps.Find(b => b.displayName == listView1.SelectedItems[0].Text);
-            ManuallyEnableButton?.Invoke(null, temp.mapName);
+            this.selectedBase = initializer.Maps.Find(b => b.displayName == listView1.SelectedItems[0].Text);
+            ManuallyEnableButton?.Invoke(null, this.selectedBase.mapName);
              
         }
 
@@ -218,5 +222,32 @@ namespace pp3
         {
             lastPoint = new Point(e.X, e.Y);
         }
+
+        private void goButton_Click(object sender, EventArgs e)
+        {
+
+            if (selectedBase != null)
+            {
+                if (currentPlayer.money <= selectedBase.price)
+                {
+                    MessageBox.Show("Not enough money to travel to base!");
+                }
+
+                else if (currentPlayer.karma < selectedBase.karma)
+                {
+                    MessageBox.Show("Not enough karma!" + "   " +  selectedBase.displayName);
+                }
+
+                else
+                {
+                    EventHandlers.OnItemBought(null, selectedBase.price);
+                    EventHandlers.OnButtonClickSound(null, null);
+                    EventHandlers.OnCanBeBought(null, false);
+                }
+            }
+            
+        }
+
+       
     }
 }

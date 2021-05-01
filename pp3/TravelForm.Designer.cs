@@ -278,6 +278,7 @@ namespace pp3
             this.goButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.goButton.TabIndex = 3;
             this.goButton.TabStop = false;
+            this.goButton.Click += new System.EventHandler(this.goButton_Click);
             this.goButton.MouseEnter += new System.EventHandler(this.goButton_MouseEnter);
             this.goButton.MouseLeave += new System.EventHandler(this.goButton_MouseLeave);
             this.goButton.MouseHover += new System.EventHandler(this.goButton_MouseHover);
