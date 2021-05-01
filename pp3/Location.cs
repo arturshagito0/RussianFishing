@@ -9,11 +9,12 @@ namespace pp3
 {
     public class Location
     {
-       
+        public int id { get; set; }
+        
         public string displayName { get; set; }
         public Image locationImage { get; set; }
 
-        public int locationNumer { get; set; }
+        public int locationNumber { get; set; }
 
         public Location() { }
 

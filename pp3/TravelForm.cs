@@ -18,6 +18,7 @@ namespace pp3
         private Player currentPlayer;
         private ObjectInitializer initializer;
         private Base selectedBase;
+        private Base currentBase; 
 
         Point lastPoint;
 
@@ -29,6 +30,7 @@ namespace pp3
 
             this.currentPlayer = currentPlayer;
             this.initializer = initializer;
+            this.currentBase = currentPlayer.currentBase;
 
             reDrawButtons();
 
@@ -62,6 +64,8 @@ namespace pp3
                 
             }
 
+
+           // MessageBox.Show(this.currentPlayer.currentBase.displayName);
 
         }
 
@@ -245,9 +249,17 @@ namespace pp3
 
                 else
                 {
+                   // EventHandlers.ClearOutBase(null, currentBase);
+
                     EventHandlers.OnItemBought(null, selectedBase.price);
                     EventHandlers.OnButtonClickSound(null, null);
                     EventHandlers.OnCanBeBought(null, false);
+
+                    
+                    //initializer.InitializeMapLocations(selectedBase);
+                    EventHandlers.OnTravelToAnotherBase(null, selectedBase);
+                    //this.currentPlayer.currentBase = selectedBase;
+
                 }
             }
             

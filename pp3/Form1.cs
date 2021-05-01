@@ -28,12 +28,17 @@ namespace pp3
             travelForm = new TravelForm(player, initializer);
             currentPlayer = player;
             currentPlayer.currentBase = initializer.Maps.Find(e => e.mapName == "houm");
-
             InitializeComponent();
             fishShopForm.OnItemBought += MyForm_DataAvailable;
             EventHandlers.OnCanBeBought += MoneyChanged;
             EventHandlers.OnButtonClickSound += ButtonClickSound;
+            EventHandlers.OnTravelToAnotherBase += ChangeBaseImage;
             moneyLabel.Text = $"Деньги: {StringFormatter.decimalFormat(this.currentPlayer.money.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
+            
+        }
+
+        private void ChangeBaseImage(object sender, Base e)
+        {
             
         }
 
@@ -262,7 +267,6 @@ namespace pp3
 
         private void TravelButton_Click(object sender, EventArgs e)
         {
-            
             travelForm.Show();
 
         }

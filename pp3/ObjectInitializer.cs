@@ -19,6 +19,8 @@ namespace pp3
 
         public ObjectInitializer()
         {
+            EventHandlers.OnTravelToAnotherBase += InitializeMapLocations;
+            EventHandlers.ClearOutBase += ClearOutBase;
             this.Rods = InitializeAllRods();
             this.Reels = InitializeAllReels();
            this.Maps = InitializeAllMaps();
@@ -78,9 +80,7 @@ namespace pp3
 
             {
 
-                Database1DataSet1TableAdapters.LocationTableAdapter locAdapter = new  Database1DataSet1TableAdapters.LocationTableAdapter();
-
-                List<Location> locs = new List<Location>();
+                
 
                 
 
@@ -93,7 +93,7 @@ namespace pp3
                     rank = (int)map["Rank"],
                     karma = (int)map["Karma"],
                     price = (int)map["Price"],
-                    locations = locs,
+                    locations = new List<Location>(),
                     indexImage = Image.FromFile(Application.StartupPath + @"\Locations\" + (string)map["Map name"] + @"\index.jpg")
 
 
@@ -108,9 +108,44 @@ namespace pp3
                 return bases;
         }
 
-        private static void InitializeMapLocations(Base map)
+        private void InitializeMapLocations(object sender, Base map)
         {
+            Database1DataSet1TableAdapters.LocationTableAdapter locAdapter = new Database1DataSet1TableAdapters.LocationTableAdapter();
 
+
+
+            if (!(map.isInitialized))
+            {
+                MessageBox.Show(map.locations.Count.ToString());
+
+
+                foreach (System.Data.DataRow location in locAdapter.GetByBaseID(map.id))
+
+                    {
+
+                        int locNo = (int)location["Location Number"];
+                        Location newLocation = new Location
+                        {
+                            id = (int)location["ID"],
+                            displayName = (string)location["Display Name"],
+                            locationNumber = locNo,
+                            locationImage = Image.FromFile(Application.StartupPath + @"\Locations\" + map.mapName + $@"\Loc{locNo}" + @"\Scene.jpg")
+                        };
+
+                        map.locations.Add(newLocation);
+
+                    }
+
+                map.isInitialized = true;
+            }
+
+            
+        }
+
+        private void ClearOutBase(object sender, Base map)
+        {
+            map.isInitialized = false;
+            map.locations.Clear();
         }
 
     }

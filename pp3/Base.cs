@@ -10,6 +10,8 @@ namespace pp3
 {
     public class Base
     {
+
+        public bool isInitialized { get; set; } = false;
         public int id { get; set; }
         public string displayName { get; set; }
         public string mapName {get; set;}

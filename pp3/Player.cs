@@ -13,7 +13,7 @@ namespace pp3
 
         private int id { get; set; }
         private string player_name { get; set; }
-        public int rank { get; set; } = 0;
+        public int rank { get; set; } = 50;
 
 
 
@@ -24,7 +24,7 @@ namespace pp3
         public Backpack backpack { get; set; }
 
         public long money { get; set; } = 2000000000;
-        public int karma { get; set; } = 0;
+        public int karma { get; set; } = 30000;
 
 
 
@@ -38,8 +38,16 @@ namespace pp3
             backpack = new Backpack();
             EventHandlers.OnItemBought += PlayerBuysSomething;
             EventHandlers.ItemToBeAdded += PlayerBoughtItem;
+            EventHandlers.OnTravelToAnotherBase += TravelToAnotherBase;
+
+            
             
 
+        }
+
+        private void TravelToAnotherBase(object sender, Base e)
+        {
+            this.currentBase = e;
         }
 
         private void PlayerBoughtItem(object sender, GameObject item)

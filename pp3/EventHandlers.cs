@@ -15,7 +15,11 @@ namespace pp3
         public static EventHandler OnButtonClickSound;
         public static EventHandler OnMapButtonClick;
         public static EventHandler<int> OnItemBought;
+        public static EventHandler<Base> OnTravelToAnotherBase;
+        public static EventHandler<Base> ClearOutBase;
 
-
+        
     }
+
+
 }
