@@ -54,9 +54,7 @@ namespace pp3
             FishshopForm child = sender as FishshopForm;
             if (child != null)
             {
-                
-                this.currentPlayer.playerInventory.addItem(child.selectedItem, currentPlayer);
-                
+                EventHandlers.ItemToBeAdded?.Invoke(null, child.selectedItem);                
 
             }
         }
@@ -235,7 +233,7 @@ namespace pp3
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show(this.currentPlayer.playerInventory.count.ToString() + "   " + this.currentPlayer.money);
+            MessageBox.Show("Inventory: " + this.currentPlayer.playerInventory.count.ToString() + System.Environment.NewLine + $"Backpack: {this.currentPlayer.backpack.count}" );
             //DatabaseForm dbForm = new DatabaseForm();
             //dbForm.Show();
            

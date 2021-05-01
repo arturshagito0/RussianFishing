@@ -9,7 +9,7 @@ namespace pp3
     public static class EventHandlers
     {
 
-        public static EventHandler<Object> ItemToBeAdded;
+        public static EventHandler<GameObject> ItemToBeAdded;
         public static EventHandler<String> OnCannotBeBought;
         public static EventHandler<bool> OnCanBeBought;
         public static EventHandler OnButtonClickSound;

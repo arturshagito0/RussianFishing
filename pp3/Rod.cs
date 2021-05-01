@@ -2,7 +2,7 @@
 
 namespace pp3
 {
-    public class Rod : Object
+    public class Rod : InventoryObject
     {
         public enum ROD_TYPE
         {
@@ -18,7 +18,7 @@ namespace pp3
         private int id { get; set; }
         public string rodName { get; set; }
         public int maxWeight { get; set; }
-        public int price { get; set; }
+        public override int price { get; set; }
 
         public bool getUniqueness()
         {
@@ -39,21 +39,11 @@ namespace pp3
             this.unique = unique;
         }
 
-        public void initializeRods()
-        {
+       
 
+        
 
-        }
-
-        public List<Rod> getAllRods()
-        {
-            return this.gameRods;
-        }
-
-        int Object.getPrice()
-        {
-            return this.price;
-        }
+        
     }
 
 

@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Backpack.cs" />
+    <Compile Include="BackpackObject.cs" />
     <Compile Include="Bait.cs" />
     <Compile Include="Base.cs" />
     <Compile Include="Car.cs" />
@@ -137,6 +138,7 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Hook.cs" />
+    <Compile Include="InventoryObject.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="LocationsForm.cs">
       <SubType>Form</SubType>
@@ -149,7 +151,7 @@
     <Compile Include="Initializer.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Line.cs" />
-    <Compile Include="Object.cs" />
+    <Compile Include="GameObject.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerHandler.cs" />
     <Compile Include="Potion.cs" />

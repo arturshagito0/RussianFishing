@@ -15,7 +15,7 @@ namespace pp3
         public List<Label> leftLabels;
         public List<PictureBox> topButtons = new List<PictureBox>();
         
-        public Object selectedItem;
+        public GameObject selectedItem;
 
         public FishshopForm(ObjectInitializer initializer)
         {
@@ -127,7 +127,7 @@ namespace pp3
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
-            var selectedRod = (Object)dataGridView1.CurrentRow.DataBoundItem;
+            var selectedRod = (GameObject)dataGridView1.CurrentRow.DataBoundItem;
             selectedItem = selectedRod;
             ShopObjectViewWindowHandler.DisplayItem(dataGridView1, selectedRod, displayedLabels, pictureBox1);
 

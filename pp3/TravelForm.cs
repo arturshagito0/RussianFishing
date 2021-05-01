@@ -131,7 +131,7 @@ namespace pp3
                     
                     button.BackColor = Color.Transparent;
                     Base baseToQuery = initializer.Maps.Find(e => e.mapName == button.Name);
-                    if (currentPlayer.money >= baseToQuery.price && currentPlayer.karma >= baseToQuery.karma)
+                    if (currentPlayer.money >= baseToQuery.price && currentPlayer.karma >= baseToQuery.karma && currentPlayer.rank >= baseToQuery.rank)
                     {
                         button.Image = Properties.Resources.redkrug;
                     }
@@ -235,7 +235,12 @@ namespace pp3
 
                 else if (currentPlayer.karma < selectedBase.karma)
                 {
-                    MessageBox.Show("Not enough karma!" + "   " +  selectedBase.displayName);
+                    MessageBox.Show("Not enough karma!");
+                }
+
+                else if (currentPlayer.rank < selectedBase.rank) {
+
+                    MessageBox.Show("Not enough karma!");
                 }
 
                 else

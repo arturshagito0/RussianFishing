@@ -70,7 +70,7 @@ namespace pp3
 
             var reels = initializer.Reels;
 
-            List<Reel> selectedReels = reels.FindAll(e => e.getUniqueness() == unique);
+            List<Reel> selectedReels = reels.FindAll(e => e.unique == unique);
 
             datagrid.Columns.Clear();
             datagrid.AutoGenerateColumns = false;
