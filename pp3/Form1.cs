@@ -39,7 +39,7 @@ namespace pp3
 
         private void ChangeBaseImage(object sender, Base e)
         {
-            
+            CurrentBase.Image = e.indexImage;
         }
 
         private void ButtonClickSound(object sender, EventArgs e)
