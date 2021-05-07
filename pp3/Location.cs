@@ -7,6 +7,7 @@ using System.Drawing;
 
 namespace pp3
 {
+    [Serializable]
     public class Location
     {
         public int id { get; set; }

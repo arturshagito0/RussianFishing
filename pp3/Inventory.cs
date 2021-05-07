@@ -4,6 +4,7 @@ using System.Windows.Forms;
 
 namespace pp3
 {
+    [Serializable]
     public class Inventory
     {
 

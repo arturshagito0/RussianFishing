@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace pp3
 {
+    [Serializable]
     public class Backpack
     {
         private List<BackpackObject> items = new List<BackpackObject>();

@@ -228,6 +228,7 @@ namespace pp3
             this.karmaLabel.AutoSize = true;
             this.karmaLabel.BackColor = System.Drawing.Color.Transparent;
             this.karmaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.karmaLabel.ForeColor = System.Drawing.Color.Red;
             this.karmaLabel.Location = new System.Drawing.Point(697, 555);
             this.karmaLabel.Name = "karmaLabel";
             this.karmaLabel.Size = new System.Drawing.Size(53, 20);

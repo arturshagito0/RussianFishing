@@ -12,7 +12,7 @@ namespace pp3
     {
 
         private int id { get; set; }
-        private string player_name { get; set; }
+        public string player_name { get; set; }
         public int rank { get; set; } = 50;
 
 
@@ -27,7 +27,7 @@ namespace pp3
         public int karma { get; set; } = 30000;
 
 
-
+       
 
 
 
@@ -70,7 +70,7 @@ namespace pp3
 
             else
             {
-                MessageBox.Show(item.GetType().BaseType.Name + "   " + typeof(InventoryObject).ToString());
+                //MessageBox.Show(item.GetType().BaseType.Name + "   " + typeof(InventoryObject).ToString());
 
                 if (item.GetType().BaseType == typeof(InventoryObject))
                 {
@@ -84,16 +84,17 @@ namespace pp3
                    
                 }
 
-                
-                
 
-                EventHandlers.OnItemBought(null, item.price);
+                this.money -= item.price;
+
+                //EventHandlers.OnItemBought(null, item.price);
                 EventHandlers.OnCanBeBought(null, true);
             }
         }
 
         public void PlayerBuysSomething(object sender, int deducted)
         {
+          
             this.money -= deducted;
         }
 

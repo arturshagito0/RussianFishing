@@ -133,6 +133,9 @@
   <data name="select_place_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\select_place_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="base_teams_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_teams_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sevens Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sevens Gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,8 +154,8 @@
   <data name="Super Bambuka" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Super Bambuka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Atlantic Nord" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Atlantic Nord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cat_uniq_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_uniq_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Bambuka Ultima" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bambuka Ultima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +169,8 @@
   <data name="cat_fider_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_fider_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="base_flea_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_flea_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="blackkrug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blackkrug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="magna_mx_400_spinning_fishing_reel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\magna-mx-400-spinning-fishing-reel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,14 +199,23 @@
   <data name="chat_send_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chat_send_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Black Eagle Luxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Black Eagle Luxe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="JSR_T100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JSR-T100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bestia 110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bestia 110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="players_i" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\players_i.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cat_house_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_house_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gold River - Limited" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gold River - Limited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="return_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\return_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,9 +304,6 @@
   <data name="Sevens White" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sevens White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Daytona M3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Daytona M3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Harpoon 51" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Harpoon 51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -325,14 +334,14 @@
   <data name="Marco_R9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Marco-R9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Haven Creek-3000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Haven Creek-3000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Kipper 212" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kipper 212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Marco_R4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Marco-R4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="John Silver-Tuna V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\John Silver-Tuna V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Syberia_LT_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Syberia LT-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -391,6 +400,9 @@
   <data name="cat_fider_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_fider_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Mirage 851" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mirage 851.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="shop_but08" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shop_but08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -406,14 +418,17 @@
   <data name="shop_but05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shop_but05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Oyster Speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Oyster Speed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Anglers Division S16000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anglers Division S16000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bag_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bag_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Armada-S1800" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Armada-S1800.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dbchat_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dbchat_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Silver Fish S-Beginner" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Silver Fish S-Beginner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -445,6 +460,9 @@
   <data name="cat_acc_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_acc_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="layer8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="layer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\layer1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -457,8 +475,8 @@
   <data name="rod2_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rod2_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eraze_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eraze_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bambuka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bambuka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="blocks_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blocks_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -468,6 +486,9 @@
   </data>
   <data name="Quest Winners-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Quest Winners-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="go_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toteam_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toteam_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -490,14 +511,17 @@
   <data name="Silver Fish S-Ellite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Silver Fish S-Ellite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="save_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Anglers Division C4000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Anglers Division C4000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="office_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\office_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Acamedic 255" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Acamedic 255.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Atlantic Nord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Atlantic Nord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Bambuka 15-Edition" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bambuka 15-Edition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -505,8 +529,8 @@
   <data name="Anglers Division S10000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Anglers Division S10000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Anglers_Division_R400" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Anglers Division R400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wf-c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wf-c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Adventure rod-pike" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Adventure rod-pike.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -517,17 +541,11 @@
   <data name="Barracuda B200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Barracuda B200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Haven Creek-5500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Haven Creek-5500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="layer7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\layer7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Meridian_600" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Meridian-600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Atlant 254" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Atlant 254.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Black Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Black Line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -535,20 +553,23 @@
   <data name="Miada_Lake_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Miada Lake-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exitw_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exitw_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Armada-S3000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Armada-S3000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Viking rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Viking rod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cat_osn_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat_osn_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MGX_Cruiser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MGX Cruiser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fireblade-S1400" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fireblade-S1400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info_rod_popl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info_rod_popl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\map_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Syberia_HD_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Syberia HD-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -574,8 +595,8 @@
   <data name="Anglers Division C16000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Anglers Division C16000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="JSR_L200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\JSR-L200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cat_ordin_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_ordin_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Barracuda B100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Barracuda B100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -613,9 +634,6 @@
   <data name="bucket_fu_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bucket_fu_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat_aroma_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat_aroma_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="menu_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -628,8 +646,8 @@
   <data name="Fox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sellshop_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sellshop_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Daytona M3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Daytona M3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SPARK_1316" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SPARK 1316.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -646,17 +664,14 @@
   <data name="Atlantic Smart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Atlantic Smart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PowerStick Classic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PowerStick Classic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Gold Marlin-100-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold Marlin-100-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sendbill_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sendbill_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="refresh_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refresh_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Haven Creek-5500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Haven Creek-5500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Barracuda B500" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Barracuda B500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -742,8 +757,8 @@
   <data name="Hera Fiber Glass 672" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hera Fiber Glass 672.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat_uniq_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat_uniq_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cat_osn_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_osn_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Silver Fish S-Expert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Silver Fish S-Expert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -772,6 +787,9 @@
   <data name="Sea_Monster_s190" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sea Monster s190.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Meridian_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Meridian-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Quest_Platinum" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Quest Platinum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -780,6 +798,9 @@
   </data>
   <data name="Syzdal Legend-c30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Syzdal Legend-c30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="load_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\load_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FastMaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FastMaster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -871,17 +892,17 @@
   <data name="base_news_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\base_news_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Oyster Speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oyster Speed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Daytona B1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Daytona B1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Otter c520" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Otter c520.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Anglers Division S14000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Anglers Division S14000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Anglers Division C3500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Anglers Division C3500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Faraon rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Faraon rod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="onserv_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\onserv_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -904,17 +925,23 @@
   <data name="JSR_C200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JSR-C200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat_reel_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat_reel_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="refresh_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Anglers Division S16000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Anglers Division S16000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sevens_Reel_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sevens Reel-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="start_d1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\start_d1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="John Silver-Killerwhale V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\John Silver-Killerwhale V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Meteor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Meteor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="start_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\start_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Silver Carp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Silver Carp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -927,6 +954,9 @@
   </data>
   <data name="rod1_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rod1_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eraze_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eraze_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gold Marlin-200-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold Marlin-200-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -958,9 +988,6 @@
   <data name="players_det_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\players_det_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bambuka" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bambuka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="base_teams_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\base_teams_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -982,6 +1009,9 @@
   <data name="Anglers Division C12000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Anglers Division C12000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cat_reel_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_reel_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Flueger_Vintage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flueger Vintage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -994,14 +1024,17 @@
   <data name="Armada-C1600" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Armada-C1600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Deep Fish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Deep Fish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sevens Crystal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sevens Crystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Quest Winners-6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Quest Winners-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mirage 851" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mirage 851.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Anglers_Division_R400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anglers Division R400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Force Master" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Force Master.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1057,6 +1090,9 @@
   <data name="Haven Creek-1500" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Haven Creek-1500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="John Silver-TroutShot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\John Silver-TroutShot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Silver Fish C-Ellite 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Silver Fish C-Ellite 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1081,11 +1117,11 @@
   <data name="buy_d1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buy_d1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Anglers Division C5000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Anglers Division C5000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="go_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Banana Start-s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Banana Start-s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Anglers Division C14000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anglers Division C14000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="onserv_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\onserv_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1108,11 +1144,14 @@
   <data name="JSR_T200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JSR-T200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Otter c300" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Otter c300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rem_d1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rem_d1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chat_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chat_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JSR_C100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JSR-C100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="John Silver-Sharks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\John Silver-Sharks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1131,6 +1170,9 @@
   </data>
   <data name="Marco_R1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Marco-R1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cat_reel_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_reel_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Black Fish-700" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Black Fish-700.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1159,11 +1201,17 @@
   <data name="PowerStick Sport-S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PowerStick Sport-S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fireblade-C1400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fireblade-C1400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Limited Edition 221" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Limited Edition 221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TBR_4000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TBR-4000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_but04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_but04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sea_Monster_s180" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sea Monster s180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1189,8 +1237,8 @@
   <data name="takeprofit_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\takeprofit_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="corf_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\corf_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="start_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\start_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Achilles 233" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Achilles 233.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1198,17 +1246,17 @@
   <data name="Anglers_Division_R500" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Anglers Division R500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Banana Force-s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Banana Force-s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="shop_but13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shop_but13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Assistance 257" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Assistance 257.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Black Eagle Luxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Black Eagle Luxe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cat_bles_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_bles_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tobase_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tobase_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ink_reel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ink reel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1216,11 +1264,14 @@
   <data name="rod2_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rod2_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exitw_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exitw_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Moroz rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Moroz rod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rod1_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rod1_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Banana Start-s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banana Start-s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PowerStick Compact" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PowerStick Compact.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1252,8 +1303,8 @@
   <data name="ICARUS_1309" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ICARUS 1309.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shop_but06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shop_but06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="JSR_L200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JSR-L200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tarpon-2000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tarpon-2000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1276,8 +1327,8 @@
   <data name="ico_block_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ico_block_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat_reel_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat_reel_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Banana Force-s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banana Force-s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Oyster Deluxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Oyster Deluxe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1285,8 +1336,8 @@
   <data name="Freeman 856" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Freeman 856.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bestia 110" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bestia 110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Anglers Division C5000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anglers Division C5000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="layer2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\layer2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1318,14 +1369,17 @@
   <data name="Atlantic Breeze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Atlantic Breeze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="John Silver-TroutShot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\John Silver-TroutShot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Haven Creek-3000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Haven Creek-3000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MGX_Inshore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MGX Inshore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="John Silver-Cocodrilo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\John Silver-Cocodrilo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hermes 112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hermes 112.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="corf_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\corf_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1336,11 +1390,11 @@
   <data name="Daytona B2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Daytona B2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="base_tour_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_tour_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Anglers Division C3500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anglers Division C3500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat_bles_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat_bles_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rod1_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rod1_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="store_car_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\store_car_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1354,8 +1408,8 @@
   <data name="Salmon_Pro_SP2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Salmon Pro-SP2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tobase_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tobase_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PowerStick Classic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PowerStick Classic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tobase_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tobase_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1429,17 +1483,20 @@
   <data name="John Silver-Walleye" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\John Silver-Walleye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat_reel_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat_reel_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Atlant 254" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Atlant 254.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Anglers Division S5000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Anglers Division S5000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Flueger_LProf_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Flueger LProf-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ico_block_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ico_block_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="John Silver-Tuna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\John Silver-Tuna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="greenkrug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\greenkrug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cat_osn_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_osn_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1459,14 +1516,17 @@
   <data name="Ice Bullet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ice Bullet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="base_tour_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_tour_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="base_blanks_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\base_blanks_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Daytona M1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Daytona M1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redkrug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redkrug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FishMaster-M2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishMaster-M2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1489,11 +1549,11 @@
   <data name="info_rod_spin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info_rod_spin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fireblade-C1400" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fireblade-C1400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="load_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\load_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat_ordin_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat_ordin_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="corf_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\corf_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cat_bait_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_bait_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1509,6 +1569,9 @@
   </data>
   <data name="cat_ammo_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_ammo_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="buy_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buy_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1531,14 +1594,14 @@
   <data name="Lagoon 243" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lagoon 243.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Omphale 670" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Omphale 670.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sellshop_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sellshop_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cat_house_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_house_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Phantom 852" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Phantom 852.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Otter c300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Otter c300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RAINSTARS_1317" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RAINSTARS 1317.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1600,8 +1663,11 @@
   <data name="John Silver-CarpKiller V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\John Silver-CarpKiller V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bucket_em_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bucket_em_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cat_reel_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_reel_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="create_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\create_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Delta 759" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Delta 759.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1609,8 +1675,8 @@
   <data name="Quest_Reel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Quest Reel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dbchat_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dbchat_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Omphale 670" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Omphale 670.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cat_popl_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_popl_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1621,8 +1687,8 @@
   <data name="LACERTA_1301" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LACERTA 1301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MGX_Cruiser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MGX Cruiser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Anglers Division S5000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anglers Division S5000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Quest Winners-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Quest Winners-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1633,8 +1699,8 @@
   <data name="Panther" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panther.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Faraon rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Faraon rod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="index" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\index.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tarpon-1000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tarpon-1000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1642,8 +1708,8 @@
   <data name="base_sell_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\base_sell_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Meridian_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Meridian-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="base_travel_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_travel_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Armada-S2000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Armada-S2000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1657,8 +1723,8 @@
   <data name="cat_ordin_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_ordin_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shop_but04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shop_but04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit_d2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_d2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Spinner Pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Spinner Pro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1666,8 +1732,8 @@
   <data name="Instant 252" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Instant 252.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sevens_Reel_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sevens Reel-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Anglers Division S14000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anglers Division S14000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Miada_River_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Miada River-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1678,8 +1744,11 @@
   <data name="bag_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bag_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="base_teams_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_teams_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="layer3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Viking rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Viking rod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="refresh_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1738,23 +1807,20 @@
   <data name="SuperWinch_170" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SuperWinch-170.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Syberia_HD_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Syberia HD-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="actions_i" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\actions_i.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="John Silver-Salmon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\John Silver-Salmon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gold River - Limited" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gold River - Limited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Anglers Division C14000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Anglers Division C14000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Phantom 852" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Phantom 852.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BaitFlex" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaitFlex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pause_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pause_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1768,11 +1834,11 @@
   <data name="Greek-880" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Greek-880.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Flueger_LProf_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Flueger LProf-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Syberia_HD_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Syberia HD-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wf-c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wf-c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bucket_em_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bucket_em_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Atlantic Carp-fider" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Atlantic Carp-fider.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1783,8 +1849,8 @@
   <data name="Tuna Hunter 110" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tuna Hunter 110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="JSR_C100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\JSR-C100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="create_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\create_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Green Devil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Green Devil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1798,8 +1864,11 @@
   <data name="Silver Fish C-Expert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Silver Fish C-Expert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="John Silver-Tuna V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\John Silver-Tuna V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="base_flea_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base_flea_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_but06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_but06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Bambuka 21-Edition" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bambuka 21-Edition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1813,14 +1882,14 @@
   <data name="Ecko Fish" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ecko Fish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="base_travel_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\base_travel_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cat_aroma_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_aroma_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Denlou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Denlou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hermes 112" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hermes 112.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit_d3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_d3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SuperFisher-950" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SuperFisher-950.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1831,8 +1900,8 @@
   <data name="Yellow SuperCarp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Yellow SuperCarp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Deep Fish" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Deep Fish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cat_bles_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_bles_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1861,25 +1930,7 @@
   <data name="Armada-S1600" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Armada-S1600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="index" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\index.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blackkrug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blackkrug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="go_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\go_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="go_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\go_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="greenkrug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\greenkrug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="redkrug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\redkrug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu_d1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_d1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

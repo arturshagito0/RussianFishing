@@ -24,13 +24,13 @@ namespace pp3
 
 
 
-        public TravelForm(Player currentPlayer, ObjectInitializer initializer)
+        public TravelForm(Player player, ObjectInitializer initializer)
         {
             InitializeComponent();
 
-            this.currentPlayer = currentPlayer;
+            this.currentPlayer = player;
             this.initializer = initializer;
-            this.currentBase = currentPlayer.currentBase;
+            this.currentBase = currentPlayer.currentBase != null ? currentPlayer.currentBase : (Base)initializer.Maps.Find(b => b.mapName == "houm");
 
             reDrawButtons();
 
@@ -43,6 +43,9 @@ namespace pp3
                 listView1.Items.Add(item);
                     }
                 );
+
+
+
             listView1.View = View.Details;
             listView1.AutoResizeColumns(0);
 
@@ -249,16 +252,16 @@ namespace pp3
 
                 else
                 {
-                   // EventHandlers.ClearOutBase(null, currentBase);
+                    
 
                     EventHandlers.OnItemBought(null, selectedBase.price);
                     EventHandlers.OnButtonClickSound(null, null);
                     EventHandlers.OnCanBeBought(null, false);
 
                     
-                    //initializer.InitializeMapLocations(selectedBase);
+                    
                     EventHandlers.OnTravelToAnotherBase(null, selectedBase);
-                    //this.currentPlayer.currentBase = selectedBase;
+                    
 
                 }
             }

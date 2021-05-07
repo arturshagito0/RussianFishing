@@ -15,7 +15,8 @@ namespace pp3
             Player player = new Player("art_shag");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm(player));
+            // Application.Run(new MainForm(player));
+            Application.Run(new SaveForm());
             
         }
 

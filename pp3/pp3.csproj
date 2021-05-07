@@ -146,6 +146,18 @@
     <Compile Include="LocationsForm.Designer.cs">
       <DependentUpon>LocationsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuSettingsSaveFormcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSettingsSaveFormcs.Designer.cs">
+      <DependentUpon>MenuSettingsSaveFormcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPlayerForm.Designer.cs">
+      <DependentUpon>NewPlayerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ObjectInitializer.cs" />
     <Compile Include="Home.cs" />
     <Compile Include="Initializer.cs" />
@@ -153,7 +165,7 @@
     <Compile Include="Line.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="Player.cs" />
-    <Compile Include="PlayerHandler.cs" />
+    <Compile Include="PlayersMenuHandler.cs" />
     <Compile Include="Potion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -164,6 +176,12 @@
     </Compile>
     <Compile Include="Reel.cs" />
     <Compile Include="Rod.cs" />
+    <Compile Include="SaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveForm.Designer.cs">
+      <DependentUpon>SaveForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShopGridViewHandler.cs" />
     <Compile Include="ShopObjectViewWindowHandler.cs" />
     <Compile Include="StringFormatter.cs" />
@@ -182,6 +200,12 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuSettingsSaveFormcs.resx">
+      <DependentUpon>MenuSettingsSaveFormcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPlayerForm.resx">
+      <DependentUpon>NewPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\ReelResouce.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ReelResouce.Designer.cs</LastGenOutput>
@@ -190,6 +214,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveForm.resx">
+      <DependentUpon>SaveForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TravelForm.resx">
       <DependentUpon>TravelForm.cs</DependentUpon>
@@ -665,6 +692,29 @@
     <Content Include="Locations\ahtung\index.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\Acamedic 255.png" />
+    <None Include="Resources\menu_d1.png" />
+    <None Include="Resources\layer7.jpg" />
+    <None Include="Resources\save_d.png" />
+    <None Include="Resources\save_a.png" />
+    <None Include="Resources\exitw_d.png" />
+    <None Include="Resources\exitw_a.png" />
+    <None Include="Resources\start_d1.png" />
+    <None Include="Resources\exit_d3.png" />
+    <None Include="Resources\layer31.jpg" />
+    <None Include="Resources\exit_d2.png" />
+    <None Include="Resources\start_d.png" />
+    <None Include="Resources\start_a.png" />
+    <None Include="Resources\rem_d.png" />
+    <None Include="Resources\rem_a.png" />
+    <None Include="Resources\load_d.png" />
+    <None Include="Resources\load_a.png" />
+    <None Include="Resources\exit_d.png" />
+    <None Include="Resources\exit_a.png" />
+    <None Include="Resources\create_d.png" />
+    <None Include="Resources\create_a.png" />
+    <None Include="Resources\rem_d1.png" />
+    <None Include="Resources\layer3.jpg" />
     <None Include="Resources\go_a.png" />
     <None Include="Resources\go_d.png" />
     <None Include="Resources\blackkrug.png" />
@@ -1554,150 +1604,438 @@
     <Content Include="Locations\yakutia\Loc7\Scene.jpg" />
     <Content Include="Locations\yakutia\Loc8\Scene.jpg" />
     <Content Include="Locations\yakutia\Loc9\Scene.jpg" />
-    <Content Include="maps\ahtung_a.png" />
-    <Content Include="maps\ahtung_d.png" />
-    <Content Include="maps\akadia_a.png" />
-    <Content Include="maps\akadia_d.png" />
-    <Content Include="maps\alexandra_a.png" />
-    <Content Include="maps\alexandra_d.png" />
-    <Content Include="maps\amazonia_a.png" />
-    <Content Include="maps\amazonia_d.png" />
-    <Content Include="maps\amga_a.png" />
-    <Content Include="maps\amga_d.png" />
-    <Content Include="maps\amsterdam_a.png" />
-    <Content Include="maps\amsterdam_d.png" />
-    <Content Include="maps\amurtung_a.png" />
-    <Content Include="maps\amurtung_d.png" />
-    <Content Include="maps\baikal_a.png" />
-    <Content Include="maps\baikal_d.png" />
-    <Content Include="maps\balagan_a.png" />
-    <Content Include="maps\balagan_d.png" />
-    <Content Include="maps\buruyah_a.png" />
-    <Content Include="maps\buruyah_d.png" />
-    <Content Include="maps\chagan_a.png" />
-    <Content Include="maps\chagan_d.png" />
-    <Content Include="maps\chile_coast_a.png" />
-    <Content Include="maps\chile_coast_d.png" />
-    <Content Include="maps\chile_lake_a.png" />
-    <Content Include="maps\chile_lake_d.png" />
-    <Content Include="maps\crete_a.png" />
-    <Content Include="maps\crete_d.png" />
-    <Content Include="maps\dema_a.png" />
-    <Content Include="maps\dema_d.png" />
-    <Content Include="maps\dnepr_delta_a.png" />
-    <Content Include="maps\dnepr_delta_d.png" />
-    <Content Include="maps\dnepr_kiev_a.png" />
-    <Content Include="maps\dnepr_kiev_d.png" />
-    <Content Include="maps\donaukanal_a.png" />
-    <Content Include="maps\donaukanal_d.png" />
-    <Content Include="maps\dovelake_a.png" />
-    <Content Include="maps\dovelake_d.png" />
-    <Content Include="maps\gbr_a.png" />
-    <Content Include="maps\gbr_d.png" />
-    <Content Include="maps\geneva_a.png" />
-    <Content Include="maps\geneva_d.png" />
-    <Content Include="maps\goldfish_a.png" />
-    <Content Include="maps\goldfish_d.png" />
-    <Content Include="maps\greenland_a.png" />
-    <Content Include="maps\greenland_d.png" />
-    <Content Include="maps\hoper_a.png" />
-    <Content Include="maps\hoper_d.png" />
-    <Content Include="maps\horotu_a.png" />
-    <Content Include="maps\horotu_d.png" />
-    <Content Include="maps\houm_a.png" />
-    <Content Include="maps\houm_d.png" />
-    <Content Include="maps\kamchatka_a.png" />
-    <Content Include="maps\kamchatka_d.png" />
-    <Content Include="maps\kirzhach_a.png" />
-    <Content Include="maps\kirzhach_d.png" />
-    <Content Include="maps\klazma_a.png" />
-    <Content Include="maps\klazma_d.png" />
-    <Content Include="maps\kolatung_a.png" />
-    <Content Include="maps\kolatung_d.png" />
-    <Content Include="maps\kolpakovo_a.png" />
-    <Content Include="maps\kolpakovo_d.png" />
-    <Content Include="maps\kolyma_a.png" />
-    <Content Include="maps\kolyma_d.png" />
-    <Content Include="maps\konigssee_a.png" />
-    <Content Include="maps\konigssee_d.png" />
-    <Content Include="maps\krono_a.png" />
-    <Content Include="maps\krono_d.png" />
-    <Content Include="maps\kuhtuy_a.png" />
-    <Content Include="maps\kuhtuy_d.png" />
-    <Content Include="maps\labinkir_a.png" />
-    <Content Include="maps\labinkir_d.png" />
-    <Content Include="maps\ladoga_a.png" />
-    <Content Include="maps\ladoga_d.png" />
-    <Content Include="maps\lofoten_a.png" />
-    <Content Include="maps\lofoten_d.png" />
-    <Content Include="maps\loptung_a.png" />
-    <Content Include="maps\loptung_d.png" />
-    <Content Include="maps\main_a.png" />
-    <Content Include="maps\main_d.png" />
-    <Content Include="maps\manguina_a.png" />
-    <Content Include="maps\manguina_d.png" />
-    <Content Include="maps\mecha_a.png" />
-    <Content Include="maps\mecha_d.png" />
-    <Content Include="maps\missisipi_a.png" />
-    <Content Include="maps\missisipi_d.png" />
-    <Content Include="maps\mostung_a.png" />
-    <Content Include="maps\mostung_d.png" />
-    <Content Include="maps\nevabelnoch_a.png" />
-    <Content Include="maps\nevabelnoch_d.png" />
-    <Content Include="maps\nile_a.png" />
-    <Content Include="maps\nile_d.png" />
-    <Content Include="maps\pahra_a.png" />
-    <Content Include="maps\pahra_d.png" />
-    <Content Include="maps\pasha_a.png" />
-    <Content Include="maps\pasha_d.png" />
-    <Content Include="maps\pengina_a.png" />
-    <Content Include="maps\pengina_d.png" />
-    <Content Include="maps\pereslavl_a.png" />
-    <Content Include="maps\pereslavl_d.png" />
-    <Content Include="maps\podtungys_a.png" />
-    <Content Include="maps\podtungys_d.png" />
-    <Content Include="maps\polynesia_a.png" />
-    <Content Include="maps\polynesia_d.png" />
-    <Content Include="maps\redsea_a.png" />
-    <Content Include="maps\redsea_d.png" />
-    <Content Include="maps\rybtung_a.png" />
-    <Content Include="maps\rybtung_d.png" />
-    <Content Include="maps\saratung_a.png" />
-    <Content Include="maps\saratung_d.png" />
-    <Content Include="maps\seligtung_a.png" />
-    <Content Include="maps\seligtung_d.png" />
-    <Content Include="maps\seychelles_a.png" />
-    <Content Include="maps\seychelles_d.png" />
-    <Content Include="maps\shantar_a.png" />
-    <Content Include="maps\shantar_d.png" />
-    <Content Include="maps\southeastcoast_a.png" />
-    <Content Include="maps\southeastcoast_d.png" />
-    <Content Include="maps\svir_a.png" />
-    <Content Include="maps\svir_d.png" />
-    <Content Include="maps\syzdal_a.png" />
-    <Content Include="maps\syzdal_d.png" />
-    <Content Include="maps\tanz_coast_a.png" />
-    <Content Include="maps\tanz_coast_d.png" />
-    <Content Include="maps\tanz_lake_a.png" />
-    <Content Include="maps\tanz_lake_d.png" />
-    <Content Include="maps\undulung_a.png" />
-    <Content Include="maps\undulung_d.png" />
-    <Content Include="maps\ural_a.png" />
-    <Content Include="maps\ural_d.png" />
-    <Content Include="maps\vertung_a.png" />
-    <Content Include="maps\vertung_d.png" />
-    <Content Include="maps\vierwald_a.png" />
-    <Content Include="maps\vierwald_d.png" />
-    <Content Include="maps\vltava_a.png" />
-    <Content Include="maps\vltava_d.png" />
-    <Content Include="maps\volga_a.png" />
-    <Content Include="maps\volga_d.png" />
-    <Content Include="maps\volhov_a.png" />
-    <Content Include="maps\volhov_d.png" />
-    <Content Include="maps\vuoksa_a.png" />
-    <Content Include="maps\vuoksa_d.png" />
-    <Content Include="maps\yakutia_a.png" />
-    <Content Include="maps\yakutia_d.png" />
+    <Content Include="maps\ahtung_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\ahtung_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\akadia_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\akadia_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\alexandra_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\alexandra_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\amazonia_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\amazonia_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\amga_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\amga_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\amsterdam_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\amsterdam_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\amurtung_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\amurtung_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\baikal_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\baikal_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\balagan_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\balagan_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\buruyah_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\buruyah_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\chagan_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\chagan_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\chile_coast_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\chile_coast_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\chile_lake_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\chile_lake_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\crete_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\crete_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\dema_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\dema_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\dnepr_delta_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\dnepr_delta_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\dnepr_kiev_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\dnepr_kiev_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\donaukanal_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\donaukanal_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\dovelake_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\dovelake_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\gbr_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\gbr_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\geneva_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\geneva_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\goldfish_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\goldfish_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\greenland_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\greenland_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\hoper_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\hoper_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\horotu_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\horotu_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\houm_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\houm_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kamchatka_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kamchatka_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kirzhach_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kirzhach_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\klazma_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\klazma_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kolatung_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kolatung_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kolpakovo_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kolpakovo_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kolyma_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kolyma_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\konigssee_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\konigssee_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\krono_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\krono_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kuhtuy_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\kuhtuy_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\labinkir_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\labinkir_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\ladoga_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\ladoga_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\lofoten_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\lofoten_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\loptung_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\loptung_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\main_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\main_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\manguina_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\manguina_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\mecha_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\mecha_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\missisipi_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\missisipi_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\mostung_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\mostung_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\nevabelnoch_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\nevabelnoch_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\nile_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\nile_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\pahra_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\pahra_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\pasha_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\pasha_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\pengina_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\pengina_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\pereslavl_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\pereslavl_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\podtungys_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\podtungys_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\polynesia_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\polynesia_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\redsea_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\redsea_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\rybtung_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\rybtung_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\saratung_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\saratung_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\seligtung_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\seligtung_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\seychelles_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\seychelles_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\shantar_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\shantar_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\southeastcoast_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\southeastcoast_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\svir_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\svir_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\syzdal_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\syzdal_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\tanz_coast_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\tanz_coast_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\tanz_lake_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\tanz_lake_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\undulung_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\undulung_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\ural_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\ural_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\vertung_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\vertung_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\vierwald_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\vierwald_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\vltava_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\vltava_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\volga_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\volga_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\volhov_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\volhov_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\vuoksa_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\vuoksa_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\yakutia_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\yakutia_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="ReelImages\ACIS 1304.png" />
     <Content Include="ReelImages\Anglers Division R300.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -1928,16 +2266,12 @@
     <None Include="Resources\sellshop_a.png" />
     <None Include="Resources\select_place_d.png" />
     <None Include="Resources\select_place_a.png" />
-    <None Include="Resources\rem_d.png" />
-    <None Include="Resources\rem_a.png" />
     <None Include="Resources\refresh_d.png" />
     <None Include="Resources\refresh_a.png" />
     <None Include="Resources\office_d.png" />
     <None Include="Resources\office_a.png" />
     <None Include="Resources\makebid_d.png" />
     <None Include="Resources\makebid_a.png" />
-    <None Include="Resources\exit_d.png" />
-    <None Include="Resources\exit_a.png" />
     <None Include="Resources\cat_uniq_s.png" />
     <None Include="Resources\cat_uniq_d.png" />
     <None Include="Resources\cat_uniq_a.png" />
@@ -2255,7 +2589,6 @@
     <None Include="Resources\Achilles 233.png" />
     <None Include="Resources\Achilles 228.png" />
     <None Include="Resources\Acamedic 285.png" />
-    <None Include="Resources\Acamedic 255.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -2271,6 +2604,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BasesForms\" />
+    <Folder Include="Profiles\" />
     <Folder Include="Resources\PIDORASI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

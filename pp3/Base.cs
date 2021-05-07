@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace pp3
 {
+    [Serializable]
     public class Base
     {
 
@@ -24,6 +25,9 @@ namespace pp3
 
         public List<Location> locations { get; set;}
         public Image indexImage { get;  set; }
+
+        public Image selectedIcon { get; set; }
+        public Image deselectedIcon { get; set; }
 
         public Base(int id, string displayName, string mapName, int rank, int karma, int price, List<Location> locations, Image index)
         {

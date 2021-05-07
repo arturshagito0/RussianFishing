@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System;
 
 namespace pp3
 {
+    [Serializable]
     public class Rod : InventoryObject
     {
         public enum ROD_TYPE

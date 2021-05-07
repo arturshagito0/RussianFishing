@@ -1,5 +1,8 @@
-﻿namespace pp3
+﻿
+using System;
+namespace pp3
 {
+    [Serializable]
     public class Reel : BackpackObject
     {
         public int id;

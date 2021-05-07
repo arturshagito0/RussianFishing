@@ -1,5 +1,9 @@
-﻿namespace pp3
+﻿
+using System;
+
+namespace pp3
 {
+    [Serializable]
     class Line : InventoryObject
     {
         private int id { get; set; }

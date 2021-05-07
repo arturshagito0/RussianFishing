@@ -18,7 +18,8 @@ namespace pp3
         public static EventHandler<Base> OnTravelToAnotherBase;
         public static EventHandler<Base> ClearOutBase;
 
-        
+        public static EventHandler NewPlayerCreated;
+        public static EventHandler<Player> SavePlayerProfile;
     }
 
 

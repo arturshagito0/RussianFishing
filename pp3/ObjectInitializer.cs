@@ -94,8 +94,9 @@ namespace pp3
                     karma = (int)map["Karma"],
                     price = (int)map["Price"],
                     locations = new List<Location>(),
-                    indexImage = Image.FromFile(Application.StartupPath + @"\Locations\" + (string)map["Map name"] + @"\index.jpg")
-
+                    indexImage = Image.FromFile(Application.StartupPath + @"\Locations\" + (string)map["Map name"] + @"\index.jpg"),
+                    deselectedIcon = Image.FromFile(Application.StartupPath + @"\maps\" + $"{(string)map["Map name"]}_d.png"),
+                    selectedIcon = Image.FromFile(Application.StartupPath + @"\maps\" + $"{(string)map["Map name"]}_a.png")
 
                 };
 

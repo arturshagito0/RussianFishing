@@ -22,24 +22,30 @@ namespace pp3
         public MainForm(Player player)
         {
 
-
+            
 
             fishShopForm = new FishshopForm(initializer);
             travelForm = new TravelForm(player, initializer);
             currentPlayer = player;
             currentPlayer.currentBase = initializer.Maps.Find(e => e.mapName == "houm");
+
             InitializeComponent();
+
+            
             fishShopForm.OnItemBought += MyForm_DataAvailable;
             EventHandlers.OnCanBeBought += MoneyChanged;
             EventHandlers.OnButtonClickSound += ButtonClickSound;
             EventHandlers.OnTravelToAnotherBase += ChangeBaseImage;
+            button2.Text = currentPlayer.player_name;
+
             moneyLabel.Text = $"Деньги: {StringFormatter.decimalFormat(this.currentPlayer.money.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
-            
+            CurrentBase.Image = currentPlayer.currentBase.deselectedIcon;
+
         }
 
         private void ChangeBaseImage(object sender, Base e)
         {
-            CurrentBase.Image = e.indexImage;
+            CurrentBase.Image = currentPlayer.currentBase.deselectedIcon;
         }
 
         private void ButtonClickSound(object sender, EventArgs e)
@@ -50,7 +56,9 @@ namespace pp3
         }
 
         public void MoneyChanged(object sender, bool b)
+
         {
+            
             moneyLabel.Text = $"Деньги: {StringFormatter.decimalFormat(this.currentPlayer.money.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
         }
 
@@ -239,6 +247,7 @@ namespace pp3
         private void button1_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("Inventory: " + this.currentPlayer.playerInventory.count.ToString() + System.Environment.NewLine + $"Backpack: {this.currentPlayer.backpack.count}" );
+            MessageBox.Show($"{this.currentPlayer.money}");
             //DatabaseForm dbForm = new DatabaseForm();
             //dbForm.Show();
            
@@ -305,6 +314,28 @@ namespace pp3
         {
             this.lastPoint = new Point(e.X, e.Y);
             
+        }
+
+        private void CurrentBase_MouseEnter(object sender, EventArgs e)
+        {
+            CurrentBase.Image = currentPlayer.currentBase.selectedIcon;
+        }
+
+        private void CurrentBase_MouseLeave(object sender, EventArgs e)
+        {
+            CurrentBase.Image = currentPlayer.currentBase.deselectedIcon;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form seti = new MenuSettingsSaveFormcs(currentPlayer);
+            MessageBox.Show("oud");
+            seti.Show();
+        }
+
+        private void ControlPanel_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("gfgfgfgf");
         }
     }
 }
