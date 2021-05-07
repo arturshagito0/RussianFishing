@@ -27,7 +27,7 @@ namespace pp3
             fishShopForm = new FishshopForm(initializer);
             travelForm = new TravelForm(player, initializer);
             currentPlayer = player;
-            currentPlayer.currentBase = initializer.Maps.Find(e => e.mapName == "houm");
+            //currentPlayer.currentBase = initializer.Maps.Find(e => e.mapName == "amurtung");
 
             InitializeComponent();
 
@@ -246,8 +246,14 @@ namespace pp3
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Inventory: " + this.currentPlayer.playerInventory.count.ToString() + System.Environment.NewLine + $"Backpack: {this.currentPlayer.backpack.count}" );
-            MessageBox.Show($"{this.currentPlayer.money}");
+            MessageBox.Show("Inventory: " + this.currentPlayer.playerInventory.count.ToString() 
+                + System.Environment.NewLine 
+                + $"Backpack: {this.currentPlayer.backpack.count}"
+                + System.Environment.NewLine 
+                + $"{this.currentPlayer.player_name} + {this.currentPlayer.money}" 
+                + System.Environment.NewLine 
+                + $"{this.currentPlayer.currentBase.displayName}");
+           
             //DatabaseForm dbForm = new DatabaseForm();
             //dbForm.Show();
            
@@ -329,7 +335,8 @@ namespace pp3
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Form seti = new MenuSettingsSaveFormcs(currentPlayer);
-            MessageBox.Show("oud");
+            seti.BringToFront();
+           
             seti.Show();
         }
 

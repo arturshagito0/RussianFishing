@@ -20,7 +20,7 @@ namespace pp3
         public NewPlayerForm()
         {
             InitializeComponent();
-            EventHandlers.SavePlayerProfile += SerializePlayer;
+           // EventHandlers.SavePlayerProfile += SerializePlayer;
         }
 
         private void startGame_Click(object sender, EventArgs e)
@@ -42,17 +42,13 @@ namespace pp3
             else
             {
                
-
                 Player newPlayer = new Player(textBox1.Text);
 
-                SerializePlayer(null, newPlayer);
 
-                //Stream playerProfile = new FileStream(dir + $@"\{textBox1.Text}.pp3profile", FileMode.Create, FileAccess.Write);
-                //BinaryFormatter formatter = new BinaryFormatter();
-                //formatter.Serialize(playerProfile, newPlayer);
-                //playerProfile.Close();
+                PlayersMenuHandler.SavePlayer(newPlayer);
 
-                EventHandlers.NewPlayerCreated.Invoke(null, null);
+
+                EventHandlers.NewPlayerCreated?.Invoke(null, null);
             }
                 
                 

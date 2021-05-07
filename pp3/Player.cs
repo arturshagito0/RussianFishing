@@ -17,17 +17,40 @@ namespace pp3
 
 
 
-        public Base currentBase { get; set; } 
+        public Base currentBase { get; set; } = ObjectInitializer.getDefaultBase();
         Location currentLocation { get; set; }
 
         public Inventory playerInventory { get; set; }
         public Backpack backpack { get; set; }
 
-        public long money { get; set; } = 2000000000;
+        public long money { get; set; } = 2200000000;
         public int karma { get; set; } = 30000;
 
+        public Player()
+        {
+            EventHandlers.OnItemBought += PlayerBuysSomething;
+            EventHandlers.ItemToBeAdded += PlayerBoughtItem;
+            EventHandlers.OnTravelToAnotherBase += TravelToAnotherBase;
+        }
+        public static Player copyPlayer(Player other)
+        {
+            return new Player
+            {
+                id = other.id,
+                player_name = other.player_name,
+                rank = other.rank,
+                currentBase = other.currentBase,
+                currentLocation = other.currentLocation,
+                playerInventory = other.playerInventory,
+                backpack = other.backpack,
+                money = other.money,
+                karma = other.karma
 
-       
+
+                
+        };
+
+        }
 
 
 

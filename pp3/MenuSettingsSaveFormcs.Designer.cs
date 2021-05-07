@@ -30,11 +30,11 @@ namespace pp3
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.saveButton = new System.Windows.Forms.PictureBox();
             this.exitButton = new System.Windows.Forms.PictureBox();
+            this.saveButton = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.saveButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveButton)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -48,20 +48,6 @@ namespace pp3
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 228);
             this.panel1.TabIndex = 0;
-            // 
-            // saveButton
-            // 
-            this.saveButton.BackColor = System.Drawing.Color.Transparent;
-            this.saveButton.Image = global::pp3.Properties.Resources.save_d;
-            this.saveButton.Location = new System.Drawing.Point(12, 53);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(200, 29);
-            this.saveButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.saveButton.TabIndex = 0;
-            this.saveButton.TabStop = false;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
-            this.saveButton.MouseEnter += new System.EventHandler(this.saveButton_MouseEnter);
-            this.saveButton.MouseLeave += new System.EventHandler(this.saveButton_MouseLeave);
             // 
             // exitButton
             // 
@@ -77,20 +63,36 @@ namespace pp3
             this.exitButton.MouseEnter += new System.EventHandler(this.exitButton_MouseEnter);
             this.exitButton.MouseLeave += new System.EventHandler(this.exitButton_MouseLeave);
             // 
+            // saveButton
+            // 
+            this.saveButton.BackColor = System.Drawing.Color.Transparent;
+            this.saveButton.Image = global::pp3.Properties.Resources.save_d;
+            this.saveButton.Location = new System.Drawing.Point(28, 53);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(200, 29);
+            this.saveButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.saveButton.TabIndex = 0;
+            this.saveButton.TabStop = false;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            this.saveButton.MouseEnter += new System.EventHandler(this.saveButton_MouseEnter);
+            this.saveButton.MouseLeave += new System.EventHandler(this.saveButton_MouseLeave);
+            // 
             // MenuSettingsSaveFormcs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(240, 228);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimizeBox = false;
             this.Name = "MenuSettingsSaveFormcs";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuSettingsSaveFormcs";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.saveButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveButton)).EndInit();
             this.ResumeLayout(false);
 
         }

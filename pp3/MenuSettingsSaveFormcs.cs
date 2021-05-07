@@ -36,7 +36,7 @@ namespace pp3
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            EventHandlers.SavePlayerProfile(null, currentPlayer);
+            PlayersMenuHandler.SavePlayer(currentPlayer);
         }
 
         private void saveButton_MouseLeave(object sender, EventArgs e)

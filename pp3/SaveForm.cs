@@ -17,10 +17,14 @@ namespace pp3
         private Player selectedPlayer;
         private List<Player> allPlayers = new List<Player>();
         Form newPlayerForm = new NewPlayerForm();
+        PlayersMenuHandler handler;
         public SaveForm()
         {
             
             InitializeComponent();
+            handler = new PlayersMenuHandler(dataGridView1);
+
+
 
             if (Directory.GetFiles(Application.StartupPath + @"\Profiles", "*", SearchOption.TopDirectoryOnly).Length == 0)
             {
@@ -29,45 +33,13 @@ namespace pp3
                 newPlayerForm.BringToFront();
             }
 
+            handler.ShowAllPlayers();
 
-
-            EventHandlers.NewPlayerCreated += UpdatePlayers;
-            UpdatePlayers(null, null);
+           // EventHandlers.NewPlayerCreated += UpdatePlayers;
+            //UpdatePlayers(null, null);
         }
 
-        private void UpdatePlayers(object sender, EventArgs e)
-
-        {
-            string directory = Application.StartupPath + @"\Profiles";
-            string[] files = Directory.GetFiles(directory, "*", SearchOption.TopDirectoryOnly);
-            foreach (string player in files)
-            {
-                Stream str = new FileStream(player, FileMode.Open, FileAccess.Read);
-                BinaryFormatter formatter = new BinaryFormatter();
-                Player loadedPlayer = (Player)formatter.Deserialize(str);
-
-                if (!this.allPlayers.Select(p => p.player_name).Contains(loadedPlayer.player_name)) 
-                {
-                   this.allPlayers.Add(new Player(loadedPlayer.player_name));
-                }
-               
-                
-            }
-
-            dataGridView1.DataSource = allPlayers;
-            dataGridView1.AutoGenerateColumns = false;
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.Columns.Clear();
-
-            if (dataGridView1.Columns.Count == 0 )
-            {
-                DataGridViewColumn column = new DataGridViewTextBoxColumn();
-                column.Name = "Игрок";
-                column.DataPropertyName = "player_name";
-                dataGridView1.Columns.Add(column);
-            }
-
-        }
+       
 
         #region HoverEvents
         private void loadButton_MouseEnter(object sender, EventArgs e)

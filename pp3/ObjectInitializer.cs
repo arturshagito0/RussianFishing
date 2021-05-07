@@ -16,6 +16,11 @@ namespace pp3
         public List<Reel> Reels { get; set; }
         public List<Base> Maps { get; set; }
 
+        public static Base getDefaultBase()
+        {
+           return InitializeAllMaps().Find(e => e.mapName == "houm");
+        }
+
 
         public ObjectInitializer()
         {
