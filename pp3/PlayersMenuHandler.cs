@@ -43,9 +43,10 @@ namespace pp3
 
                 if (!this.allPlayers.Select(p => p.player_name).Contains(loadedPlayer.player_name))
                 {
-                    MessageBox.Show("Added new plauer");
-                    //this.allPlayers.Add(new Player(loadedPlayer.player_name));
-                    this.allPlayers.Add(Player.copyPlayer(loadedPlayer));
+                    
+                  
+                   this.allPlayers.Add(Player.copyPlayer(loadedPlayer));
+                    
                 }
 
 

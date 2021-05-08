@@ -1933,4 +1933,16 @@
   <data name="menu_d1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_d1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exitm_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exitm_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exitm_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exitm_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\set_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\set_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

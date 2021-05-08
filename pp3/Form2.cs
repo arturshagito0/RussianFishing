@@ -272,11 +272,14 @@ namespace pp3
         {
             
             EventHandler eh = OnItemBought;
-            if (eh != null)
-            {
-                eh(this, e);
+
+            EventHandlers.ItemToBeAdded?.Invoke(null, selectedItem);
+
+            //if (eh != null)
+            //{
+            //    eh(this, e);
                 
-            }
+            //}
         }
 
         public static EventHandler<Player> PlayerIsNeeded;
@@ -285,10 +288,6 @@ namespace pp3
         {
             buyButton.Image = Properties.Resources.buy_a;
             ItemIsBought(null);
-
-
-
-
 
         }
 

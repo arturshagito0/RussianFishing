@@ -20,7 +20,6 @@ namespace pp3
         public NewPlayerForm()
         {
             InitializeComponent();
-           // EventHandlers.SavePlayerProfile += SerializePlayer;
         }
 
         private void startGame_Click(object sender, EventArgs e)
@@ -49,22 +48,14 @@ namespace pp3
 
 
                 EventHandlers.NewPlayerCreated?.Invoke(null, null);
+
+                exitButton_Click(null, null);
             }
                 
                 
         }
 
-        private void SerializePlayer(object sender, Player player)
-        {
-            MessageBox.Show(player.money.ToString());
-            string dir = Application.StartupPath + $@"\Profiles\{player.player_name}.pp3profile";
-            File.Delete(dir);
-            MessageBox.Show("In beyween");
-            Stream playerProfile = new FileStream(dir, FileMode.Create, FileAccess.Write);
-            BinaryFormatter formatter = new BinaryFormatter();
-            formatter.Serialize(playerProfile, player);
-            playerProfile.Close();
-        }
+        #region HoverEvents
 
         private void exitButton_MouseLeave(object sender, EventArgs e)
         {
@@ -85,6 +76,8 @@ namespace pp3
         {
             startGame.Image = Properties.Resources.start_d;
         }
+
+        #endregion 
 
         private void exitButton_Click(object sender, EventArgs e)
         {

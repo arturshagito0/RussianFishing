@@ -18,7 +18,7 @@ namespace pp3
         private Player currentPlayer;
         private ObjectInitializer initializer;
         private Base selectedBase;
-        private Base currentBase; 
+        
 
         Point lastPoint;
 
@@ -30,7 +30,7 @@ namespace pp3
 
             this.currentPlayer = player;
             this.initializer = initializer;
-            this.currentBase = currentPlayer.currentBase != null ? currentPlayer.currentBase : (Base)initializer.Maps.Find(b => b.mapName == "houm");
+            //this.currentBase = currentPlayer.currentBase != null ? currentPlayer.currentBase : (Base)initializer.Maps.Find(b => b.mapName == "houm");
 
             reDrawButtons();
 

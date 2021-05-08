@@ -32,9 +32,15 @@ namespace pp3
             this.panel1 = new System.Windows.Forms.Panel();
             this.exitButton = new System.Windows.Forms.PictureBox();
             this.saveButton = new System.Windows.Forms.PictureBox();
+            this.closeGame = new System.Windows.Forms.PictureBox();
+            this.mainMenuButton = new System.Windows.Forms.PictureBox();
+            this.settingsButton = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.saveButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainMenuButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsButton)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -43,6 +49,9 @@ namespace pp3
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.exitButton);
             this.panel1.Controls.Add(this.saveButton);
+            this.panel1.Controls.Add(this.closeGame);
+            this.panel1.Controls.Add(this.mainMenuButton);
+            this.panel1.Controls.Add(this.settingsButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -77,6 +86,47 @@ namespace pp3
             this.saveButton.MouseEnter += new System.EventHandler(this.saveButton_MouseEnter);
             this.saveButton.MouseLeave += new System.EventHandler(this.saveButton_MouseLeave);
             // 
+            // closeGame
+            // 
+            this.closeGame.BackColor = System.Drawing.Color.Transparent;
+            this.closeGame.Image = global::pp3.Properties.Resources.exitw_d;
+            this.closeGame.Location = new System.Drawing.Point(28, 158);
+            this.closeGame.Name = "closeGame";
+            this.closeGame.Size = new System.Drawing.Size(200, 29);
+            this.closeGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.closeGame.TabIndex = 2;
+            this.closeGame.TabStop = false;
+            this.closeGame.Click += new System.EventHandler(this.closeGame_Click);
+            this.closeGame.MouseEnter += new System.EventHandler(this.closeGame_MouseEnter);
+            this.closeGame.MouseLeave += new System.EventHandler(this.closeGame_MouseLeave);
+            // 
+            // mainMenuButton
+            // 
+            this.mainMenuButton.BackColor = System.Drawing.Color.Transparent;
+            this.mainMenuButton.Image = global::pp3.Properties.Resources.exitm_d;
+            this.mainMenuButton.Location = new System.Drawing.Point(28, 123);
+            this.mainMenuButton.Name = "mainMenuButton";
+            this.mainMenuButton.Size = new System.Drawing.Size(200, 29);
+            this.mainMenuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.mainMenuButton.TabIndex = 3;
+            this.mainMenuButton.TabStop = false;
+            this.mainMenuButton.Click += new System.EventHandler(this.mainMenuButton_Click);
+            this.mainMenuButton.MouseEnter += new System.EventHandler(this.mainMenuButton_MouseEnter);
+            this.mainMenuButton.MouseLeave += new System.EventHandler(this.mainMenuButton_MouseLeave);
+            // 
+            // settingsButton
+            // 
+            this.settingsButton.BackColor = System.Drawing.Color.Transparent;
+            this.settingsButton.Image = global::pp3.Properties.Resources.set_d;
+            this.settingsButton.Location = new System.Drawing.Point(28, 88);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(200, 29);
+            this.settingsButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.settingsButton.TabIndex = 4;
+            this.settingsButton.TabStop = false;
+            this.settingsButton.MouseEnter += new System.EventHandler(this.settingsButton_MouseEnter);
+            this.settingsButton.MouseLeave += new System.EventHandler(this.settingsButton_MouseLeave);
+            // 
             // MenuSettingsSaveFormcs
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -93,6 +143,9 @@ namespace pp3
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saveButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainMenuButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -102,5 +155,8 @@ namespace pp3
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox exitButton;
         private System.Windows.Forms.PictureBox saveButton;
+        private System.Windows.Forms.PictureBox closeGame;
+        private System.Windows.Forms.PictureBox mainMenuButton;
+        private System.Windows.Forms.PictureBox settingsButton;
     }
 }

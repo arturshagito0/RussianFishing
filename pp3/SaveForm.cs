@@ -15,14 +15,19 @@ namespace pp3
     public partial class SaveForm : Form
     {
         private Player selectedPlayer;
-        private List<Player> allPlayers = new List<Player>();
+        MainForm mf;
         Form newPlayerForm = new NewPlayerForm();
         PlayersMenuHandler handler;
+        bool mainFormInitialized = false;
         public SaveForm()
         {
             
             InitializeComponent();
+
             handler = new PlayersMenuHandler(dataGridView1);
+
+            MenuSettingsSaveFormcs.OnMainMenuClick += ShowSaveMenu;
+           
 
 
 
@@ -33,13 +38,24 @@ namespace pp3
                 newPlayerForm.BringToFront();
             }
 
+            else
+            {
+                //dataGridView1_Click(null, null);
+            }
+
             handler.ShowAllPlayers();
+            
 
            // EventHandlers.NewPlayerCreated += UpdatePlayers;
             //UpdatePlayers(null, null);
         }
 
-       
+        private void ShowSaveMenu(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+
 
         #region HoverEvents
         private void loadButton_MouseEnter(object sender, EventArgs e)
@@ -87,19 +103,36 @@ namespace pp3
         private void loadButton_Click(object sender, EventArgs e)
         {
 
+            //if (!mainFormInitialized)
+            //{
+            //    mf = new MainForm(selectedPlayer);
+            //    mainFormInitialized = true;
+            //}
 
-            new MainForm(selectedPlayer).Show();
-            
+            //else
+            //{
+            //    mf.currentPlayer = this.selectedPlayer;
+            //    mf.Update();
+            //}
+
+            selectedPlayer.SubscribeToPlayerEvents();
+
+            mf = new MainForm(selectedPlayer);
+            mf.Show();
             this.Hide();
+            
+            
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.allPlayers.ForEach(f => MessageBox.Show(f.player_name));
+            MessageBox.Show(dataGridView1.Rows.Count.ToString());
         }
 
         private void saveButton_Click(object sender, EventArgs e)
         {
+            
             newPlayerForm.Show();
         }
 
@@ -110,8 +143,17 @@ namespace pp3
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
-            selectedPlayer = (Player)dataGridView1.CurrentRow.DataBoundItem;
-            MessageBox.Show(selectedPlayer.money.ToString());
+            try
+            {
+                selectedPlayer = (Player)dataGridView1.CurrentRow.DataBoundItem;
+            }
+
+            catch (IndexOutOfRangeException eg)
+            {
+                MessageBox.Show("Etot juy ne daet");
+            } 
+
+           
             
         }
     }

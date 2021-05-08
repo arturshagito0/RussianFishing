@@ -693,6 +693,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Acamedic 255.png" />
+    <None Include="Resources\exitm_a.png" />
+    <None Include="Resources\set_d.png" />
+    <None Include="Resources\set_a.png" />
+    <None Include="Resources\exitm_d.png" />
     <None Include="Resources\menu_d1.png" />
     <None Include="Resources\layer7.jpg" />
     <None Include="Resources\save_d.png" />

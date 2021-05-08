@@ -26,12 +26,15 @@ namespace pp3
         public long money { get; set; } = 2200000000;
         public int karma { get; set; } = 30000;
 
+
+
         public Player()
         {
-            EventHandlers.OnItemBought += PlayerBuysSomething;
-            EventHandlers.ItemToBeAdded += PlayerBoughtItem;
-            EventHandlers.OnTravelToAnotherBase += TravelToAnotherBase;
+            
+
+  
         }
+
         public static Player copyPlayer(Player other)
         {
             return new Player
@@ -59,14 +62,26 @@ namespace pp3
             this.player_name = player_name;
             playerInventory = new Inventory();
             backpack = new Backpack();
-            EventHandlers.OnItemBought += PlayerBuysSomething;
-            EventHandlers.ItemToBeAdded += PlayerBoughtItem;
-            EventHandlers.OnTravelToAnotherBase += TravelToAnotherBase;
-
-            
             
 
         }
+
+
+        public void SubscribeToPlayerEvents()
+        {
+            EventHandlers.OnItemBought += PlayerBuysSomething;
+            EventHandlers.ItemToBeAdded += PlayerBoughtItem;
+            EventHandlers.OnTravelToAnotherBase += TravelToAnotherBase;
+        }
+
+        public void UnsubscribeFromPlayerEvents()
+        {
+            EventHandlers.OnItemBought -= PlayerBuysSomething;
+            EventHandlers.ItemToBeAdded -= PlayerBoughtItem;
+            EventHandlers.OnTravelToAnotherBase -= TravelToAnotherBase;
+        }
+
+
 
         private void TravelToAnotherBase(object sender, Base e)
         {
@@ -75,6 +90,8 @@ namespace pp3
 
         private void PlayerBoughtItem(object sender, GameObject item)
         {
+           
+
             if (this.playerInventory.count > this.playerInventory.capacity)
             {
 
@@ -86,7 +103,7 @@ namespace pp3
             else if (item.price > this.money)
             {
 
-                EventHandlers.OnCannotBeBought?.Invoke(this, "Not enough money!");
+                EventHandlers.OnCannotBeBought?.Invoke(this, $"Not enough money! {this.money}");
 
 
             }
@@ -110,7 +127,6 @@ namespace pp3
 
                 this.money -= item.price;
 
-                //EventHandlers.OnItemBought(null, item.price);
                 EventHandlers.OnCanBeBought(null, true);
             }
         }

@@ -14,7 +14,7 @@ namespace pp3
         public ObjectInitializer initializer = new ObjectInitializer();
         public FishshopForm fishShopForm;
         public TravelForm travelForm;
-        public Player currentPlayer;
+        public Player currentPlayer { get; set; }
         
 
 
@@ -22,12 +22,11 @@ namespace pp3
         public MainForm(Player player)
         {
 
-            
+            currentPlayer = player;
 
             fishShopForm = new FishshopForm(initializer);
             travelForm = new TravelForm(player, initializer);
-            currentPlayer = player;
-            //currentPlayer.currentBase = initializer.Maps.Find(e => e.mapName == "amurtung");
+            
 
             InitializeComponent();
 
@@ -36,10 +35,17 @@ namespace pp3
             EventHandlers.OnCanBeBought += MoneyChanged;
             EventHandlers.OnButtonClickSound += ButtonClickSound;
             EventHandlers.OnTravelToAnotherBase += ChangeBaseImage;
+
+
+            
+
             button2.Text = currentPlayer.player_name;
+
+
 
             moneyLabel.Text = $"Деньги: {StringFormatter.decimalFormat(this.currentPlayer.money.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
             CurrentBase.Image = currentPlayer.currentBase.deselectedIcon;
+            
 
         }
 
@@ -79,7 +85,8 @@ namespace pp3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            MoneyChanged(null, false);
+            MessageBox.Show("money changed");
         }
         private void FishShopButton_MouseClick(object sender, MouseEventArgs e)
         {
@@ -303,7 +310,7 @@ namespace pp3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
 
         Point lastPoint;
@@ -334,15 +341,31 @@ namespace pp3
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
+            
             Form seti = new MenuSettingsSaveFormcs(currentPlayer);
             seti.BringToFront();
            
             seti.Show();
+
+            seti.Closed += (s, args) => {
+                this.Hide();
+                MessageBox.Show("Form1 disposed"); };
         }
 
         private void ControlPanel_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("gfgfgfgf");
+            
+        }
+
+        private void settingsButton_MouseEnter(object sender, EventArgs e)
+        {
+            settingsButton.Image = Properties.Resources.menu_a;
+        }
+
+        private void settingsButton_MouseLeave(object sender, EventArgs e)
+        {
+            settingsButton.Image = Properties.Resources.menu_d;
         }
     }
 }
