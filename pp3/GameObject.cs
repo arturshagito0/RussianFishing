@@ -1,8 +1,8 @@
 ﻿namespace pp3
 {
-    public  interface GameObject
+    public interface GameObject
     {
-         int price { get; set; }
+        int price { get; set; }
 
     }
 }

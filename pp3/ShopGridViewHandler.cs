@@ -7,7 +7,7 @@ namespace pp3
     public static class ShopGridViewHandler
 
     {
-       
+
 
         public static void selectRods(Rod.ROD_TYPE type, bool unique, DataGridView datagrid, ObjectInitializer initializer)
         {

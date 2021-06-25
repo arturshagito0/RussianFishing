@@ -85,7 +85,7 @@ namespace pp3
             }
 
             BinaryFormatter formatter = new BinaryFormatter();
-            MessageBox.Show($"{player.money}    {player.player_name}  { player.currentBase.displayName } ");
+           // MessageBox.Show($"{player.money}    {player.player_name}  { player.currentBase.displayName } ");
             
             Stream playerStream = new FileStream(pathToPlayer, FileMode.Create, FileAccess.Write);
 

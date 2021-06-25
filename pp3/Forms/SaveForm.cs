@@ -143,15 +143,12 @@ namespace pp3
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
+            
                 selectedPlayer = (Player)dataGridView1.CurrentRow.DataBoundItem;
-            }
+            
 
-            catch (IndexOutOfRangeException eg)
-            {
-                MessageBox.Show("Etot juy ne daet");
-            } 
+            
 
            
             

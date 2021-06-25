@@ -31,13 +31,13 @@ namespace pp3
                 controls[1].Text = "Чем мощнее катушка тем легче вытащить рыбу";
 
                 picturebox.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(reel.name);
-                
+
 
                 controls[0].Text = reel.name;
 
                 controls[2].Text = $"Мощность: {reel.power}%";
 
-                
+
                 controls[3].Text = $"Цена: {StringFormatter.decimalFormat(reel.price.ToString(), StringFormatter.FORMAT_KIND.CURR)}";
 
 
@@ -67,7 +67,7 @@ namespace pp3
 
                 Bitmap im = (Bitmap)Properties.Resources.ResourceManager.GetObject(selectedRod.rodName);
 
-                
+
 
 
 
