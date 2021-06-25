@@ -86,8 +86,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Backpack.cs" />
-    <Compile Include="BackpackObject.cs" />
+    <Compile Include="GameObjects\Backpack.cs" />
+    <Compile Include="GameObjects\BackpackObject.cs" />
     <Compile Include="GameObjects\Bait.cs" />
     <Compile Include="GameObjects\Base.cs" />
     <Compile Include="GameObjects\Car.cs" />
