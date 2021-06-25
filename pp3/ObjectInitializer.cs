@@ -85,11 +85,7 @@ namespace pp3
 
             {
 
-                
-
-                
-
-
+               
                 Base newBase = new Base
                 {
                     id = (int)map["ID"],

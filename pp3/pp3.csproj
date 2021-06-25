@@ -91,31 +91,13 @@
     <Compile Include="GameObjects\Bait.cs" />
     <Compile Include="GameObjects\Base.cs" />
     <Compile Include="GameObjects\Car.cs" />
-    <Compile Include="Database1DataSet.cs">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    <Compile Include="ObjectDataSet.cs">
+      <DependentUpon>ObjectDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Database1DataSet.Designer.cs">
+    <Compile Include="ObjectDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Database1DataSet1.cs">
-      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Database1DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Database1DataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Database1DataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet3.xsd</DependentUpon>
+      <DependentUpon>ObjectDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Forms\DatabaseForm.cs">
       <SubType>Form</SubType>
@@ -160,10 +142,9 @@
     </Compile>
     <Compile Include="ObjectInitializer.cs" />
     <Compile Include="GameObjects\Home.cs" />
-    <Compile Include="Initializer.cs" />
     <Compile Include="GameObjects\Inventory.cs" />
     <Compile Include="GameObjects\Line.cs" />
-    <Compile Include="GameObject.cs" />
+    <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\Player.cs" />
     <Compile Include="PlayersMenuHandler.cs" />
     <Compile Include="GameObjects\Potion.cs" />
@@ -221,49 +202,16 @@
     <EmbeddedResource Include="Forms\TravelForm.resx">
       <DependentUpon>TravelForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Database1DataSet.xsc">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    <None Include="ObjectDataSet.xsc">
+      <DependentUpon>ObjectDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Database1DataSet.xsd">
+    <None Include="ObjectDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>ObjectDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Database1DataSet.xss">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet1.xsc">
-      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database1DataSet1.xss">
-      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet2.xsc">
-      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database1DataSet2.xss">
-      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet3.xsc">
-      <DependentUpon>Database1DataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database1DataSet3.xss">
-      <DependentUpon>Database1DataSet3.xsd</DependentUpon>
+    <None Include="ObjectDataSet.xss">
+      <DependentUpon>ObjectDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="pp3_TemporaryKey.pfx" />

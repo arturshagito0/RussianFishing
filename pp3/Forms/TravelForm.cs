@@ -258,7 +258,7 @@ namespace pp3
                     EventHandlers.OnButtonClickSound(null, null);
                     EventHandlers.OnCanBeBought(null, false);
 
-                    
+                    this.Hide();
                     
                     EventHandlers.OnTravelToAnotherBase(null, selectedBase);
                     

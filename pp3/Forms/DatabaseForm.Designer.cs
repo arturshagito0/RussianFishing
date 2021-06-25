@@ -32,7 +32,7 @@ namespace pp3
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.mapsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database1DataSet1 = new pp3.Database1DataSet1();
+            this.ObjectDataSet = new pp3.ObjectDataSet();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@ namespace pp3
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ObjectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,12 +75,12 @@ namespace pp3
             // mapsBindingSource
             // 
             this.mapsBindingSource.DataMember = "Maps";
-            this.mapsBindingSource.DataSource = this.database1DataSet1;
+            this.mapsBindingSource.DataSource = this.ObjectDataSet;
             // 
             // database1DataSet1
             // 
-            this.database1DataSet1.DataSetName = "Database1DataSet1";
-            this.database1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.ObjectDataSet.DataSetName = "ObjectDataSet";
+            this.ObjectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox1
             // 
@@ -195,7 +195,7 @@ namespace pp3
             this.Load += new System.EventHandler(this.DatabaseForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ObjectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -208,7 +208,7 @@ namespace pp3
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
-        private Database1DataSet1 database1DataSet1;
+        private ObjectDataSet ObjectDataSet;
         private System.Windows.Forms.BindingSource mapsBindingSource;
         private Database1DataSet1TableAdapters.MapsTableAdapter mapsTableAdapter;
         private Database1DataSet1TableAdapters.TableAdapterManager tableAdapterManager;
