@@ -48,9 +48,9 @@ namespace pp3
             this.MessagePanel = new System.Windows.Forms.Panel();
             this.moneyLabel = new System.Windows.Forms.Label();
             this.ControlPanel = new System.Windows.Forms.Panel();
+            this.settingsButton = new System.Windows.Forms.PictureBox();
             this.MiddlePanel = new System.Windows.Forms.Panel();
             this.BasePanel = new System.Windows.Forms.Panel();
-            this.settingsButton = new System.Windows.Forms.PictureBox();
             this.SellFishButton = new System.Windows.Forms.PictureBox();
             this.TravelButton = new System.Windows.Forms.PictureBox();
             this.JunkShopButton = new System.Windows.Forms.PictureBox();
@@ -74,9 +74,9 @@ namespace pp3
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.MessagePanel.SuspendLayout();
             this.ControlPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsButton)).BeginInit();
             this.MiddlePanel.SuspendLayout();
             this.BasePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.settingsButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SellFishButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TravelButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.JunkShopButton)).BeginInit();
@@ -173,6 +173,7 @@ namespace pp3
             this.TackleboxButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.TackleboxButton.TabIndex = 1;
             this.TackleboxButton.TabStop = false;
+            this.TackleboxButton.Click += new System.EventHandler(this.TackleboxButton_Click);
             this.TackleboxButton.MouseEnter += new System.EventHandler(this.TackleboxButton_MouseEnter);
             this.TackleboxButton.MouseLeave += new System.EventHandler(this.TackleboxButton_MouseLeave);
             // 
@@ -321,6 +322,20 @@ namespace pp3
             this.ControlPanel.TabIndex = 2;
             this.ControlPanel.Click += new System.EventHandler(this.ControlPanel_Click);
             // 
+            // settingsButton
+            // 
+            this.settingsButton.BackColor = System.Drawing.Color.Transparent;
+            this.settingsButton.Image = global::pp3.Properties.Resources.menu_d1;
+            this.settingsButton.Location = new System.Drawing.Point(376, 3);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(60, 30);
+            this.settingsButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.settingsButton.TabIndex = 7;
+            this.settingsButton.TabStop = false;
+            this.settingsButton.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.settingsButton.MouseEnter += new System.EventHandler(this.settingsButton_MouseEnter);
+            this.settingsButton.MouseLeave += new System.EventHandler(this.settingsButton_MouseLeave);
+            // 
             // MiddlePanel
             // 
             this.MiddlePanel.AutoSize = true;
@@ -346,20 +361,6 @@ namespace pp3
             this.BasePanel.Size = new System.Drawing.Size(803, 503);
             this.BasePanel.TabIndex = 2;
             this.BasePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.BasePanel_MouseClick);
-            // 
-            // settingsButton
-            // 
-            this.settingsButton.BackColor = System.Drawing.Color.Transparent;
-            this.settingsButton.Image = global::pp3.Properties.Resources.menu_d1;
-            this.settingsButton.Location = new System.Drawing.Point(376, 3);
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(60, 30);
-            this.settingsButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.settingsButton.TabIndex = 7;
-            this.settingsButton.TabStop = false;
-            this.settingsButton.Click += new System.EventHandler(this.pictureBox1_Click);
-            this.settingsButton.MouseEnter += new System.EventHandler(this.settingsButton_MouseEnter);
-            this.settingsButton.MouseLeave += new System.EventHandler(this.settingsButton_MouseLeave);
             // 
             // SellFishButton
             // 
@@ -476,10 +477,10 @@ namespace pp3
             this.MessagePanel.PerformLayout();
             this.ControlPanel.ResumeLayout(false);
             this.ControlPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsButton)).EndInit();
             this.MiddlePanel.ResumeLayout(false);
             this.BasePanel.ResumeLayout(false);
             this.BasePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.settingsButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SellFishButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TravelButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.JunkShopButton)).EndInit();

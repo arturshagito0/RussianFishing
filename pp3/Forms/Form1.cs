@@ -14,6 +14,7 @@ namespace pp3
         public ObjectInitializer initializer = new ObjectInitializer();
         public FishshopForm fishShopForm;
         public TravelForm travelForm;
+        
         public Player currentPlayer { get; set; }
         
 
@@ -366,6 +367,11 @@ namespace pp3
         private void settingsButton_MouseLeave(object sender, EventArgs e)
         {
             settingsButton.Image = Properties.Resources.menu_d;
+        }
+
+        private void TackleboxButton_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

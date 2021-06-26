@@ -3433,6 +3433,16 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap layer21 {
+            get {
+                object obj = ResourceManager.GetObject("layer21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap layer3 {
             get {
                 object obj = ResourceManager.GetObject("layer3", resourceCulture);
@@ -3446,6 +3456,16 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap layer31 {
             get {
                 object obj = ResourceManager.GetObject("layer31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap layer32 {
+            get {
+                object obj = ResourceManager.GetObject("layer32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3496,6 +3516,16 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap layer8 {
             get {
                 object obj = ResourceManager.GetObject("layer8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap layer9 {
+            get {
+                object obj = ResourceManager.GetObject("layer9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
