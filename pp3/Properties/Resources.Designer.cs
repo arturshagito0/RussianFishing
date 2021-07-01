@@ -2013,16 +2013,6 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Daytona_B3 {
-            get {
-                object obj = ResourceManager.GetObject("Daytona B3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Daytona_M1 {
             get {
                 object obj = ResourceManager.GetObject("Daytona M1", resourceCulture);
@@ -5626,16 +5616,6 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap Sprut_200HP {
             get {
                 object obj = ResourceManager.GetObject("Sprut-200HP", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sprut_300 {
-            get {
-                object obj = ResourceManager.GetObject("Sprut-300", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

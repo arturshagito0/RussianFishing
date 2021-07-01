@@ -175,11 +175,6 @@
     <Compile Include="GameObjects\Potion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\ReelResouce.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReelResouce.resx</DependentUpon>
-    </Compile>
     <Compile Include="GameObjects\Reel.cs" />
     <Compile Include="GameObjects\Rod.cs" />
     <Compile Include="Forms\SaveForm.cs">
@@ -187,6 +182,11 @@
     </Compile>
     <Compile Include="Forms\SaveForm.Designer.cs">
       <DependentUpon>SaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="ShopGridViewHandler.cs" />
     <Compile Include="ShopObjectViewWindowHandler.cs" />
@@ -214,10 +214,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TackleBoxForm.resx">
       <DependentUpon>TackleBoxForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\ReelResouce.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ReelResouce.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -280,11 +276,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -293,402 +284,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\layer7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backbase_n.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\layer4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\layer2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\layer5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\layer6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\step9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\goldfish_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\actions_i.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\actions_s.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bag_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bag_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_bar_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_bar_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_blanks_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_blanks_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_flea_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_flea_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_food_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_food_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_news_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_news_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_quests_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_quests_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_sell_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_sell_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_shop_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_shop_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_teams_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_teams_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_tour_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_tour_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_travel_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_travel_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_uniq_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base_uniq_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blocks_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blocks_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bucket_em_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bucket_em_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bucket_fu_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bucket_fu_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chat_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chat_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chat_i.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chat_s.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chat_send_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chat_send_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chat_text.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\corf_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\corf_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\data_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\data_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dbchat_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dbchat_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eraze_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eraze_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\food_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\food_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\help_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\help_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ico_block_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ico_block_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ico_rec_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ico_rec_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ico_rec_i.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ind_alc.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ind_food.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ind_loading.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ind_reel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ind_rod.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\info_bait_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\info_bait_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\info_rod_popl.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\info_rod_spin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\info_scaf_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\no_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\no_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ok_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ok_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\onserv_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\onserv_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pack_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pack_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pause_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pause_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\players_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\players_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\players_det_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\players_det_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\players_i.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\players_s.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\prolong_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\prolong_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\recive_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\recive_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\return_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\return_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rod1_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rod1_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rod1_s.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rod2_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rod2_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rod2_s.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rod3_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rod3_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rod3_s.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rodback_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rodback_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rodset_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rodset_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\store_car_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\store_car_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\store_house_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\store_house_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tobase_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tobase_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\toteam_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\toteam_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\actions_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\actions_d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\layer.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shop_but01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shop_but03.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shop_but04.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shop_but05.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shop_but06.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shop_but08.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shop_but10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shop_but13.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database1.mdf">
@@ -701,217 +296,510 @@
     <Content Include="Locations\ahtung\index.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Objects\Spin\Acamedic 255.jpg" />
-    <Content Include="Objects\Spin\Acamedic 285.jpg" />
-    <Content Include="Objects\Spin\Achilles 228.jpg" />
-    <Content Include="Objects\Spin\Achilles 233.jpg" />
-    <Content Include="Objects\Spin\Admiral 249.jpg" />
-    <Content Include="Objects\Spin\Adventure rod-carp.jpg" />
-    <Content Include="Objects\Spin\Adventure rod-pike.jpg" />
-    <Content Include="Objects\Spin\Assistance 257.jpg" />
-    <Content Include="Objects\Spin\Atlant 254.jpg" />
-    <Content Include="Objects\Spin\Atlantic Carp-fider.jpg" />
-    <Content Include="Objects\Spin\Atlantic Lakestar.jpg" />
-    <Content Include="Objects\Spin\Atlantic Light.jpg" />
-    <Content Include="Objects\Spin\Atlantic Nord.jpg" />
-    <Content Include="Objects\Spin\Atlantic Pike.jpg" />
-    <Content Include="Objects\Spin\Atlantic Salmon.jpg" />
-    <Content Include="Objects\Spin\Atlantic Smart.jpg" />
-    <Content Include="Objects\Spin\Atlantic White Bear.jpg" />
-    <Content Include="Objects\Spin\Bambuka.jpg" />
-    <Content Include="Objects\Spin\Banana Force-c.jpg" />
-    <Content Include="Objects\Spin\Banana Force-s.jpg" />
-    <Content Include="Objects\Spin\Banana Start-c.jpg" />
-    <Content Include="Objects\Spin\Banana Start-s.jpg" />
-    <Content Include="Objects\Spin\Barracuda B100.jpg" />
-    <Content Include="Objects\Spin\Barracuda B200.jpg" />
-    <Content Include="Objects\Spin\Barracuda B300.jpg" />
-    <Content Include="Objects\Spin\Barracuda B400.jpg" />
-    <Content Include="Objects\Spin\Barracuda B500.jpg" />
-    <Content Include="Objects\Spin\Bestia 110.jpg" />
-    <Content Include="Objects\Spin\Black Eagle Luxe.jpg" />
-    <Content Include="Objects\Spin\Black Eagle.jpg" />
-    <Content Include="Objects\Spin\Black Fish-700.jpg" />
-    <Content Include="Objects\Spin\Black Fish-800.jpg" />
-    <Content Include="Objects\Spin\Black Fish-900.jpg" />
-    <Content Include="Objects\Spin\Black Line.jpg" />
-    <Content Include="Objects\Spin\Black.jpg" />
-    <Content Include="Objects\Spin\Boreas 107.jpg" />
-    <Content Include="Objects\Spin\Bullet 246.jpg" />
-    <Content Include="Objects\Spin\Catapult 119.jpg" />
-    <Content Include="Objects\Spin\Catapult 120.jpg" />
-    <Content Include="Objects\Spin\Cheetah.jpg" />
-    <Content Include="Objects\Spin\Combat Stick 216.jpg" />
-    <Content Include="Objects\Spin\Combat Stick 218.jpg" />
-    <Content Include="Objects\Spin\Combat Stick 222.jpg" />
-    <Content Include="Objects\Spin\Comet 753.jpg" />
-    <Content Include="Objects\Spin\Corona 251.jpg" />
-    <Content Include="Objects\Spin\Crystal LE.jpg" />
-    <Content Include="Objects\Spin\Daytona B1.jpg" />
-    <Content Include="Objects\Spin\Daytona B2.jpg" />
-    <Content Include="Objects\Spin\Daytona B3.jpg" />
-    <Content Include="Objects\Spin\Daytona M1.jpg" />
-    <Content Include="Objects\Spin\Daytona M2.jpg" />
-    <Content Include="Objects\Spin\Daytona M3.jpg" />
-    <Content Include="Objects\Spin\Deep Fish.jpg" />
-    <Content Include="Objects\Spin\Delta 759.jpg" />
-    <Content Include="Objects\Spin\Demeter 111.jpg" />
-    <Content Include="Objects\Spin\Dex.jpg" />
-    <Content Include="Objects\Spin\Ecko Fish.jpg" />
-    <Content Include="Objects\Spin\FastMaster.jpg" />
-    <Content Include="Objects\Spin\FishMaster-M1.jpg" />
-    <Content Include="Objects\Spin\FishMaster-M2.jpg" />
-    <Content Include="Objects\Spin\FishMaster-M3.jpg" />
-    <Content Include="Objects\Spin\FishMaster-M4.jpg" />
-    <Content Include="Objects\Spin\FishMaster-M5.jpg" />
-    <Content Include="Objects\Spin\FishMaster-M6.jpg" />
-    <Content Include="Objects\Spin\Force Master.jpg" />
-    <Content Include="Objects\Spin\Fox.jpg" />
-    <Content Include="Objects\Spin\Freeman 856.jpg" />
-    <Content Include="Objects\Spin\Gold Marlin-100.jpg" />
-    <Content Include="Objects\Spin\Gold Marlin-200.jpg" />
-    <Content Include="Objects\Spin\Gold River - Limited.jpg" />
-    <Content Include="Objects\Spin\gp-c.jpg" />
-    <Content Include="Objects\Spin\gp-s.jpg" />
-    <Content Include="Objects\Spin\Green Devil.jpg" />
-    <Content Include="Objects\Spin\Harpoon 51.jpg" />
-    <Content Include="Objects\Spin\Haven Creek-1500.jpg" />
-    <Content Include="Objects\Spin\Haven Creek-3000.jpg" />
-    <Content Include="Objects\Spin\Haven Creek-4000.jpg" />
-    <Content Include="Objects\Spin\Haven Creek-5500.jpg" />
-    <Content Include="Objects\Spin\Haven Creek-7000.jpg" />
-    <Content Include="Objects\Spin\Helios Bolognese 860.jpg" />
-    <Content Include="Objects\Spin\Hera Fiber Glass 672.jpg" />
-    <Content Include="Objects\Spin\Herakles 108.jpg" />
-    <Content Include="Objects\Spin\Hermes 112.jpg" />
-    <Content Include="Objects\Spin\Hermes Fiber Glass 651.jpg" />
-    <Content Include="Objects\Spin\Hydra Bolognese 861.jpg" />
-    <Content Include="Objects\Spin\Ice Bullet.jpg" />
-    <Content Include="Objects\Spin\Instant 252.jpg" />
-    <Content Include="Objects\Spin\Kipper 212.jpg" />
-    <Content Include="Objects\Spin\Labzilla Light.jpg" />
-    <Content Include="Objects\Spin\Labzilla Monster.jpg" />
-    <Content Include="Objects\Spin\Labzilla Power.jpg" />
-    <Content Include="Objects\Spin\Lagoon 242.jpg" />
-    <Content Include="Objects\Spin\Lagoon 243.jpg" />
-    <Content Include="Objects\Spin\Laocoon 235.jpg" />
-    <Content Include="Objects\Spin\Legend.jpg" />
-    <Content Include="Objects\Spin\Light Start.jpg" />
-    <Content Include="Objects\Spin\Limited Edition 217.jpg" />
-    <Content Include="Objects\Spin\Limited Edition 221.jpg" />
-    <Content Include="Objects\Spin\Lock Fish.jpg" />
-    <Content Include="Objects\Spin\Mirage 851.jpg" />
-    <Content Include="Objects\Spin\Nephele 750.jpg" />
-    <Content Include="Objects\Spin\Nereids 230.jpg" />
-    <Content Include="Objects\Spin\Okeanos Bolognese 800.jpg" />
-    <Content Include="Objects\Spin\Omphale 670.jpg" />
-    <Content Include="Objects\Spin\Otter c300.jpg" />
-    <Content Include="Objects\Spin\Otter c520.jpg" />
-    <Content Include="Objects\Spin\Otter s300.jpg" />
-    <Content Include="Objects\Spin\Otter s520.jpg" />
-    <Content Include="Objects\Spin\Oyster Atlant.jpg" />
-    <Content Include="Objects\Spin\Oyster Deluxe.jpg" />
-    <Content Include="Objects\Spin\Oyster Fly.jpg" />
-    <Content Include="Objects\Spin\Oyster Gigant.jpg" />
-    <Content Include="Objects\Spin\Oyster Speed.jpg" />
-    <Content Include="Objects\Spin\Pan 802.jpg" />
-    <Content Include="Objects\Spin\Panther.jpg" />
-    <Content Include="Objects\Spin\Phantom 852.jpg" />
-    <Content Include="Objects\Spin\Prince 244.jpg" />
-    <Content Include="Objects\Spin\Quest Winners-1.jpg" />
-    <Content Include="Objects\Spin\Quest Winners-2.jpg" />
-    <Content Include="Objects\Spin\Quest Winners-3.jpg" />
-    <Content Include="Objects\Spin\Quest Winners-4.jpg" />
-    <Content Include="Objects\Spin\Quest Winners-5.jpg" />
-    <Content Include="Objects\Spin\Quest Winners-6.jpg" />
-    <Content Include="Objects\Spin\Ranger 247.jpg" />
-    <Content Include="Objects\Spin\Rattler 853.jpg" />
-    <Content Include="Objects\Spin\Red Salmon.jpg" />
-    <Content Include="Objects\Spin\Scout Carp-Easy.jpg" />
-    <Content Include="Objects\Spin\Scout Carp-Master.jpg" />
-    <Content Include="Objects\Spin\Scout Carp-Platinum.jpg" />
-    <Content Include="Objects\Spin\Scout Spin-Easy.jpg" />
-    <Content Include="Objects\Spin\Scout Spin-Master.jpg" />
-    <Content Include="Objects\Spin\Sea Devil-C1000.jpg" />
-    <Content Include="Objects\Spin\Sea Devil-S1000.jpg" />
-    <Content Include="Objects\Spin\Sevens Bronze.jpg" />
-    <Content Include="Objects\Spin\Sevens Crystal.jpg" />
-    <Content Include="Objects\Spin\Sevens Gold.jpg" />
-    <Content Include="Objects\Spin\Sevens Ice.jpg" />
-    <Content Include="Objects\Spin\Sevens Platinum.jpg" />
-    <Content Include="Objects\Spin\Sevens White.jpg" />
-    <Content Include="Objects\Spin\Sey-Pearl carp.jpg" />
-    <Content Include="Objects\Spin\Sey-Pearl peak.jpg" />
-    <Content Include="Objects\Spin\shark-c.jpg" />
-    <Content Include="Objects\Spin\shark-s.jpg" />
-    <Content Include="Objects\Spin\Silver Carp.jpg" />
-    <Content Include="Objects\Spin\Silver Fish C-Beginner.jpg" />
-    <Content Include="Objects\Spin\Silver Fish C-Ellite.jpg" />
-    <Content Include="Objects\Spin\Silver Fish C-Expert.jpg" />
-    <Content Include="Objects\Spin\Silver Fish C-Master.jpg" />
-    <Content Include="Objects\Spin\Silver Fish C-Prof.jpg" />
-    <Content Include="Objects\Spin\Silver Fish S-Beginner.jpg" />
-    <Content Include="Objects\Spin\Silver Fish S-Ellite.jpg" />
-    <Content Include="Objects\Spin\Silver Fish S-Expert.jpg" />
-    <Content Include="Objects\Spin\Silver Fish S-Master.jpg" />
-    <Content Include="Objects\Spin\Silver Fish S-Prof.jpg" />
-    <Content Include="Objects\Spin\Spinner Pro.jpg" />
-    <Content Include="Objects\Spin\Sprut-100.jpg" />
-    <Content Include="Objects\Spin\Sprut-200.jpg" />
-    <Content Include="Objects\Spin\Sprut-300.jpg" />
-    <Content Include="Objects\Spin\Super Match 271.jpg" />
-    <Content Include="Objects\Spin\SuperFisher-700.jpg" />
-    <Content Include="Objects\Spin\SuperFisher-950.jpg" />
-    <Content Include="Objects\Spin\Sworldfish black.jpg" />
-    <Content Include="Objects\Spin\Sworldfish red.jpg" />
-    <Content Include="Objects\Spin\Titanium.jpg" />
-    <Content Include="Objects\Spin\Tuna Hunter 110.jpg" />
-    <Content Include="Objects\Spin\Tuna Hunter 120.jpg" />
-    <Content Include="Objects\Spin\Vesta 276.jpg" />
-    <Content Include="Objects\Spin\Yellow SuperCarp.jpg" />
-    <Content Include="Resources\Acamedic 255.png" />
-    <None Include="Resources\spin.png" />
-    <None Include="Resources\popl.png" />
-    <None Include="Resources\exit_d4.png" />
-    <None Include="Resources\layer32.jpg" />
-    <None Include="Resources\layer21.jpg" />
-    <None Include="Resources\layer8.jpg" />
-    <None Include="Resources\exitm_a.png" />
-    <None Include="Resources\set_d.png" />
-    <None Include="Resources\set_a.png" />
-    <None Include="Resources\exitm_d.png" />
-    <None Include="Resources\menu_d1.png" />
-    <None Include="Resources\layer7.jpg" />
-    <None Include="Resources\save_d.png" />
-    <None Include="Resources\save_a.png" />
-    <None Include="Resources\exitw_d.png" />
-    <None Include="Resources\exitw_a.png" />
-    <None Include="Resources\start_d1.png" />
-    <None Include="Resources\exit_d3.png" />
-    <None Include="Resources\layer31.jpg" />
-    <None Include="Resources\exit_d2.png" />
-    <None Include="Resources\start_d.png" />
-    <None Include="Resources\start_a.png" />
-    <None Include="Resources\rem_d.png" />
-    <None Include="Resources\rem_a.png" />
-    <None Include="Resources\load_d.png" />
-    <None Include="Resources\load_a.png" />
-    <None Include="Resources\exit_d.png" />
-    <None Include="Resources\exit_a.png" />
-    <None Include="Resources\create_d.png" />
-    <None Include="Resources\create_a.png" />
-    <None Include="Resources\rem_d1.png" />
-    <None Include="Resources\layer3.jpg" />
-    <None Include="Resources\go_a.png" />
-    <None Include="Resources\go_d.png" />
-    <None Include="Resources\blackkrug.png" />
-    <None Include="Resources\greenkrug.png" />
-    <None Include="Resources\redkrug.png" />
-    <None Include="Resources\map_act.png" />
-    <None Include="Resources\index.jpg" />
-    <None Include="Resources\map_de.png" />
-    <None Include="Resources\podmoskovie.jpg" />
-    <None Include="Resources\layer1.jpg" />
+    <Content Include="Objects\Spin\Acamedic 255.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Acamedic 285.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Achilles 228.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Achilles 233.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Admiral 249.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Adventure rod-carp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Adventure rod-pike.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Assistance 257.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Atlant 254.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Atlantic Carp-fider.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Atlantic Lakestar.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Atlantic Light.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Atlantic Nord.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Atlantic Pike.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Atlantic Salmon.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Atlantic Smart.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Atlantic White Bear.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Bambuka.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Banana Force-c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Banana Force-s.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Banana Start-c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Banana Start-s.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Barracuda B100.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Barracuda B200.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Barracuda B300.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Barracuda B400.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Barracuda B500.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Bestia 110.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Black Eagle Luxe.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Black Eagle.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Black Fish-700.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Black Fish-800.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Black Fish-900.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Black Line.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Black.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Boreas 107.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Bullet 246.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Catapult 119.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Catapult 120.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Cheetah.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Combat Stick 216.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Combat Stick 218.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Combat Stick 222.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Comet 753.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Corona 251.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Crystal LE.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Daytona B1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Daytona B2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Daytona B3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Daytona M1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Daytona M2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Daytona M3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Deep Fish.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Delta 759.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Demeter 111.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Dex.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Ecko Fish.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\FastMaster.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\FishMaster-M1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\FishMaster-M2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\FishMaster-M3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\FishMaster-M4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\FishMaster-M5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\FishMaster-M6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Force Master.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Fox.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Freeman 856.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Gold Marlin-100.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Gold Marlin-200.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Gold River - Limited.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\gp-c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\gp-s.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Green Devil.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Harpoon 51.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Haven Creek-1500.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Haven Creek-3000.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Haven Creek-4000.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Haven Creek-5500.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Haven Creek-7000.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Helios Bolognese 860.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Hera Fiber Glass 672.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Herakles 108.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Hermes 112.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Hermes Fiber Glass 651.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Hydra Bolognese 861.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Ice Bullet.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Instant 252.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Kipper 212.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Labzilla Light.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Labzilla Monster.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Labzilla Power.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Lagoon 242.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Lagoon 243.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Laocoon 235.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Legend.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Light Start.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Limited Edition 217.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Limited Edition 221.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Lock Fish.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Mirage 851.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Nephele 750.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Nereids 230.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Okeanos Bolognese 800.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Omphale 670.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Otter c300.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Otter c520.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Otter s300.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Otter s520.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Oyster Atlant.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Oyster Deluxe.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Oyster Fly.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Oyster Gigant.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Oyster Speed.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Pan 802.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Panther.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Phantom 852.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Prince 244.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Quest Winners-1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Quest Winners-2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Quest Winners-3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Quest Winners-4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Quest Winners-5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Quest Winners-6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Ranger 247.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Rattler 853.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Red Salmon.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Scout Carp-Easy.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Scout Carp-Master.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Scout Carp-Platinum.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Scout Spin-Easy.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Scout Spin-Master.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sea Devil-C1000.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sea Devil-S1000.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sevens Bronze.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sevens Crystal.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sevens Gold.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sevens Ice.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sevens Platinum.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sevens White.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sey-Pearl carp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sey-Pearl peak.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\shark-c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\shark-s.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Carp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Fish C-Beginner.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Fish C-Ellite.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Fish C-Expert.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Fish C-Master.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Fish C-Prof.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Fish S-Beginner.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Fish S-Ellite.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Fish S-Expert.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Fish S-Master.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Silver Fish S-Prof.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Spinner Pro.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sprut-100.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sprut-200.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sprut-300.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Super Match 271.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\SuperFisher-700.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\SuperFisher-950.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sworldfish black.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Sworldfish red.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Titanium.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Tuna Hunter 110.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Tuna Hunter 120.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Vesta 276.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Spin\Yellow SuperCarp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Locations\ahtung\Loc10\Scene.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -2333,449 +2221,6 @@
     <Content Include="ReelImages\Valkyrie V5.png" />
     <Content Include="ReelImages\Viking reel.png" />
     <Content Include="ReelImages\Zymix.png" />
-    <None Include="Resources\click1.wav" />
-    <None Include="Resources\kassa.wav" />
-    <None Include="Resources\exit_d1.png" />
-    <None Include="Resources\buy_d1.png" />
-    <None Include="Resources\Chartel.png" />
-    <None Include="Resources\Anglers Division R300.png" />
-    <None Include="Resources\ACIS 1304.png" />
-    <None Include="Resources\Zymix.png" />
-    <None Include="Resources\Viking reel.png" />
-    <None Include="Resources\Valkyrie V5.png" />
-    <None Include="Resources\Valkyrie V3.png" />
-    <None Include="Resources\TBR-4000.png" />
-    <None Include="Resources\Syberia LT-2.png" />
-    <None Include="Resources\Syberia LT-1.png" />
-    <None Include="Resources\Syberia HD-5.png" />
-    <None Include="Resources\Syberia HD-4.png" />
-    <None Include="Resources\Syberia HD-3.png" />
-    <None Include="Resources\Syberia HD-1.png" />
-    <None Include="Resources\SuperWinch-170.png" />
-    <None Include="Resources\SuperWinch-155.png" />
-    <None Include="Resources\Squid Power-3000HG.png" />
-    <None Include="Resources\Squid Power-3000.png" />
-    <None Include="Resources\Squid Power-2000HG.png" />
-    <None Include="Resources\Squid Power-2000.png" />
-    <None Include="Resources\Squid Power-1000HG.png" />
-    <None Include="Resources\Squid Power-1000.png" />
-    <None Include="Resources\SPARK 1316.png" />
-    <None Include="Resources\Sky Raven.png" />
-    <None Include="Resources\Sevens Reel-400.png" />
-    <None Include="Resources\Sevens Reel-300.png" />
-    <None Include="Resources\Sevens Reel-200.png" />
-    <None Include="Resources\Sevens Reel-100.png" />
-    <None Include="Resources\Sea Monster s200.png" />
-    <None Include="Resources\Sea Monster s190.png" />
-    <None Include="Resources\Sea Monster s180.png" />
-    <None Include="Resources\Salmon Pro-SP2.png" />
-    <None Include="Resources\Salmon Pro-SP1.png" />
-    <None Include="Resources\Salmon Pro-PW.png" />
-    <None Include="Resources\Salmon Force.png" />
-    <None Include="Resources\RS-800.png" />
-    <None Include="Resources\REMUS 1312.png" />
-    <None Include="Resources\RAINSTARS 1317.png" />
-    <None Include="Resources\Quest Reel.png" />
-    <None Include="Resources\Quest Platinum.png" />
-    <None Include="Resources\Predator Ultimate.png" />
-    <None Include="Resources\Predator MonsterGear.png" />
-    <None Include="Resources\Predator Classic.png" />
-    <None Include="Resources\Old Reel.png" />
-    <None Include="Resources\NUMAN 1400.png" />
-    <None Include="Resources\Miada River-200.png" />
-    <None Include="Resources\Miada River-100.png" />
-    <None Include="Resources\Miada Lake-200.png" />
-    <None Include="Resources\Miada Lake-100.png" />
-    <None Include="Resources\MGX SilverTrack.png" />
-    <None Include="Resources\MGX Inshore.png" />
-    <None Include="Resources\MGX Cruiser.png" />
-    <None Include="Resources\Meteor.png" />
-    <None Include="Resources\Meridian-800.png" />
-    <None Include="Resources\Meridian-700.png" />
-    <None Include="Resources\Meridian-600.png" />
-    <None Include="Resources\Meridian-500.png" />
-    <None Include="Resources\Meridian-400.png" />
-    <None Include="Resources\Meridian-300.png" />
-    <None Include="Resources\Meridian-200.png" />
-    <None Include="Resources\Meridian-100.png" />
-    <None Include="Resources\Marco-R13.png" />
-    <None Include="Resources\Marco-R12.png" />
-    <None Include="Resources\Marco-R11.png" />
-    <None Include="Resources\Marco-R10.png" />
-    <None Include="Resources\Marco-R9.png" />
-    <None Include="Resources\Marco-R8.png" />
-    <None Include="Resources\Marco-R7.png" />
-    <None Include="Resources\Marco-R6.png" />
-    <None Include="Resources\Marco-R5.png" />
-    <None Include="Resources\Marco-R4.png" />
-    <None Include="Resources\Marco-R3.png" />
-    <None Include="Resources\Marco-R2.png" />
-    <None Include="Resources\Marco-R1.png" />
-    <None Include="Resources\magna-mx-400-spinning-fishing-reel.jpg" />
-    <None Include="Resources\LIBRA 1901.png" />
-    <None Include="Resources\LATONA 1712.png" />
-    <None Include="Resources\LACERTA 1301.png" />
-    <None Include="Resources\JSR-T200.png" />
-    <None Include="Resources\JSR-T100.png" />
-    <None Include="Resources\JSR-T20.png" />
-    <None Include="Resources\JSR-L200.png" />
-    <None Include="Resources\JSR-L100.png" />
-    <None Include="Resources\JSR-C200.png" />
-    <None Include="Resources\JSR-C100.png" />
-    <None Include="Resources\Ink reel.png" />
-    <None Include="Resources\ICARUS 1309.png" />
-    <None Include="Resources\Hydra.png" />
-    <None Include="Resources\HYDRA 1711.png" />
-    <None Include="Resources\Flueger Vintage.png" />
-    <None Include="Resources\Flueger Spin-200.png" />
-    <None Include="Resources\Flueger Spin-100.png" />
-    <None Include="Resources\Flueger LProf-200.png" />
-    <None Include="Resources\Flueger LProf-100.png" />
-    <None Include="Resources\Faraon reel.png" />
-    <None Include="Resources\DRACO FD 1704.png" />
-    <None Include="Resources\DIONYSIA 1302.png" />
-    <None Include="Resources\Denlou.png" />
-    <None Include="Resources\CIRCE 1311.png" />
-    <None Include="Resources\Blood Raven.png" />
-    <None Include="Resources\Black Raven.png" />
-    <None Include="Resources\BaitFlex.png" />
-    <None Include="Resources\Anglers Division R500.png" />
-    <None Include="Resources\Anglers Division R450.png" />
-    <None Include="Resources\Anglers Division R400.png" />
-    <None Include="Resources\Anglers Division R350.png" />
-    <None Include="Resources\buy_d.png" />
-    <None Include="Resources\buy_a.png" />
-    <None Include="Resources\takeprofit_d.png" />
-    <None Include="Resources\takeprofit_a.png" />
-    <None Include="Resources\sendbill_d.png" />
-    <None Include="Resources\sendbill_a.png" />
-    <None Include="Resources\sellshop_d.png" />
-    <None Include="Resources\sellshop_a.png" />
-    <None Include="Resources\select_place_d.png" />
-    <None Include="Resources\select_place_a.png" />
-    <None Include="Resources\refresh_d.png" />
-    <None Include="Resources\refresh_a.png" />
-    <None Include="Resources\office_d.png" />
-    <None Include="Resources\office_a.png" />
-    <None Include="Resources\makebid_d.png" />
-    <None Include="Resources\makebid_a.png" />
-    <None Include="Resources\cat_uniq_s.png" />
-    <None Include="Resources\cat_uniq_d.png" />
-    <None Include="Resources\cat_uniq_a.png" />
-    <None Include="Resources\cat_spin_s.png" />
-    <None Include="Resources\cat_spin_d.png" />
-    <None Include="Resources\cat_spin_a.png" />
-    <None Include="Resources\cat_reel_s.png" />
-    <None Include="Resources\cat_reel_d.png" />
-    <None Include="Resources\cat_reel_a.png" />
-    <None Include="Resources\cat_popl_s.png" />
-    <None Include="Resources\cat_popl_d.png" />
-    <None Include="Resources\cat_popl_a.png" />
-    <None Include="Resources\cat_osn_s.png" />
-    <None Include="Resources\cat_osn_d.png" />
-    <None Include="Resources\cat_osn_a.png" />
-    <None Include="Resources\cat_ordin_s.png" />
-    <None Include="Resources\cat_ordin_d.png" />
-    <None Include="Resources\cat_ordin_a.png" />
-    <None Include="Resources\cat_house_s.png" />
-    <None Include="Resources\cat_house_d.png" />
-    <None Include="Resources\cat_house_a.png" />
-    <None Include="Resources\cat_fider_s.png" />
-    <None Include="Resources\cat_fider_d.png" />
-    <None Include="Resources\cat_fider_a.png" />
-    <None Include="Resources\cat_car_s.png" />
-    <None Include="Resources\cat_car_d.png" />
-    <None Include="Resources\cat_car_a.png" />
-    <None Include="Resources\cat_bles_s.png" />
-    <None Include="Resources\cat_bles_d.png" />
-    <None Include="Resources\cat_bles_a.png" />
-    <None Include="Resources\cat_bait_s.png" />
-    <None Include="Resources\cat_bait_d.png" />
-    <None Include="Resources\cat_bait_a.png" />
-    <None Include="Resources\cat_aroma_s.png" />
-    <None Include="Resources\cat_aroma_d.png" />
-    <None Include="Resources\cat_aroma_a.png" />
-    <None Include="Resources\cat_ammo_s.png" />
-    <None Include="Resources\cat_ammo_d.png" />
-    <None Include="Resources\cat_ammo_a.png" />
-    <None Include="Resources\cat_acc_s.png" />
-    <None Include="Resources\cat_acc_d.png" />
-    <None Include="Resources\cat_acc_a.png" />
-    <None Include="Resources\Yellow SuperCarp.png" />
-    <None Include="Resources\wf-s.png" />
-    <None Include="Resources\wf-c.png" />
-    <None Include="Resources\Viking rod.png" />
-    <None Include="Resources\Vesta 276.png" />
-    <None Include="Resources\Tuna Hunter 300.png" />
-    <None Include="Resources\Tuna Hunter 250.png" />
-    <None Include="Resources\Tuna Hunter 200.png" />
-    <None Include="Resources\Tuna Hunter 180.png" />
-    <None Include="Resources\Tuna Hunter 120.png" />
-    <None Include="Resources\Tuna Hunter 110.png" />
-    <None Include="Resources\Titanium.png" />
-    <None Include="Resources\Tarpon-2000.png" />
-    <None Include="Resources\Tarpon-1000.png" />
-    <None Include="Resources\Syzdal Legend-s20.png" />
-    <None Include="Resources\Syzdal Legend-s10.png" />
-    <None Include="Resources\Syzdal Legend-c30.png" />
-    <None Include="Resources\Sworldfish red.png" />
-    <None Include="Resources\Sworldfish black.png" />
-    <None Include="Resources\SuperFisher-950.png" />
-    <None Include="Resources\SuperFisher-700.png" />
-    <None Include="Resources\Super Match 271.png" />
-    <None Include="Resources\Super Bambuka.png" />
-    <None Include="Resources\Sprut-300HP.png" />
-    <None Include="Resources\Sprut-300.png" />
-    <None Include="Resources\Sprut-200HP.png" />
-    <None Include="Resources\Sprut-200.png" />
-    <None Include="Resources\Sprut-100HP.png" />
-    <None Include="Resources\Sprut-100.png" />
-    <None Include="Resources\Spinner Pro.png" />
-    <None Include="Resources\Silver Fish S-Prof.png" />
-    <None Include="Resources\Silver Fish S-Master.png" />
-    <None Include="Resources\Silver Fish S-Expert.png" />
-    <None Include="Resources\Silver Fish S-Ellite.png" />
-    <None Include="Resources\Silver Fish S-Ellite 2.png" />
-    <None Include="Resources\Silver Fish S-Beginner.png" />
-    <None Include="Resources\Silver Fish C-Prof.png" />
-    <None Include="Resources\Silver Fish C-Master.png" />
-    <None Include="Resources\Silver Fish C-Expert.png" />
-    <None Include="Resources\Silver Fish C-Ellite.png" />
-    <None Include="Resources\Silver Fish C-Ellite 2.png" />
-    <None Include="Resources\Silver Fish C-Beginner.png" />
-    <None Include="Resources\Silver Carp.png" />
-    <None Include="Resources\shark-s.png" />
-    <None Include="Resources\shark-c.png" />
-    <None Include="Resources\Sey-Pearl peak.png" />
-    <None Include="Resources\Sey-Pearl carp.png" />
-    <None Include="Resources\Sevens White.png" />
-    <None Include="Resources\Sevens Platinum.png" />
-    <None Include="Resources\Sevens Ice.png" />
-    <None Include="Resources\Sevens Gold.png" />
-    <None Include="Resources\Sevens Crystal.png" />
-    <None Include="Resources\Sevens Bronze.png" />
-    <None Include="Resources\Sea Devil-S1000.png" />
-    <None Include="Resources\Sea Devil-C1000.png" />
-    <None Include="Resources\Scout Spin-Master.png" />
-    <None Include="Resources\Scout Spin-Easy.png" />
-    <None Include="Resources\Scout Carp-Platinum.png" />
-    <None Include="Resources\Scout Carp-Master.png" />
-    <None Include="Resources\Scout Carp-Easy.png" />
-    <None Include="Resources\Red Salmon.png" />
-    <None Include="Resources\Rattler 853.png" />
-    <None Include="Resources\Ranger 247.png" />
-    <None Include="Resources\Quest Winners-Ultra.png" />
-    <None Include="Resources\Quest Winners-Alpha.png" />
-    <None Include="Resources\Quest Winners-6.png" />
-    <None Include="Resources\Quest Winners-5.png" />
-    <None Include="Resources\Quest Winners-4.png" />
-    <None Include="Resources\Quest Winners-3.png" />
-    <None Include="Resources\Quest Winners-2.png" />
-    <None Include="Resources\Quest Winners-1.png" />
-    <None Include="Resources\Prince 244.png" />
-    <None Include="Resources\PowerStick Telescope.png" />
-    <None Include="Resources\PowerStick Sport-S.png" />
-    <None Include="Resources\PowerStick Sport.png" />
-    <None Include="Resources\PowerStick Magma.png" />
-    <None Include="Resources\PowerStick Icebolt.png" />
-    <None Include="Resources\PowerStick Darkness.png" />
-    <None Include="Resources\PowerStick Compact.png" />
-    <None Include="Resources\PowerStick Classic.png" />
-    <None Include="Resources\PowerStick Classic ADV.png" />
-    <None Include="Resources\PowerStick Big carp.png" />
-    <None Include="Resources\plasma-s.png" />
-    <None Include="Resources\plasma-c.png" />
-    <None Include="Resources\Phantom 852.png" />
-    <None Include="Resources\Panther.png" />
-    <None Include="Resources\Pan 802.png" />
-    <None Include="Resources\Oyster Speed.png" />
-    <None Include="Resources\Oyster Gigant.png" />
-    <None Include="Resources\Oyster Fly.png" />
-    <None Include="Resources\Oyster Deluxe.png" />
-    <None Include="Resources\Oyster Atlant.png" />
-    <None Include="Resources\Otter s520.png" />
-    <None Include="Resources\Otter s300.png" />
-    <None Include="Resources\Otter c520.png" />
-    <None Include="Resources\Otter c300.png" />
-    <None Include="Resources\Omphale 670.png" />
-    <None Include="Resources\Okeanos Bolognese 800.png" />
-    <None Include="Resources\Nereids 230.png" />
-    <None Include="Resources\Nephele 750.png" />
-    <None Include="Resources\Moroz rod.png" />
-    <None Include="Resources\Mirage 851.png" />
-    <None Include="Resources\Lock Fish.png" />
-    <None Include="Resources\Limited Edition 221.png" />
-    <None Include="Resources\Limited Edition 217.png" />
-    <None Include="Resources\Light Start.png" />
-    <None Include="Resources\Legend.png" />
-    <None Include="Resources\Laocoon 235.png" />
-    <None Include="Resources\Lagoon 243.png" />
-    <None Include="Resources\Lagoon 242.png" />
-    <None Include="Resources\Labzilla Power.png" />
-    <None Include="Resources\Labzilla Monster.png" />
-    <None Include="Resources\Labzilla Light.png" />
-    <None Include="Resources\Kipper 212.png" />
-    <None Include="Resources\John Silver-Walleye.png" />
-    <None Include="Resources\John Silver-Tuna.png" />
-    <None Include="Resources\John Silver-Tuna V2.png" />
-    <None Include="Resources\John Silver-TroutShot.png" />
-    <None Include="Resources\John Silver-Trophy S.png" />
-    <None Include="Resources\John Silver-Trophy C.png" />
-    <None Include="Resources\John Silver-Sturgeon.png" />
-    <None Include="Resources\John Silver-Squids.png" />
-    <None Include="Resources\John Silver-ShellMaster.png" />
-    <None Include="Resources\John Silver-Sharks.png" />
-    <None Include="Resources\John Silver-Salmon.png" />
-    <None Include="Resources\John Silver-PerchMaster.png" />
-    <None Include="Resources\John Silver-Palia.png" />
-    <None Include="Resources\John Silver-Octopus.png" />
-    <None Include="Resources\John Silver-Murena.png" />
-    <None Include="Resources\John Silver-Mbambo Mbengo.png" />
-    <None Include="Resources\John Silver-Magic S.png" />
-    <None Include="Resources\John Silver-Magic C.png" />
-    <None Include="Resources\John Silver-Lobster.png" />
-    <None Include="Resources\John Silver-Killerwhale.png" />
-    <None Include="Resources\John Silver-Killerwhale V2.png" />
-    <None Include="Resources\John Silver-Grouper.png" />
-    <None Include="Resources\John Silver-Gathering.png" />
-    <None Include="Resources\John Silver-Conus.png" />
-    <None Include="Resources\John Silver-Cocodrilo.png" />
-    <None Include="Resources\John Silver-CarpKiller.png" />
-    <None Include="Resources\John Silver-CarpKiller V2.png" />
-    <None Include="Resources\Instant 252.png" />
-    <None Include="Resources\Ink rod.png" />
-    <None Include="Resources\Ice Bullet.png" />
-    <None Include="Resources\Hydra Bolognese 861.png" />
-    <None Include="Resources\Hermes Fiber Glass 651.png" />
-    <None Include="Resources\Hermes 112.png" />
-    <None Include="Resources\Herakles 108.png" />
-    <None Include="Resources\Hera Fiber Glass 672.png" />
-    <None Include="Resources\Helios Bolognese 860.png" />
-    <None Include="Resources\Haven Creek-7000.png" />
-    <None Include="Resources\Haven Creek-5500.png" />
-    <None Include="Resources\Haven Creek-4000.png" />
-    <None Include="Resources\Haven Creek-3000.png" />
-    <None Include="Resources\Haven Creek-1500.png" />
-    <None Include="Resources\Harpoon 51.png" />
-    <None Include="Resources\Green Devil.png" />
-    <None Include="Resources\Greek-880.png" />
-    <None Include="Resources\gp-s.png" />
-    <None Include="Resources\gp-c.png" />
-    <None Include="Resources\Gold River - Limited.png" />
-    <None Include="Resources\Gold Marlin-200-2.png" />
-    <None Include="Resources\Gold Marlin-200.png" />
-    <None Include="Resources\Gold Marlin-100-2.png" />
-    <None Include="Resources\Gold Marlin-100.png" />
-    <None Include="Resources\Freeman 856.png" />
-    <None Include="Resources\Fox.png" />
-    <None Include="Resources\Force Master.png" />
-    <None Include="Resources\FishMaster-M6.png" />
-    <None Include="Resources\FishMaster-M5.png" />
-    <None Include="Resources\FishMaster-M4.png" />
-    <None Include="Resources\FishMaster-M3.png" />
-    <None Include="Resources\FishMaster-M2.png" />
-    <None Include="Resources\FishMaster-M1.png" />
-    <None Include="Resources\Fireblade-S1400.png" />
-    <None Include="Resources\Fireblade-C1400.png" />
-    <None Include="Resources\FastMaster.png" />
-    <None Include="Resources\Faraon rod.png" />
-    <None Include="Resources\Ecko Fish.png" />
-    <None Include="Resources\Dex.png" />
-    <None Include="Resources\Demeter 111.png" />
-    <None Include="Resources\Delta 759.png" />
-    <None Include="Resources\Deep Fish.png" />
-    <None Include="Resources\Daytona M3.png" />
-    <None Include="Resources\Daytona M2.png" />
-    <None Include="Resources\Daytona M1.png" />
-    <None Include="Resources\Daytona B3.png" />
-    <None Include="Resources\Daytona B2.png" />
-    <None Include="Resources\Daytona B1.png" />
-    <None Include="Resources\Crystal LE.png" />
-    <None Include="Resources\Corona 251.png" />
-    <None Include="Resources\Comet 753.png" />
-    <None Include="Resources\Combat Stick 222.png" />
-    <None Include="Resources\Combat Stick 218.png" />
-    <None Include="Resources\Combat Stick 216.png" />
-    <None Include="Resources\Cheetah.png" />
-    <None Include="Resources\Catapult 120.png" />
-    <None Include="Resources\Catapult 119.png" />
-    <None Include="Resources\Bullet 246.png" />
-    <None Include="Resources\Boreas 107.png" />
-    <None Include="Resources\Black.png" />
-    <None Include="Resources\Black Line.png" />
-    <None Include="Resources\Black Fish-900.png" />
-    <None Include="Resources\Black Fish-800.png" />
-    <None Include="Resources\Black Fish-700.png" />
-    <None Include="Resources\Black Eagle.png" />
-    <None Include="Resources\Black Eagle Luxe.png" />
-    <None Include="Resources\Bestia 110.png" />
-    <None Include="Resources\Barracuda B800.png" />
-    <None Include="Resources\Barracuda B700.png" />
-    <None Include="Resources\Barracuda B600.png" />
-    <None Include="Resources\Barracuda B500.png" />
-    <None Include="Resources\Barracuda B400.png" />
-    <None Include="Resources\Barracuda B300.png" />
-    <None Include="Resources\Barracuda B200.png" />
-    <None Include="Resources\Barracuda B100.png" />
-    <None Include="Resources\Banana Strike-c.png" />
-    <None Include="Resources\Banana Start-s.png" />
-    <None Include="Resources\Banana Start-c.png" />
-    <None Include="Resources\Banana Force-s.png" />
-    <None Include="Resources\Banana Force-c.png" />
-    <None Include="Resources\Bambuka.png" />
-    <None Include="Resources\Bambuka Ultima.png" />
-    <None Include="Resources\Bambuka 21-Edition.png" />
-    <None Include="Resources\Bambuka 15-Edition.png" />
-    <None Include="Resources\Bambuka 14-Edition.png" />
-    <None Include="Resources\Bambuka 12-Edition.png" />
-    <None Include="Resources\Atlantic xRise.png" />
-    <None Include="Resources\Atlantic xAgility.png" />
-    <None Include="Resources\Atlantic White Bear.png" />
-    <None Include="Resources\Atlantic Smart.png" />
-    <None Include="Resources\Atlantic Salmon.png" />
-    <None Include="Resources\Atlantic Pike.png" />
-    <None Include="Resources\Atlantic Nord.png" />
-    <None Include="Resources\Atlantic Light.png" />
-    <None Include="Resources\Atlantic Lakestar.png" />
-    <None Include="Resources\Atlantic Carp-fider.png" />
-    <None Include="Resources\Atlantic Breeze.png" />
-    <None Include="Resources\Atlant 254.png" />
-    <None Include="Resources\Assistance 257.png" />
-    <None Include="Resources\Armada-S3000.png" />
-    <None Include="Resources\Armada-S2500.png" />
-    <None Include="Resources\Armada-S2000.png" />
-    <None Include="Resources\Armada-S1800.png" />
-    <None Include="Resources\Armada-S1600.png" />
-    <None Include="Resources\Armada-C1600.png" />
-    <None Include="Resources\Apach rod.png" />
-    <None Include="Resources\Anglers Division S20000.png" />
-    <None Include="Resources\Anglers Division S16000.png" />
-    <None Include="Resources\Anglers Division S14000.png" />
-    <None Include="Resources\Anglers Division S12000.png" />
-    <None Include="Resources\Anglers Division S10000.png" />
-    <None Include="Resources\Anglers Division S8000.png" />
-    <None Include="Resources\Anglers Division S6500.png" />
-    <None Include="Resources\Anglers Division S5000.png" />
-    <None Include="Resources\Anglers Division S4000.png" />
-    <None Include="Resources\Anglers Division S3500.png" />
-    <None Include="Resources\Anglers Division C20000.png" />
-    <None Include="Resources\Anglers Division C16000.png" />
-    <None Include="Resources\Anglers Division C14000.png" />
-    <None Include="Resources\Anglers Division C12000.png" />
-    <None Include="Resources\Anglers Division C10000.png" />
-    <None Include="Resources\Anglers Division C8000.png" />
-    <None Include="Resources\Anglers Division C6500.png" />
-    <None Include="Resources\Anglers Division C5000.png" />
-    <None Include="Resources\Anglers Division C4000.png" />
-    <None Include="Resources\Anglers Division C3500.png" />
-    <None Include="Resources\Adventure rod-pike.png" />
-    <None Include="Resources\Adventure rod-carp.png" />
-    <None Include="Resources\ADS.png" />
-    <None Include="Resources\Admiral 249.png" />
-    <None Include="Resources\ADC.png" />
-    <None Include="Resources\Achilles 233.png" />
-    <None Include="Resources\Achilles 228.png" />
-    <None Include="Resources\Acamedic 285.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -2790,9 +2235,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BasesForms\" />
     <Folder Include="Profiles\" />
-    <Folder Include="Resources\PIDORASI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,7 +20,7 @@ namespace pp3
         
 
 
-        public System.Media.SoundPlayer onClickSound = new System.Media.SoundPlayer(Properties.ReelResouce.click1);
+        //public System.Media.SoundPlayer onClickSound = new System.Media.SoundPlayer(Properties.ReelResouce.click1);
         public MainForm(Player player)
         {
 
@@ -60,7 +60,7 @@ namespace pp3
             
         {
             
-            onClickSound.Play();
+           // onClickSound.Play();
         }
 
         public void MoneyChanged(object sender, bool b)

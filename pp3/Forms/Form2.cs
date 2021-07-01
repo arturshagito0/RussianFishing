@@ -53,8 +53,8 @@ namespace pp3
         {
             if (e)
             {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.ReelResouce.kassa);
-                player.Play();
+                //System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.ReelResouce.kassa);
+                //player.Play();
             }
         }
 

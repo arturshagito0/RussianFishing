@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Daytona B3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Daytona B3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Anglers_Division_R350" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Anglers Division R350.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1353,9 +1350,6 @@
   </data>
   <data name="Nereids 230" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nereids 230.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sprut-300" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sprut-300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="John Silver-Conus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\John Silver-Conus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
