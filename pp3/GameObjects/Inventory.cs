@@ -21,6 +21,14 @@ namespace pp3
          
         }
 
+
+        public List<Rod> getAllRods()
+        {
+            
+            List<InventoryObject> temp =  items.FindAll( e => e.GetType() == typeof(Rod));
+            return temp.ConvertAll(e => e as Rod);
+        }
+
         
         
 

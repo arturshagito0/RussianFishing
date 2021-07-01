@@ -47,7 +47,10 @@ namespace pp3
                 Rod.ROD_TYPE ty = (Rod.ROD_TYPE)(Enum.Parse(typeof(Rod.ROD_TYPE), rod["type"].ToString()));
                 bool unique = (bool)rod["isUnique"];
 
-                gamerRods.Add(new Rod(name, maxWeight, price, ty, unique));
+                Image icon = ty == Rod.ROD_TYPE.POPLAVOK ? Properties.Resources.popl : Properties.Resources.spin;
+
+
+                gamerRods.Add(new Rod(name, maxWeight, price, ty, unique, icon));
 
             }
 

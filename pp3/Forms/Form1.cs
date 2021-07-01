@@ -4,6 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Threading;
 using System.Drawing;
+using pp3.Forms;
 
 namespace pp3
 {
@@ -14,7 +15,7 @@ namespace pp3
         public ObjectInitializer initializer = new ObjectInitializer();
         public FishshopForm fishShopForm;
         public TravelForm travelForm;
-        
+        public TackleBoxForm tackleBoxForm;
         public Player currentPlayer { get; set; }
         
 
@@ -27,7 +28,7 @@ namespace pp3
 
             fishShopForm = new FishshopForm(initializer);
             travelForm = new TravelForm(player, initializer);
-            
+            tackleBoxForm = new TackleBoxForm(player, initializer);
 
             InitializeComponent();
 
@@ -371,7 +372,8 @@ namespace pp3
 
         private void TackleboxButton_Click(object sender, EventArgs e)
         {
-            
+            tackleBoxForm.Show();
+
         }
     }
 }

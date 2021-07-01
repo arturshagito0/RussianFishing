@@ -3,7 +3,7 @@ using System;
 namespace pp3
 {
     [Serializable]
-    public class Reel : BackpackObject
+    public class Reel : InventoryObject
     {
         public int id;
         public string name { get; set; }
