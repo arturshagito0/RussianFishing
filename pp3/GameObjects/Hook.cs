@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace pp3
 {
-    class Hook
+    [Serializable]
+    public class Hook
     {
         public string name { get; private set; }
         

@@ -21,6 +21,13 @@ namespace pp3
          
         }
 
+
+        public List<T> GetItemsOfSpecificType<T>() where T : InventoryObject
+        {
+            List<InventoryObject> temp =  items.FindAll( e => e.GetType() == typeof(T));
+            return temp.ConvertAll(e => e as T);
+        }
+
         
         
 

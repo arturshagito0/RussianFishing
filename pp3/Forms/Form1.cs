@@ -4,6 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Threading;
 using System.Drawing;
+using pp3.Forms;
 
 namespace pp3
 {
@@ -14,11 +15,12 @@ namespace pp3
         public ObjectInitializer initializer = new ObjectInitializer();
         public FishshopForm fishShopForm;
         public TravelForm travelForm;
+        public TackleBoxForm tackleBoxForm;
         public Player currentPlayer { get; set; }
         
 
 
-        public System.Media.SoundPlayer onClickSound = new System.Media.SoundPlayer(Properties.ReelResouce.click1);
+        //public System.Media.SoundPlayer onClickSound = new System.Media.SoundPlayer(Properties.ReelResouce.click1);
         public MainForm(Player player)
         {
 
@@ -26,7 +28,7 @@ namespace pp3
 
             fishShopForm = new FishshopForm(initializer);
             travelForm = new TravelForm(player, initializer);
-            
+            tackleBoxForm = new TackleBoxForm(player, initializer);
 
             InitializeComponent();
 
@@ -58,7 +60,7 @@ namespace pp3
             
         {
             
-            onClickSound.Play();
+           // onClickSound.Play();
         }
 
         public void MoneyChanged(object sender, bool b)
@@ -366,6 +368,12 @@ namespace pp3
         private void settingsButton_MouseLeave(object sender, EventArgs e)
         {
             settingsButton.Image = Properties.Resources.menu_d;
+        }
+
+        private void TackleboxButton_Click(object sender, EventArgs e)
+        {
+            tackleBoxForm.Show();
+
         }
     }
 }

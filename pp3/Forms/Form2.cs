@@ -53,8 +53,8 @@ namespace pp3
         {
             if (e)
             {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.ReelResouce.kassa);
-                player.Play();
+                //System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.ReelResouce.kassa);
+                //player.Play();
             }
         }
 
@@ -144,7 +144,7 @@ namespace pp3
         {
             poplavokButton.Image = pp3.Properties.Resources.cat_popl_s;
             Load += spinningButton_MouseLeave;
-            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, false, dataGridView1, initializer);
+            ShopGridViewHandler.selectRods(false, Rod.ROD_TYPE.POPLAVOK, false, dataGridView1, initializer.Rods);
             EventHandlers.OnButtonClickSound(null, null);
 
 
@@ -162,7 +162,7 @@ namespace pp3
             EventHandlers.OnButtonClickSound(null, null);
 
 
-            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.SPINNING, false, dataGridView1, initializer);
+            ShopGridViewHandler.selectRods(false, Rod.ROD_TYPE.SPINNING, false, dataGridView1, initializer.Rods);
 
 
         }
@@ -188,7 +188,7 @@ namespace pp3
         {
             EventHandlers.OnButtonClickSound(null, null);
             uniqueRodButton.Image = Properties.Resources.cat_uniq_s;
-            ShopGridViewHandler.selectRods(Rod.ROD_TYPE.POPLAVOK, true, dataGridView1, initializer);
+            ShopGridViewHandler.selectRods(false, Rod.ROD_TYPE.POPLAVOK, true, dataGridView1, initializer.Rods);
         }
 
         private void uniqueButton_MouseEnter(object sender, EventArgs e)
