@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace pp3
 {
-    class Bait
+    [Serializable]
+    public class Bait
     {
     }
 }

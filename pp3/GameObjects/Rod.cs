@@ -13,7 +13,7 @@ namespace pp3
             SPINNING
         }
 
-        protected List<Rod> gameRods = new List<Rod>();
+        
 
         public bool unique { get; } = false;
 
@@ -25,6 +25,15 @@ namespace pp3
 
         public Image icon { get; set; }
 
+        public int condition { get; set; }
+        public Reel installedReel { get; set; }
+        public Line installedLine { get; set; }
+        public Hook installedHook { get; set; }
+        public Bait installedBait { get; set; }
+
+
+
+
         public bool getUniqueness()
         {
             return unique;
@@ -34,7 +43,7 @@ namespace pp3
             return type;
         }
 
-        public Rod(string name, int maxWeight, int price, ROD_TYPE type, bool unique, Image icon)
+        public Rod(string name, int maxWeight, int price, ROD_TYPE type, bool unique, Image icon, Image rodImage)
         {
             this.rodName = name;
             this.icon = icon;
@@ -42,6 +51,7 @@ namespace pp3
             this.price = price;
             this.type = type;
             this.unique = unique;
+            this.rodImage = rodImage;
         }
 
        

@@ -48,9 +48,9 @@ namespace pp3
                 bool unique = (bool)rod["isUnique"];
 
                 Image icon = ty == Rod.ROD_TYPE.POPLAVOK ? Properties.Resources.popl : Properties.Resources.spin;
+                Image rodImage = Image.FromFile(Application.StartupPath + @"\Objects" + @"\Spin" + $@"\{name}.png");
 
-
-                gamerRods.Add(new Rod(name, maxWeight, price, ty, unique, icon));
+                gamerRods.Add(new Rod(name, maxWeight, price, ty, unique, icon, rodImage));
 
             }
 

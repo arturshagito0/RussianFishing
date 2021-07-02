@@ -22,11 +22,10 @@ namespace pp3
         }
 
 
-        public List<Rod> getAllRods()
+        public List<T> GetItemsOfSpecificType<T>() where T : InventoryObject
         {
-            
-            List<InventoryObject> temp =  items.FindAll( e => e.GetType() == typeof(Rod));
-            return temp.ConvertAll(e => e as Rod);
+            List<InventoryObject> temp =  items.FindAll( e => e.GetType() == typeof(T));
+            return temp.ConvertAll(e => e as T);
         }
 
         

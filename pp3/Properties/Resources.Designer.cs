@@ -1913,6 +1913,46 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap conf_rem_a {
+            get {
+                object obj = ResourceManager.GetObject("conf_rem_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap conf_rem_d {
+            get {
+                object obj = ResourceManager.GetObject("conf_rem_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap conf_set_a {
+            get {
+                object obj = ResourceManager.GetObject("conf_set_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap conf_set_d {
+            get {
+                object obj = ResourceManager.GetObject("conf_set_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap corf_a {
             get {
                 object obj = ResourceManager.GetObject("corf_a", resourceCulture);
@@ -2466,6 +2506,26 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap Freeman_856 {
             get {
                 object obj = ResourceManager.GetObject("Freeman 856", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap get_a {
+            get {
+                object obj = ResourceManager.GetObject("get_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap get_d {
+            get {
+                object obj = ResourceManager.GetObject("get_d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3323,6 +3383,26 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap label_a {
+            get {
+                object obj = ResourceManager.GetObject("label_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap label_d {
+            get {
+                object obj = ResourceManager.GetObject("label_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Labzilla_Light {
             get {
                 object obj = ResourceManager.GetObject("Labzilla Light", resourceCulture);
@@ -4043,6 +4123,56 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap not_bait {
+            get {
+                object obj = ResourceManager.GetObject("not_bait", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap not_bles {
+            get {
+                object obj = ResourceManager.GetObject("not_bles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap not_hook {
+            get {
+                object obj = ResourceManager.GetObject("not_hook", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap not_reel {
+            get {
+                object obj = ResourceManager.GetObject("not_reel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap not_scaf {
+            get {
+                object obj = ResourceManager.GetObject("not_scaf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NUMAN_1400 {
             get {
                 object obj = ResourceManager.GetObject("NUMAN_1400", resourceCulture);
@@ -4236,6 +4366,56 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap pack_a {
             get {
                 object obj = ResourceManager.GetObject("pack_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pack_but01 {
+            get {
+                object obj = ResourceManager.GetObject("pack_but01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pack_but02 {
+            get {
+                object obj = ResourceManager.GetObject("pack_but02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pack_but03 {
+            get {
+                object obj = ResourceManager.GetObject("pack_but03", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pack_but04 {
+            get {
+                object obj = ResourceManager.GetObject("pack_but04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pack_but05 {
+            get {
+                object obj = ResourceManager.GetObject("pack_but05", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4783,9 +4963,49 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap remove_a {
+            get {
+                object obj = ResourceManager.GetObject("remove_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove_d {
+            get {
+                object obj = ResourceManager.GetObject("remove_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap REMUS_1312 {
             get {
                 object obj = ResourceManager.GetObject("REMUS_1312", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap repair_a {
+            get {
+                object obj = ResourceManager.GetObject("repair_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap repair_d {
+            get {
+                object obj = ResourceManager.GetObject("repair_d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5113,6 +5333,26 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap select_item_a {
+            get {
+                object obj = ResourceManager.GetObject("select_item_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap select_item_d {
+            get {
+                object obj = ResourceManager.GetObject("select_item_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap select_place_a {
             get {
                 object obj = ResourceManager.GetObject("select_place_a", resourceCulture);
@@ -5126,6 +5366,26 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap select_place_d {
             get {
                 object obj = ResourceManager.GetObject("select_place_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sell_a {
+            get {
+                object obj = ResourceManager.GetObject("sell_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sell_d {
+            get {
+                object obj = ResourceManager.GetObject("sell_d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5186,6 +5446,26 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap set_d {
             get {
                 object obj = ResourceManager.GetObject("set_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setrune_a {
+            get {
+                object obj = ResourceManager.GetObject("setrune_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setrune_d {
+            get {
+                object obj = ResourceManager.GetObject("setrune_d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5733,6 +6013,16 @@ namespace pp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap store_a {
+            get {
+                object obj = ResourceManager.GetObject("store_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap store_car_a {
             get {
                 object obj = ResourceManager.GetObject("store_car_a", resourceCulture);
@@ -5746,6 +6036,16 @@ namespace pp3.Properties {
         internal static System.Drawing.Bitmap store_car_d {
             get {
                 object obj = ResourceManager.GetObject("store_car_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap store_d {
+            get {
+                object obj = ResourceManager.GetObject("store_d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
